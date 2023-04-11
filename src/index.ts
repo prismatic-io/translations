@@ -1,5 +1,11 @@
+import * as phrases from "./lib";
+
 export * from "./types";
 
 export * from "./utils";
 
-export default {};
+export * from "./lib";
+
+export default {
+  ...phrases,
+};

@@ -1,6 +1,6 @@
 # @prismatic-io/translations
 
-`@prismatic-io/embedded` allows you to to embed Prismatic's [Application](https://prismatic.io/docs/embedded/) within your web application, giving your customers the ability to manage integrations, instances, and components you've built in Prismatic.
+`@prismatic-io/translations` exposes all the type interfaces for phrase translations used throughout Prismatic.io applications. In addition to the types, there are a handful of helper utilities for working with Prismatic.io translations.
 
 ## What is Prismatic?
 

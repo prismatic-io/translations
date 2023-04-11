@@ -28,7 +28,7 @@ module.exports = {
     filename: "index.js",
     path: path.resolve(__dirname, "dist"),
     globalObject: "this",
-    library: "prismatic",
+    library: "prismatic-translations",
     libraryTarget: "umd",
   },
   plugins: [
