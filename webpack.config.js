@@ -1,6 +1,4 @@
 const path = require("path");
-const webpack = require("webpack");
-const package = require("./package.json");
 
 module.exports = {
   mode: "production",
@@ -28,12 +26,7 @@ module.exports = {
     filename: "index.js",
     path: path.resolve(__dirname, "dist"),
     globalObject: "this",
-    library: "prismatic-translations",
+    library: "prismaticTranslations",
     libraryTarget: "umd",
   },
-  plugins: [
-    new webpack.DefinePlugin({
-      EMBEDDED_VERSION: JSON.stringify(package.version),
-    }),
-  ],
 };
