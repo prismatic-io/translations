@@ -160,6 +160,15 @@ export interface InputPhrases {
   /** English: "Show only templates" */
   "input.showOnlyTemplatesLabel": SimplePhrase;
 
+  /** English: "All" */
+  "input.status.allValue": SimplePhrase;
+
+  /** English: "Enabled" */
+  "input.status.enabledValue": SimplePhrase;
+
+  /** English: "Disabled" */
+  "input.status.disabledValue": SimplePhrase;
+
   /** English: "Failed" */
   "input.status.failedValue": SimplePhrase;
 
@@ -243,6 +252,9 @@ export const inputPhrases: InputPhrases = {
   "input.showOnlyPrivateComponentsLabel": "Show only private components",
   "input.showOnlyTemplatesLabel": "Show only templates",
   "input.startDateLabel": "Start Date/Time",
+  "input.status.allValue": "All",
+  "input.status.disabledValue": "Disabled",
+  "input.status.enabledValue": "Enabled",
   "input.status.failedValue": "Failed",
   "input.status.runningValue": "Running",
   "input.status.successfulValue": "Successful",
