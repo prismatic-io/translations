@@ -61,6 +61,9 @@ export interface InputPhrases {
   /** English: "Search %{type}" */
   "input.filterSearchPlaceholder": ComplexPhrase<{ type?: string }>;
 
+  /** English: "Has outdated components" */
+  "input.hasOutdatedComponentsLabel": SimplePhrase;
+
   /** English: "Add header" */
   "input.headersAddButton": SimplePhrase;
 
@@ -206,6 +209,7 @@ export const inputPhrases: InputPhrases = {
   "input.externalIdLabel": "External ID",
   "input.failedPreprocessFlowsOnlyLabel": "Show only failed preprocess flows",
   "input.filterSearchPlaceholder": { _: "Search %{type}", type: "" },
+  "input.hasOutdatedComponentsLabel": "Has outdated components",
   "input.headersAddButton": "Add header",
   "input.headersKeyLabel": "Key",
   "input.headersLabel": "Headers",
