@@ -50,6 +50,9 @@ export interface InputPhrases {
   "input.emailLabel": SimplePhrase;
 
   /** English: "End Date/Time" */
+  "input.endDateHelperText": SimplePhrase;
+
+  /** English: "End Date/Time" */
   "input.endDateLabel": SimplePhrase;
 
   /** English: "External ID" */
@@ -214,6 +217,7 @@ export const inputPhrases: InputPhrases = {
   "input.defaultValueLabel": "Default Value",
   "input.descriptionLabel": "Description",
   "input.emailLabel": "Email",
+  "input.endDateHelperText": "* Maximum filter range is 24 hours",
   "input.endDateLabel": "End Date/Time",
   "input.externalIdLabel": "External ID",
   "input.failedPreprocessFlowsOnlyLabel": "Show only failed preprocess flows",
