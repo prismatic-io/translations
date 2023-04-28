@@ -112,11 +112,23 @@ export interface DialogPhrases {
     organization?: string;
   }>;
 
+  /** English: "Add Instance" */
+  "activateIntegrationDialog.addButton": SimplePhrase;
+
   /** English: "Cancel" */
   "activateIntegrationDialog.cancelButton": SimplePhrase;
 
   /** English: "Configure" */
   "activateIntegrationDialog.configureButton": SimplePhrase;
+
+  /** English: "Instances" */
+  "activateIntegrationDialog.instancesTitle": SimplePhrase;
+
+  /** English: "View an existing instance, or create a new one." */
+  "activateIntegrationDialog.instancesText": SimplePhrase;
+
+  /** English: "View" */
+  "activateIntegrationDialog.viewButton": SimplePhrase;
 }
 
 export const dialogPhrases: DialogPhrases = {
@@ -141,12 +153,17 @@ export const dialogPhrases: DialogPhrases = {
   "webhookUrlDialog.openButton": "Details",
 
   // activate integration dialog
+  "activateIntegrationDialog.addButton": "Add Instance",
   "activateIntegrationDialog.banner.text--isNotConfigurable": {
     _: "Please contact %{organization} to configure this integration.",
     organization: "your organization",
   },
-  "activateIntegrationDialog.configureButton": "Configure",
   "activateIntegrationDialog.cancelButton": "Cancel",
+  "activateIntegrationDialog.configureButton": "Configure",
+  "activateIntegrationDialog.instancesText":
+    "View an existing instance, or create a new one.",
+  "activateIntegrationDialog.instancesTitle": "Instances",
+  "activateIntegrationDialog.viewButton": "View",
 
   // delete user configuration dialog
   "deleteUserConfigurationDialog.confirmButton": "Remove Integration",
