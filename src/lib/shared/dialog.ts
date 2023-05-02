@@ -129,6 +129,14 @@ export interface DialogPhrases {
 
   /** English: "View" */
   "activateIntegrationDialog.viewButton": SimplePhrase;
+
+  /** English: "New integration (%{id})" */
+  "activateIntegrationDialog.nameValue": ComplexPhrase<{
+    id: string;
+  }>;
+
+  /** English: "Contact organization to configure this integration" */
+  "activateIntegrationDialog.marketplaceConfigurationError": SimplePhrase;
 }
 
 export const dialogPhrases: DialogPhrases = {
@@ -163,6 +171,12 @@ export const dialogPhrases: DialogPhrases = {
   "activateIntegrationDialog.instancesText":
     "View an existing instance, or create a new one.",
   "activateIntegrationDialog.instancesTitle": "Instances",
+  "activateIntegrationDialog.marketplaceConfigurationError":
+    "Contact organization to configure this integration",
+  "activateIntegrationDialog.nameValue": {
+    _: "New integration (%{id})",
+    id: "",
+  },
   "activateIntegrationDialog.viewButton": "View",
 
   // delete user configuration dialog
