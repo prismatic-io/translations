@@ -18,6 +18,36 @@ export interface IntegrationMarketplacePhrases {
 
   /** English: "All" */
   "integration-marketplace__filterBar.allButton": SimplePhrase;
+
+  /** English: "Integration is not configured." */
+  "integration-marketplace.instanceUnconfiguredTooltip": SimplePhrase;
+
+  /** English: "Integration is paused." */
+  "integration-marketplace.instancePausedTooltip": SimplePhrase;
+
+  /** English: "Integration is activated." */
+  "integration-marketplace.instanceActivatedTooltip": SimplePhrase;
+
+  /** English: "Current user is not configured." */
+  "integration-marketplace.userUnconfiguredTooltip": SimplePhrase;
+
+  /** English: "Current user is activated." */
+  "integration-marketplace.userActivatedTooltip": SimplePhrase;
+
+  /** English: "At least one instance is not configured." */
+  "integration-marketplace.instancesUnconfiguredTooltip": SimplePhrase;
+
+  /** English: "At least one instance is paused." */
+  "integration-marketplace.instancesPausedTooltip": SimplePhrase;
+
+  /** English: "All instances are activated." */
+  "integration-marketplace.instancesActivatedTooltip": SimplePhrase;
+
+  /** English: "At least one user is not configured." */
+  "integration-marketplace.usersUnconfiguredTooltip": SimplePhrase;
+
+  /** English: "All users are activated." */
+  "integration-marketplace.usersActivatedTooltip": SimplePhrase;
 }
 
 export const integrationMarketplacePhrases: NamespacedSharedAndUniquePhrases<IntegrationMarketplacePhrases> =
@@ -37,4 +67,22 @@ export const integrationMarketplacePhrases: NamespacedSharedAndUniquePhrases<Int
     "integration-marketplace__input.filterSearchPlaceholder": {
       _: "Search integrations",
     },
+    "integration-marketplace.instanceUnconfiguredTooltip":
+      "Integration is not configured.",
+    "integration-marketplace.instancePausedTooltip": "Integration is paused.",
+    "integration-marketplace.instanceActivatedTooltip":
+      "Integration is activated.",
+    "integration-marketplace.userUnconfiguredTooltip":
+      "Current user is not configured.",
+    "integration-marketplace.userActivatedTooltip":
+      "Current user is activated.",
+    "integration-marketplace.instancesUnconfiguredTooltip":
+      "At least one instance is not configured.",
+    "integration-marketplace.instancesPausedTooltip":
+      "At least one instance is paused.",
+    "integration-marketplace.instancesActivatedTooltip":
+      "All instances are activated.",
+    "integration-marketplace.usersUnconfiguredTooltip":
+      "At least one user is not configured.",
+    "integration-marketplace.usersActivatedTooltip": "All users are activated.",
   };
