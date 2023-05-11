@@ -83,6 +83,6 @@ export const integrationMarketplacePhrases: NamespacedSharedAndUniquePhrases<Int
     "integration-marketplace.instancesActivatedTooltip":
       "All instances are activated.",
     "integration-marketplace.usersUnconfiguredTooltip":
-      "At least one instance is not configured for current user..",
+      "At least one instance is not configured for current user.",
     "integration-marketplace.usersActivatedTooltip": "All users are activated.",
   };
