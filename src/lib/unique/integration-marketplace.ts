@@ -43,7 +43,7 @@ export interface IntegrationMarketplacePhrases {
   /** English: "All instances are activated." */
   "integration-marketplace.instancesActivatedTooltip": SimplePhrase;
 
-  /** English: "At least one user is not configured." */
+  /** English: "At least one instance is not configured for current user." */
   "integration-marketplace.usersUnconfiguredTooltip": SimplePhrase;
 
   /** English: "All users are activated." */
@@ -83,6 +83,6 @@ export const integrationMarketplacePhrases: NamespacedSharedAndUniquePhrases<Int
     "integration-marketplace.instancesActivatedTooltip":
       "All instances are activated.",
     "integration-marketplace.usersUnconfiguredTooltip":
-      "At least one user is not configured.",
+      "At least one instance is not configured for current user..",
     "integration-marketplace.usersActivatedTooltip": "All users are activated.",
   };
