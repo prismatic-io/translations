@@ -92,6 +92,11 @@ export interface DialogPhrases {
   /** English: "Returning to the previous page will discard unsaved changes on this page. Are you sure?" */
   "configurationWizardDialog.previousWarningText": SimplePhrase;
 
+  /** English: "This page contains non-visible config variables that need to be set by %{organizationName} before continuing." */
+  "configurationWizardDialog.missingEmbeddedConfigVariablesWarningText": ComplexPhrase<{
+    organizationName: string;
+  }>;
+
   /** English: "Cancel" */
   "apiKeyDialog.cancelButton": SimplePhrase;
 
@@ -205,6 +210,10 @@ export const dialogPhrases: DialogPhrases = {
   "configurationWizardDialog.previousButton": "Previous",
   "configurationWizardDialog.previousWarningText":
     "Returning to the previous page will discard unsaved changes on this page. Are you sure?",
+  "configurationWizardDialog.missingEmbeddedConfigVariablesWarningText": {
+    _: "This page contains non-visible config variables that need to be set by %{organizationName} before continuing.",
+    organizationName: "the organization",
+  },
 
   // api key dialog
   "apiKeyDialog.cancelButton": "Cancel",
