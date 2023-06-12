@@ -137,6 +137,30 @@ export interface DialogPhrases {
 
   /** English: "Contact organization to configure this integration" */
   "activateIntegrationDialog.marketplaceConfigurationError": SimplePhrase;
+
+  /** English: "View configuration" */
+  "activateIntegrationDialog.viewConfiguration": SimplePhrase;
+
+  /** English: "View details" */
+  "activateIntegrationDialog.viewDetails": SimplePhrase;
+
+  /** English: "Pause integration" */
+  "activateIntegrationDialog.pauseIntegration": SimplePhrase;
+
+  /** English: "Unpause integration" */
+  "activateIntegrationDialog.unpauseIntegration": SimplePhrase;
+
+  /** English: "Create user configuration" */
+  "activateIntegrationDialog.createUserConfiguration": SimplePhrase;
+
+  /** English: "Edit user configuration" */
+  "activateIntegrationDialog.editUserConfiguration": SimplePhrase;
+
+  /** English: "View user configuration" */
+  "activateIntegrationDialog.viewUserConfiguration": SimplePhrase;
+
+  /** English: "Delete user configuration" */
+  "activateIntegrationDialog.deleteUserConfiguration": SimplePhrase;
 }
 
 export const dialogPhrases: DialogPhrases = {
@@ -174,6 +198,16 @@ export const dialogPhrases: DialogPhrases = {
   "activateIntegrationDialog.marketplaceConfigurationError":
     "Contact organization to configure this integration",
   "activateIntegrationDialog.viewButton": "View",
+  "activateIntegrationDialog.viewConfiguration": "View configuration",
+  "activateIntegrationDialog.viewDetails": "View details",
+  "activateIntegrationDialog.pauseIntegration": "Pause integration",
+  "activateIntegrationDialog.unpauseIntegration": "Unpause integration",
+  "activateIntegrationDialog.createUserConfiguration":
+    "Create user configuration",
+  "activateIntegrationDialog.editUserConfiguration": "Edit user configuration",
+  "activateIntegrationDialog.viewUserConfiguration": "View user configuration",
+  "activateIntegrationDialog.deleteUserConfiguration":
+    "Delete user configuration",
 
   // delete user configuration dialog
   "deleteUserConfigurationDialog.confirmButton": "Remove Integration",
