@@ -26,6 +26,15 @@ export interface CommonPhrases {
 
   /** English: "This version has no publish message" */
   "common.noPublishedMessage": SimplePhrase;
+
+  /** English: "Disabled" */
+  "common.disabledStatus": SimplePhrase;
+
+  /** English: "Enabled" */
+  "common.enabledStatus": SimplePhrase;
+
+  /** English: "Not Enabled" */
+  "common.notEnabledStatus": SimplePhrase;
 }
 
 export const commonPhrases: CommonPhrases = {
@@ -37,4 +46,7 @@ export const commonPhrases: CommonPhrases = {
   "common.saveButton": "Save",
   "common.saving": "Saving",
   "common.unauthorized": "You must be authenticated.",
+  "common.disabledStatus": "Disabled",
+  "common.enabledStatus": "Enabled",
+  "common.notEnabledStatus": "Not Enabled",
 };

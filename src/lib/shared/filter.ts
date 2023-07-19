@@ -79,6 +79,24 @@ export interface FilterPhrases {
   /** English: "Attachments are a place to store documents that both customers and your team members can reference." */
   "emptyState.attachmentsText": SimplePhrase;
 
+  /** English: "Attachments" */
+  "emptyState.attachmentsTitle--embedded": SimplePhrase;
+
+  /** English: "Place to store integration documents that your team members can reference." */
+  "emptyState.attachmentsText--embedded": SimplePhrase;
+
+  /** English: "Components" */
+  "emptyState.componentsTitle": SimplePhrase;
+
+  /** English: "" */
+  "emptyState.componentsText": SimplePhrase;
+
+  /** English: "Components" */
+  "emptyState.componentsTitle--embedded": SimplePhrase;
+
+  /** English: "Here you will see any components that have been built specifically for your organization to use in the integration designer." */
+  "emptyState.componentsText--embedded": SimplePhrase;
+
   /** English: "Organization credential" */
   "emptyState.credentialsTitle": SimplePhrase;
 
@@ -163,6 +181,12 @@ export interface FilterPhrases {
   /** English: "Learn about integrations" */
   "emptyState.integrationsDocsButton": SimplePhrase;
 
+  /** English: "Integrations" */
+  "emptyState.integrationsTitle--embedded": SimplePhrase;
+
+  /** English: "Here you will see any integrations that your organization has built or can modify via the integration designer." */
+  "emptyState.integrationsText--embedded": SimplePhrase;
+
   /** English: "Integration marketplace" */
   "emptyState.integrationMarketplaceTitle": SimplePhrase;
 
@@ -207,6 +231,12 @@ export interface FilterPhrases {
 
   /** English: "Learn about log streams" */
   "emptyState.logStreamsDocsButton": SimplePhrase;
+
+  /** English: "Users" */
+  "emptyState.usersTitle--embedded": SimplePhrase;
+
+  /** English: "Here you will see users within your organization that have access to manage integrations." */
+  "emptyState.usersText--embedded": SimplePhrase;
 }
 
 export const filterPhrases: FilterPhrases = {
@@ -255,6 +285,18 @@ export const filterPhrases: FilterPhrases = {
   "emptyState.attachmentsTitle": "Customer attachments",
   "emptyState.attachmentsText":
     "Attachments are a place to store documents that both customers and your team members can reference.",
+
+  "emptyState.attachmentsTitle--embedded": "Atachments",
+  "emptyState.attachmentsText--embedded":
+    "Place to store integration documents that your team members can reference.",
+
+  // components empty state
+  "emptyState.componentsTitle": "Components",
+  "emptyState.componentsText": "",
+
+  "emptyState.componentsTitle--embedded": "Components",
+  "emptyState.componentsText--embedded":
+    "Here you will see any components that have been built specifically for your organization to use in the integration designer.",
 
   // credentials empty state
   "emptyState.credentialsTitle": "Organization credential",
@@ -312,6 +354,10 @@ export const filterPhrases: FilterPhrases = {
     "After building an integration, you can deploy it to one or more of your customers, or add it to your marketplace, where customers can activate it themselves.",
   "emptyState.integrationsDocsButton": "Learn about integrations",
 
+  "emptyState.integrationsTitle--embedded": "Integrations",
+  "emptyState.integrationsText--embedded":
+    "Here you will see any integrations that your organization has built or can modify via the integration designer.",
+
   // integration marketplace empty state
   "emptyState.integrationMarketplaceTitle": "Integration marketplace",
   "emptyState.integrationMarketplaceText":
@@ -342,4 +388,9 @@ export const filterPhrases: FilterPhrases = {
   "emptyState.logStreamsText":
     "Log streams allow you to send Prismatic logs to an external logging service (like DataDog or New Relic) or your own proprietary logging system.",
   "emptyState.logStreamsDocsButton": "Learn about log streams",
+
+  // users
+  "emptyState.usersTitle--embedded": "Users",
+  "emptyState.usersText--embedded":
+    "Here you will see users within your organization that have access to manage integrations.",
 };

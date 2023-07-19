@@ -1,4 +1,4 @@
-import { SimplePhrase } from "../../types";
+import { ComplexPhrase, SimplePhrase } from "../../types";
 
 export interface TooltipPhrases {
   /** English: "Close" */
@@ -28,6 +28,11 @@ export interface TooltipPhrases {
   /** English: "Upgrade the Marketplace Configuration to this latest published version." */
   "tooltip.marketplaceVersion": SimplePhrase;
 
+  /** English: "A new version "v${latestVersion}" is available for integration." */
+  "tooltip.newIntegrationVersionAvailable": ComplexPhrase<{
+    latestVersion?: number;
+  }>;
+
   /** English: "Pass this API key via an HTTP header" */
   "tooltip.passApiKeyToHeader": SimplePhrase;
 
@@ -46,6 +51,9 @@ export const tooltipPhrases: TooltipPhrases = {
   "tooltip.copyUrl": "Copy URL to clipboard",
   "tooltip.marketplaceVersion":
     "Upgrade the Marketplace Configuration to this latest published version.",
+  "tooltip.newIntegrationVersionAvailable": {
+    _: `A new version "v%{latestVersion}" is available for integration.`,
+  },
   "tooltip.passApiKeyToHeader": "Pass this API key via an HTTP header",
   "tooltip.restoreDefault": "Restore default",
 };

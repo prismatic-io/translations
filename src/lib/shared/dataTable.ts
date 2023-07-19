@@ -51,6 +51,9 @@ export interface DataTablePhrases {
   /** English: "Labels" */
   "dataTable.labelsLabel": SimplePhrase;
 
+  /** English: "Last run" */
+  "dataTable.lastRunLabel": SimplePhrase;
+
   /** English: "Last triggered" */
   "dataTable.lastTriggeredAtLabel": SimplePhrase;
 
@@ -60,14 +63,23 @@ export interface DataTablePhrases {
   /** English: "Name" */
   "dataTable.nameLabel": SimplePhrase;
 
+  /** English: "Role" */
+  "dataTable.roleLabel": SimplePhrase;
+
   /** English: "Required" */
   "dataTable.requiredLabel": SimplePhrase;
 
   /** English: "Published" */
   "dataTable.publishedLabel": SimplePhrase;
 
+  /** English: "Status" */
+  "dataTable.statusLabel": SimplePhrase;
+
   /** English: "Timestamp" */
   "dataTable.timestampLabel": SimplePhrase;
+
+  /** English: "Triggered" */
+  "dataTable.triggeredLabel": SimplePhrase;
 
   /** English: "Triggers" */
   "dataTable.triggersLabel": SimplePhrase;
@@ -100,11 +112,15 @@ export const dataTablePhrases: DataTablePhrases = {
   "dataTable.integrationLabel": "Integration",
   "dataTable.labelsLabel": "Labels",
   "dataTable.lastTriggeredAtLabel": "Last triggered",
+  "dataTable.lastRunLabel": "Last run",
   "dataTable.messageLabel": "Message",
   "dataTable.nameLabel": "Name",
   "dataTable.requiredLabel": "Required",
+  "dataTable.roleLabel": "Role",
   "dataTable.publishedLabel": "Published",
+  "dataTable.statusLabel": "Status",
   "dataTable.timestampLabel": "Timestamp",
+  "dataTable.triggeredLabel": "Triggered",
   "dataTable.triggersLabel": "Triggers",
   "dataTable.typeLabel": "Type",
   "dataTable.versionLabel": "Version",

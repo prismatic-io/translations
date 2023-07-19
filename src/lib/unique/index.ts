@@ -4,6 +4,7 @@ import {
   AppMarketplaceNotFoundPhrases,
 } from "./app.marketplace-not-found";
 import { componentsPhrases, ComponentsPhrases } from "./components";
+import { dashboardPhrases, DashboardPhrases } from "./dashboard";
 import {
   integrationMarketplacePhrases,
   IntegrationMarketplacePhrases,
@@ -34,6 +35,7 @@ import { integrationsPhrases, IntegrationsPhrases } from "./integrations";
 export { notFoundPhrases, NotFoundPhrases };
 export { appMarketplaceNotFoundPhrases, AppMarketplaceNotFoundPhrases };
 export { componentsPhrases, ComponentsPhrases };
+export { dashboardPhrases, DashboardPhrases };
 export { integrationMarketplacePhrases, IntegrationMarketplacePhrases };
 export { integrationIdPhrases, IntegrationIdPhrases };
 export { integrationIdAlertMonitorsPhrases, IntegrationIdAlertMonitorsPhrases };
@@ -49,6 +51,7 @@ export { integrationsPhrases, IntegrationsPhrases };
 export type UniquePhrases = NotFoundPhrases &
   AppMarketplaceNotFoundPhrases &
   ComponentsPhrases &
+  DashboardPhrases &
   IntegrationMarketplacePhrases &
   IntegrationIdPhrases &
   IntegrationIdAlertMonitorsPhrases &
@@ -62,6 +65,7 @@ export const uniquePhrases: UniquePhrases = {
   ...notFoundPhrases,
   ...appMarketplaceNotFoundPhrases,
   ...componentsPhrases,
+  ...dashboardPhrases,
   ...integrationMarketplacePhrases,
   ...integrationIdPhrases,
   ...integrationIdAlertMonitorsPhrases,
