@@ -112,6 +112,12 @@ export interface TabPhrases {
   /** English: "Retry" */
   "retryTab.title": SimplePhrase;
 
+  /** English: "Retry Attempts" */
+  "retryTab.retriesTitle": SimplePhrase;
+
+  /** English: "Execution Replays" */
+  "retryTab.replaysTitle": SimplePhrase;
+
   /** English: "Team Members" */
   "teamMembersTab.title": SimplePhrase;
 }
@@ -176,4 +182,6 @@ export const tabPhrases: TabPhrases = {
     retryCount: 0,
   },
   "retryTab.title": "Retry",
+  "retryTab.retriesTitle": "Retry Attempts",
+  "retryTab.replaysTitle": "Execution Replays",
 };
