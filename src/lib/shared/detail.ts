@@ -1,6 +1,9 @@
 import { ComplexPhrase, SimplePhrase } from "../../types";
 
 export interface DetailPhrases {
+  /** English: "Attachments" */
+  "detail.attachmentsLabel": SimplePhrase;
+
   /** English: "Category" */
   "detail.categoryLabel": SimplePhrase;
 
@@ -21,6 +24,9 @@ export interface DetailPhrases {
 
   /** English: "Instance" */
   "detail.instanceLabel": SimplePhrase;
+
+  /** English: "Instances" */
+  "detail.instancesLabel": SimplePhrase;
 
   /** English: "Integration" */
   "detail.integrationLabel": SimplePhrase;
@@ -58,11 +64,21 @@ export interface DetailPhrases {
   /** English: "Activated but not configured" */
   "detail.statusUnconfiguredValue": SimplePhrase;
 
+  /** English: "Team Members" */
+  "detail.teamMembersLabel": SimplePhrase;
+
+  /** English: "Triggered Monitors" */
+  "detail.triggeredMonitorsLabel": SimplePhrase;
+
+  /** English: "Users" */
+  "detail.usersLabel": SimplePhrase;
+
   /** English: "Version" */
   "detail.versionLabel": SimplePhrase;
 }
 
 export const detailPhrases: DetailPhrases = {
+  "detail.attachmentsLabel": "Attachments",
   "detail.categoryLabel": "Category",
   "detail.configVariableLabel": "Config Variable",
   "detail.customerLabel": "Customer",
@@ -70,6 +86,7 @@ export const detailPhrases: DetailPhrases = {
   "detail.executionLabel": "Execution",
   "detail.executionText": "View in Execution Context",
   "detail.instanceLabel": "Instance",
+  "detail.instancesLabel": "Instances",
   "detail.integrationLabel": "Integration",
   "detail.labelsLabel": "Labels",
   "detail.lastRunLabel": "Last Run",
@@ -85,5 +102,8 @@ export const detailPhrases: DetailPhrases = {
   "detail.statusPausedValue": "Paused",
   "detail.statusRunningValue": "Running",
   "detail.statusUnconfiguredValue": "Activated but not configured",
+  "detail.teamMembersLabel": "Team Members",
+  "detail.triggeredMonitorsLabel": "Triggered Monitors",
+  "detail.usersLabel": "Users",
   "detail.versionLabel": "Version",
 };

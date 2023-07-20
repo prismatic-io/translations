@@ -4,11 +4,29 @@ export interface TabPhrases {
   /** English: "Monitors" */
   "alertMonitorsTab.title": SimplePhrase;
 
+  /** English: "Attachments" */
+  "attachmentsTab.title": SimplePhrase;
+
+  /** English: "Components" */
+  "componentsTab.title": SimplePhrase;
+
   /** English: "User Configuration" */
   "configurationTab.title": SimplePhrase;
 
+  /** English: "Credentials" */
+  "credentialsTab.title": SimplePhrase;
+
+  /** English: "Details" */
+  "detailsTab.title": SimplePhrase;
+
   /** English: "Executions" */
   "executionsTab.title": SimplePhrase;
+
+  /** English: "Instances" */
+  "instancesTab.title": SimplePhrase;
+
+  /** English: "Integrations" */
+  "integrationsTab.title": SimplePhrase;
 
   /** English: "Payload" */
   "payloadTab.title": SimplePhrase;
@@ -16,6 +34,8 @@ export interface TabPhrases {
   /** English: "Summary" */
   "summaryTab.title": SimplePhrase;
 
+  /** English: "Users" */
+  "usersTab.title": SimplePhrase;
   /** English: "Test is running" */
   "testTab.testResults.banner.text--testIsRunning": SimplePhrase;
 
@@ -91,14 +111,25 @@ export interface TabPhrases {
 
   /** English: "Retry" */
   "retryTab.title": SimplePhrase;
+
+  /** English: "Team Members" */
+  "teamMembersTab.title": SimplePhrase;
 }
 
 export const tabPhrases: TabPhrases = {
   "alertMonitorsTab.title": "Monitors",
+  "attachmentsTab.title": "Attachments",
+  "componentsTab.title": "Components",
   "configurationTab.title": "User Configuration",
+  "credentialsTab.title": "Credentials",
+  "detailsTab.title": "Details",
   "executionsTab.title": "Executions",
+  "instancesTab.title": "Instances",
+  "integrationsTab.title": "Integrations",
   "payloadTab.title": "Payload",
   "summaryTab.title": "Summary",
+  "teamMembersTab.title": "Team Members",
+  "usersTab.title": "Users",
 
   // test tab
   "testTab.testResults.banner.text--testIsRunning": "Test is running",

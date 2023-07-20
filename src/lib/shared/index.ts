@@ -18,6 +18,7 @@ import { popoverPhrases, PopoverPhrases } from "./popover";
 import { tabPhrases, TabPhrases } from "./tab";
 import { tooltipPhrases, TooltipPhrases } from "./tooltip";
 import { triggerDetailsPhrases, TriggerDetailsPhrases } from "./triggerDetails";
+import { userPhrases, UserPhrases } from "./user";
 
 export { chipPhases, ChipPhases };
 export { commonPhrases, CommonPhrases };
@@ -36,6 +37,7 @@ export { popoverPhrases, PopoverPhrases };
 export { tabPhrases, TabPhrases };
 export { tooltipPhrases, TooltipPhrases };
 export { triggerDetailsPhrases, TriggerDetailsPhrases };
+export { userPhrases, UserPhrases };
 
 export type SharedPhrases = ChipPhases &
   CommonPhrases &
@@ -53,7 +55,8 @@ export type SharedPhrases = ChipPhases &
   PopoverPhrases &
   TabPhrases &
   TooltipPhrases &
-  TriggerDetailsPhrases;
+  TriggerDetailsPhrases &
+  UserPhrases;
 
 export const sharedPhrases: SharedPhrases = {
   ...chipPhases,
@@ -73,4 +76,5 @@ export const sharedPhrases: SharedPhrases = {
   ...tabPhrases,
   ...tooltipPhrases,
   ...triggerDetailsPhrases,
+  ...userPhrases,
 };

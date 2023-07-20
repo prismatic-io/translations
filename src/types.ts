@@ -3,6 +3,7 @@ import { UniquePhrases } from "./lib/unique";
 
 export enum Namespace {
   COMPONENTS = "components",
+  DASHBOARD = "dashboard",
   INTEGRATIONS = "integrations",
   MARKETPLACE = "integration-marketplace",
   MARKETPLACE_INTEGRATION_ALERT_MONITORS = "integrations.id.alert-monitors",

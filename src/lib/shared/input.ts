@@ -7,6 +7,9 @@ export interface InputPhrases {
   /** English: "Alert Trigger" */
   "input.alertTriggerLabel": SimplePhrase;
 
+  /** English: "Allow embedded designer" */
+  "input.allowEmbeddedDesignerLabel": SimplePhrase;
+
   /** English: "Add API key" */
   "input.apiKeyAddButton": SimplePhrase;
 
@@ -127,6 +130,9 @@ export interface InputPhrases {
   /** English: "Marketplace Version" */
   "input.marketplaceVersionLabel": SimplePhrase;
 
+  /** English: "Name" */
+  "input.nameLabel": SimplePhrase;
+
   /** English: "No options found" */
   "input.noOptionsValue": SimplePhrase;
 
@@ -198,11 +204,18 @@ export interface InputPhrases {
 
   /** English: "Add value" */
   "input.valueAddButton": SimplePhrase;
+
+  /** English: "Upload a photo" */
+  "input.uploadPhotoLabel": SimplePhrase;
+
+  /** English: "Customer photos make it easier to recognize them throughout your account" */
+  "input.uploadCustomerLogoText": SimplePhrase;
 }
 
 export const inputPhrases: InputPhrases = {
   "input.alertMonitorLabel": "Monitor",
   "input.alertTriggerLabel": "Alert Trigger",
+  "input.allowEmbeddedDesignerLabel": "Allow embedded designer",
   "input.apiKeyAddButton": "Add API key",
   "input.apiKeyLabel": "API key",
   "input.apiKeyPlaceholder": "No API key configured",
@@ -247,6 +260,7 @@ export const inputPhrases: InputPhrases = {
   "input.logType.integrationExecutionValue": "Execution Only",
   "input.logTypeLabel": "Log type",
   "input.marketplaceVersionLabel": "Marketplace Version",
+  "input.nameLabel": "Name",
   "input.noOptionsValue": "No options found",
   "input.noneValue": "None",
   "input.objectFieldMapPlaceholder": "Edit",
@@ -271,4 +285,7 @@ export const inputPhrases: InputPhrases = {
   "input.valueAddButton": "Add value",
   "input.valueLabel": "Value",
   "input.valuePlaceholder": "Add a value",
+  "input.uploadPhotoLabel": "Upload a photo",
+  "input.uploadCustomerLogoText":
+    "Customer photos make it easier to recognize them throughout your account",
 };
