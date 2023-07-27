@@ -107,6 +107,9 @@ export interface TabPhrases {
   "retryTab.statusLabel": SimplePhrase;
 
   /** English: "Succeeded on retry %{retryCount}" */
+  "retryTab.statusSuccessWithoutRetry": SimplePhrase;
+
+  /** English: "Succeeded on retry %{retryCount}" */
   "retryTab.statusSuccessText": ComplexPhrase<{ retryCount: number }>;
 
   /** English: "Retry" */
@@ -117,6 +120,9 @@ export interface TabPhrases {
 
   /** English: "Manual Replays" */
   "retryTab.replaysTitle": SimplePhrase;
+
+  /** English: "Replay for Execution" */
+  "retryTab.replayedExecutionTitle": SimplePhrase;
 
   /** English: "Team Members" */
   "teamMembersTab.title": SimplePhrase;
@@ -177,6 +183,8 @@ export const tabPhrases: TabPhrases = {
     retryCount: 0,
   },
   "retryTab.statusLabel": "Final status",
+  "retryTab.statusSuccessWithoutRetry":
+    "Succeeded on first attempt. No retries necessary",
   "retryTab.statusSuccessText": {
     _: "Succeeded on retry %{retryCount}",
     retryCount: 0,
@@ -184,4 +192,5 @@ export const tabPhrases: TabPhrases = {
   "retryTab.title": "Retry",
   "retryTab.retriesTitle": "Retry Attempts",
   "retryTab.replaysTitle": "Manual Replays",
+  "retryTab.replayedExecutionTitle": "Replay for Execution",
 };
