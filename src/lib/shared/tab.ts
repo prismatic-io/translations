@@ -28,6 +28,9 @@ export interface TabPhrases {
   /** English: "Integrations" */
   "integrationsTab.title": SimplePhrase;
 
+  /** English: "Marketplace" */
+  "marketplaceTab.title": SimplePhrase;
+
   /** English: "Payload" */
   "payloadTab.title": SimplePhrase;
 
@@ -138,6 +141,7 @@ export const tabPhrases: TabPhrases = {
   "executionsTab.title": "Executions",
   "instancesTab.title": "Instances",
   "integrationsTab.title": "Integrations",
+  "marketplaceTab.title": "Marketplace",
   "payloadTab.title": "Payload",
   "summaryTab.title": "Summary",
   "teamMembersTab.title": "Team Members",
