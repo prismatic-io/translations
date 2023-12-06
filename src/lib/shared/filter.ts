@@ -286,7 +286,7 @@ export const filterPhrases: FilterPhrases = {
   "emptyState.attachmentsText":
     "Attachments are a place to store documents that both customers and your team members can reference.",
 
-  "emptyState.attachmentsTitle--embedded": "Atachments",
+  "emptyState.attachmentsTitle--embedded": "Attachments",
   "emptyState.attachmentsText--embedded":
     "Place to store integration documents that your team members can reference.",
 
