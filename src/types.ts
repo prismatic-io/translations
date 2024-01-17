@@ -34,9 +34,11 @@ export type NamespacedSharedPhrases<T extends unknown = SharedPhrases> = {
   [K in keyof T as `${Namespace}__${string & K}`]: T[K];
 };
 
-export type DynamicPhrases = {dynamicPhrase: { [x: string]: string }}
+export type DynamicPhrases = { dynamicPhrase: { [x: string]: string } };
 
-export type SharedAndUniquePhrases = SharedPhrases & UniquePhrases & DynamicPhrases;
+export type SharedAndUniquePhrases = SharedPhrases &
+  UniquePhrases &
+  DynamicPhrases;
 
 export type NamespacedSharedAndSharedAndUniquePhrases =
   Partial<NamespacedSharedPhrases> & SharedAndUniquePhrases;
