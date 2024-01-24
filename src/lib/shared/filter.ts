@@ -237,6 +237,9 @@ export interface FilterPhrases {
 
   /** English: "Here you will see users within your organization that have access to manage integrations." */
   "emptyState.usersText--embedded": SimplePhrase;
+
+  /** English: "Instance monitors" */
+  "emptyState.instanceMonitorsTitle": SimplePhrase;
 }
 
 export const filterPhrases: FilterPhrases = {
@@ -393,4 +396,7 @@ export const filterPhrases: FilterPhrases = {
   "emptyState.usersTitle--embedded": "Users",
   "emptyState.usersText--embedded":
     "Here you will see users within your organization that have access to manage integrations.",
+
+  // instance monitors
+  "emptyState.instanceMonitorsTitle": "Instance monitors",
 };

@@ -47,6 +47,12 @@ export interface IntegrationIdPhrases {
 
   /** English: "View User Level Configuration" */
   "integrations.id__filterBar.viewUserConfigurationButton": SimplePhrase;
+
+  /** English: This integration has a new version. Previous versions are read-only. */
+  "integrations.id__newVersionBanner.newVersionText": SimplePhrase;
+
+  /** English: "View Current" */
+  "integrations.id__newVersionBanner.viewCurrentButton": SimplePhrase;
 }
 
 export const integrationIdPhrases: NamespacedSharedAndUniquePhrases<IntegrationIdPhrases> =
@@ -73,4 +79,7 @@ export const integrationIdPhrases: NamespacedSharedAndUniquePhrases<IntegrationI
     "integrations.id__filterBar.viewConfigurationButton": "View Configuration",
     "integrations.id__filterBar.viewUserConfigurationButton":
       "View User Level Configuration",
+    "integrations.id__newVersionBanner.newVersionText":
+      "This integration has a new version. Previous versions are read-only.",
+    "integrations.id__newVersionBanner.viewCurrentButton": "View Current",
   };

@@ -37,6 +37,9 @@ export interface DetailPhrases {
   /** English: "Last Run" */
   "detail.lastRunLabel": SimplePhrase;
 
+  /** English: "Last Deployed" */
+  "detail.lastDeployedLabel": SimplePhrase;
+
   /** English: "Overview" */
   "detail.overviewLabel": SimplePhrase;
 
@@ -75,6 +78,36 @@ export interface DetailPhrases {
 
   /** English: "Version" */
   "detail.versionLabel": SimplePhrase;
+
+  /** English: "Created" */
+  "detail.createdLabel": SimplePhrase;
+
+  /** English: "Tags" */
+  "detail.tagsLabel": SimplePhrase;
+
+  /** English: "Flow count" */
+  "detail.flowCountLabel": SimplePhrase;
+
+  /** English: "Triggered Alert" */
+  "detail.triggeredAlertLabel": SimplePhrase;
+
+  /** English: "Add attachment" */
+  "detail.addAttachmentLabel": SimplePhrase;
+
+  /** English: "Load more" */
+  "detail.loadMore": SimplePhrase;
+
+  /** English: "Documentation" */
+  "detail.documentationLabel": SimplePhrase;
+
+  /** English: "Import */
+  "detail.importLabel": SimplePhrase;
+
+  /** English: "Preview */
+  "detail.previewLabel": SimplePhrase;
+
+  /** English: "Available" */
+  "detail.availableLabel": SimplePhrase;
 }
 
 export const detailPhrases: DetailPhrases = {
@@ -106,4 +139,15 @@ export const detailPhrases: DetailPhrases = {
   "detail.triggeredMonitorsLabel": "Triggered Monitors",
   "detail.usersLabel": "Users",
   "detail.versionLabel": "Version",
+  "detail.lastDeployedLabel": "Last Deployed",
+  "detail.createdLabel": "Created",
+  "detail.tagsLabel": "Tags",
+  "detail.flowCountLabel": "Flow count",
+  "detail.triggeredAlertLabel": "Triggered Alert",
+  "detail.addAttachmentLabel": "Add attachment",
+  "detail.loadMore": "Load more",
+  "detail.documentationLabel": "Documentation",
+  "detail.importLabel": "Import",
+  "detail.previewLabel": "Preview",
+  "detail.availableLabel": "Available",
 };

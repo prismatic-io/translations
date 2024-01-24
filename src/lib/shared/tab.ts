@@ -129,6 +129,9 @@ export interface TabPhrases {
 
   /** English: "Team Members" */
   "teamMembersTab.title": SimplePhrase;
+
+  /** English: "Customers" */
+  "customersTab.title": SimplePhrase;
 }
 
 export const tabPhrases: TabPhrases = {
@@ -146,6 +149,7 @@ export const tabPhrases: TabPhrases = {
   "summaryTab.title": "Summary",
   "teamMembersTab.title": "Team Members",
   "usersTab.title": "Users",
+  "customersTab.title": "Customers",
 
   // test tab
   "testTab.testResults.banner.text--testIsRunning": "Test is running",

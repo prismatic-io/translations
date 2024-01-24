@@ -31,6 +31,7 @@ import {
   IntegrationIdTestPhrases,
 } from "./integration.id.test";
 import { integrationsPhrases, IntegrationsPhrases } from "./integrations";
+import { introductionPhrases, IntroductionPhrases } from "./introduction";
 
 export { notFoundPhrases, NotFoundPhrases };
 export { appMarketplaceNotFoundPhrases, AppMarketplaceNotFoundPhrases };
@@ -47,6 +48,7 @@ export { integrationIdExecutionsPhrases, IntegrationIdExecutionsPhrases };
 export { integrationIdLogsPhrases, IntegrationIdLogsPhrases };
 export { integrationIdTestPhrases, IntegrationIdTestPhrases };
 export { integrationsPhrases, IntegrationsPhrases };
+export { introductionPhrases, IntroductionPhrases };
 
 export type UniquePhrases = NotFoundPhrases &
   AppMarketplaceNotFoundPhrases &
@@ -59,7 +61,8 @@ export type UniquePhrases = NotFoundPhrases &
   IntegrationIdExecutionsPhrases &
   IntegrationIdLogsPhrases &
   IntegrationIdTestPhrases &
-  IntegrationsPhrases;
+  IntegrationsPhrases &
+  IntroductionPhrases;
 
 export const uniquePhrases: UniquePhrases = {
   ...notFoundPhrases,
@@ -74,4 +77,5 @@ export const uniquePhrases: UniquePhrases = {
   ...integrationIdLogsPhrases,
   ...integrationIdTestPhrases,
   ...integrationsPhrases,
+  ...introductionPhrases,
 };

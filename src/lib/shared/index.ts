@@ -19,6 +19,7 @@ import { tabPhrases, TabPhrases } from "./tab";
 import { tooltipPhrases, TooltipPhrases } from "./tooltip";
 import { triggerDetailsPhrases, TriggerDetailsPhrases } from "./triggerDetails";
 import { userPhrases, UserPhrases } from "./user";
+import { dateTimePhrases, DateTimePhrases } from "./dateTime";
 
 export { chipPhases, ChipPhases };
 export { commonPhrases, CommonPhrases };
@@ -38,6 +39,7 @@ export { tabPhrases, TabPhrases };
 export { tooltipPhrases, TooltipPhrases };
 export { triggerDetailsPhrases, TriggerDetailsPhrases };
 export { userPhrases, UserPhrases };
+export { dateTimePhrases, DateTimePhrases };
 
 export type SharedPhrases = ChipPhases &
   CommonPhrases &
@@ -56,7 +58,8 @@ export type SharedPhrases = ChipPhases &
   TabPhrases &
   TooltipPhrases &
   TriggerDetailsPhrases &
-  UserPhrases;
+  UserPhrases &
+  DateTimePhrases;
 
 export const sharedPhrases: SharedPhrases = {
   ...chipPhases,
@@ -77,4 +80,5 @@ export const sharedPhrases: SharedPhrases = {
   ...tooltipPhrases,
   ...triggerDetailsPhrases,
   ...userPhrases,
+  ...dateTimePhrases,
 };

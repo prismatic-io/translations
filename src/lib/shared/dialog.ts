@@ -161,6 +161,27 @@ export interface DialogPhrases {
 
   /** English: "Delete user configuration" */
   "activateIntegrationDialog.deleteUserConfiguration": SimplePhrase;
+
+  /** English: "Add user" */
+  "addUserDialog.title": SimplePhrase;
+
+  /** English: "Email" */
+  "addUserDialog.emailLabel": SimplePhrase;
+
+  /** English: "Name" */
+  "addUserDialog.nameLabel": SimplePhrase;
+
+  /** English: "Role" */
+  "addUserDialog.roleLabel": SimplePhrase;
+
+  /** English: "This will remove this integration from the integration marketplace." */
+  "removeIntegrationDialog.warningText": SimplePhrase;
+
+  /** English: "Initial Configuration" */
+  "configurationWizardDialog.initialConfiguration": SimplePhrase;
+
+  /** English: "Configure Instance" */
+  "confiureInstanceDialog.title": SimplePhrase;
 }
 
 export const dialogPhrases: DialogPhrases = {
@@ -255,4 +276,20 @@ export const dialogPhrases: DialogPhrases = {
   "apiKeyDialog.text": "This will remove the existing API Key.",
   "apiKeyDialog.title": "API key",
   "apiKeyDialog.updateButton": "Update",
+
+  // add user dialog
+  "addUserDialog.title": "Add User",
+  "addUserDialog.emailLabel": "Email",
+  "addUserDialog.nameLabel": "Name",
+  "addUserDialog.roleLabel": "Role",
+
+  // remove integration dialog
+  "removeIntegrationDialog.warningText":
+    "This will remove this integration from the integration marketplace.",
+
+  // initial configuration dialog
+  "configurationWizardDialog.initialConfiguration": "Initial Configuration",
+
+  // configure instance dialog
+  "confiureInstanceDialog.title": "Configure Instance",
 };

@@ -210,6 +210,33 @@ export interface InputPhrases {
 
   /** English: "Customer photos make it easier to recognize them throughout your account" */
   "input.uploadCustomerLogoText": SimplePhrase;
+
+  /** English: "Description can only be updated in the integration details." */
+  "input.descriptionDisabledHelper.integration": SimplePhrase;
+
+  /** English: "Category can only be updated in the integration details." */
+  "input.categoryDisabledHelper.integration": SimplePhrase;
+
+  /** English: "Name can only be updated in the integration details."" */
+  "input.nameDisabledHelper.integration": SimplePhrase;
+
+  /** English: "Prevent customer deployment" */
+  "input.preventCustomerDeploymentLabel": SimplePhrase;
+
+  /** English: "Customer deployable" */
+  "input.customerDeployableLabel": SimplePhrase;
+
+  /** English: "Allow Multiple Instances" */
+  "input.allowMultipleInstancesLabel": SimplePhrase;
+
+  /** English: "Disable Logs." */
+  "input.disableLogsLabel": SimplePhrase;
+
+  /** English: "Disable step outputs" */
+  "input.disableStepOutputsLabel": SimplePhrase;
+
+  /** English: "Trigger" */
+  "input.triggerLabel": SimplePhrase;
 }
 
 export const inputPhrases: InputPhrases = {
@@ -288,4 +315,16 @@ export const inputPhrases: InputPhrases = {
   "input.uploadPhotoLabel": "Upload a photo",
   "input.uploadCustomerLogoText":
     "Customer photos make it easier to recognize them throughout your account",
+  "input.descriptionDisabledHelper.integration":
+    "Description can only be updated in the integration details.",
+  "input.categoryDisabledHelper.integration":
+    "Category can only be updated in the integration details.",
+  "input.nameDisabledHelper.integration":
+    "Name can only be updated in the integration details.",
+  "input.preventCustomerDeploymentLabel": "Prevent customer deployment",
+  "input.customerDeployableLabel": "Customer deployable",
+  "input.allowMultipleInstancesLabel": "Allow Multiple Instances",
+  "input.disableLogsLabel": "Disable Logs.",
+  "input.disableStepOutputsLabel": "Disable step outputs",
+  "input.triggerLabel": "Trigger",
 };
