@@ -22,8 +22,8 @@ export interface DateTimePhrases {
   /** English: "After" */
   "datetime.range.after": SimplePhrase;
 
-  /** English: "Between" */
-  "datetime.range.between": SimplePhrase;
+  /** English: "Before" */
+  "datetime.range.before": SimplePhrase;
 
   /** English: "Cancel" */
   "datetime.cancelButtonText": SimplePhrase;
@@ -60,7 +60,7 @@ export const dateTimePhrases: DateTimePhrases = {
   "datetime.timeMeasurement.seconds": "Seconds",
   "datetime.range.surrounding": "Surrounding",
   "datetime.range.after": "After",
-  "datetime.range.between": "Between",
+  "datetime.range.before": "Before",
   "datetime.cancelButtonText": "Cancel",
   "datetime.saveButtonText": "Save",
   "datetime.preset.past15Minutes": "Past 15 Minutes",
