@@ -48,6 +48,15 @@ export interface IntegrationMarketplacePhrases {
 
   /** English: "All users are activated." */
   "integration-marketplace.usersActivatedTooltip": SimplePhrase;
+
+  /** English: "Add Integration" */
+  "integration-marketplace.addIntegrationDialog.buttonText": SimplePhrase;
+
+  /** English: "Select Integration" */
+  "integration-marketplace.addIntegrationDialog.title": SimplePhrase;
+
+  /** English: "Only published integrations can be used to create an instance." */
+  "integration-marketplace.integrationPicker.text": SimplePhrase;
 }
 
 export const integrationMarketplacePhrases: NamespacedSharedAndUniquePhrases<IntegrationMarketplacePhrases> =
@@ -85,4 +94,9 @@ export const integrationMarketplacePhrases: NamespacedSharedAndUniquePhrases<Int
     "integration-marketplace.usersUnconfiguredTooltip":
       "At least one instance is not configured for current user.",
     "integration-marketplace.usersActivatedTooltip": "All users are activated.",
+    "integration-marketplace.addIntegrationDialog.buttonText":
+      "Add Integration",
+    "integration-marketplace.addIntegrationDialog.title": "Select Integration",
+    "integration-marketplace.integrationPicker.text":
+      "Only published integrations can be used to create an instance.",
   };

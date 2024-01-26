@@ -3,6 +3,9 @@ import { NamespacedSharedAndUniquePhrases, SimplePhrase } from "../../types";
 export interface IntegrationIdAlertMonitorsPhrases {
   /** English: "Click the add monitor button to add a monitor." */
   "integrations.id.alert-monitors__filterResults.placeholderText--hasInstanceOrCustomer": SimplePhrase;
+
+  /** English: "Add Monitors" */
+  "integrations.id.alert-monitors__addMonitorsButton": SimplePhrase;
 }
 
 export const integrationIdAlertMonitorsPhrases: NamespacedSharedAndUniquePhrases<IntegrationIdAlertMonitorsPhrases> =
@@ -18,4 +21,5 @@ export const integrationIdAlertMonitorsPhrases: NamespacedSharedAndUniquePhrases
     "integrations.id.alert-monitors__input.filterSearchPlaceholder": {
       _: "Search monitors",
     },
+    "integrations.id.alert-monitors__addMonitorsButton": "Add Monitors",
   };
