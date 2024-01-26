@@ -16,8 +16,8 @@ export interface DateTimePhrases {
   /** English: "Seconds" */
   "datetime.timeMeasurement.seconds": SimplePhrase;
 
-  /** English: "Before" */
-  "datetime.range.before": SimplePhrase;
+  /** English: "Surrounding" */
+  "datetime.range.surrounding": SimplePhrase;
 
   /** English: "After" */
   "datetime.range.after": SimplePhrase;
@@ -58,7 +58,7 @@ export const dateTimePhrases: DateTimePhrases = {
   "datetime.timeMeasurement.hours": "Hours",
   "datetime.timeMeasurement.minutes": "Minutes",
   "datetime.timeMeasurement.seconds": "Seconds",
-  "datetime.range.before": "Before",
+  "datetime.range.surrounding": "Surrounding",
   "datetime.range.after": "After",
   "datetime.range.between": "Between",
   "datetime.cancelButtonText": "Cancel",
