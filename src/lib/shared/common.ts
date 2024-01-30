@@ -15,6 +15,9 @@ export interface CommonPhrases {
   /** English: "Loading" */
   "common.loading": SimplePhrase;
 
+  /** English: "Load more" */
+  "common.loadMore": SimplePhrase;
+
   /** English: "Saving" */
   "common.saving": SimplePhrase;
 
@@ -45,6 +48,7 @@ export const commonPhrases: CommonPhrases = {
   "common.contactUsButton": "Contact us",
   "common.contactUsText": "Don’t see an action you’re looking for?",
   "common.loading": "Loading",
+  "common.loadMore": "Load more",
   "common.noPublishedMessage": "This version has no publish message",
   "common.saveButton": "Save",
   "common.saving": "Saving",
