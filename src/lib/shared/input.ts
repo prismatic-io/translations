@@ -10,6 +10,9 @@ export interface InputPhrases {
   /** English: "Allow embedded designer" */
   "input.allowEmbeddedDesignerLabel": SimplePhrase;
 
+  /** English: "Allow Multiple Instances" */
+  "input.allowMultipleInstancesLabel": SimplePhrase;
+
   /** English: "Add API key" */
   "input.apiKeyAddButton": SimplePhrase;
 
@@ -21,6 +24,9 @@ export interface InputPhrases {
 
   /** English: "Category" */
   "input.categoryLabel": SimplePhrase;
+
+  /** English: "Category can only be updated in the integration details." */
+  "input.categoryDisabledHelper.integration": SimplePhrase;
 
   /** English: "Edit" */
   "input.codePlaceholder": SimplePhrase;
@@ -34,6 +40,9 @@ export interface InputPhrases {
   /** English: "Content type" */
   "input.contentTypeLabel": SimplePhrase;
 
+  /** English: "Customer deployable" */
+  "input.customerDeployableLabel": SimplePhrase;
+
   /** English: "Customer" */
   "input.customerLabel": SimplePhrase;
 
@@ -46,8 +55,17 @@ export interface InputPhrases {
   /** English: "Description" */
   "input.descriptionLabel": SimplePhrase;
 
+  /** English: "Description can only be updated in the integration details." */
+  "input.descriptionDisabledHelper.integration": SimplePhrase;
+
   /** English: "Default Value" */
   "input.defaultValueLabel": SimplePhrase;
+
+  /** English: "Disable Logs." */
+  "input.disableLogsLabel": SimplePhrase;
+
+  /** English: "Disable step outputs" */
+  "input.disableStepOutputsLabel": SimplePhrase;
 
   /** English: "Email" */
   "input.emailLabel": SimplePhrase;
@@ -133,6 +151,9 @@ export interface InputPhrases {
   /** English: "Name" */
   "input.nameLabel": SimplePhrase;
 
+  /** English: "Name can only be updated in the integration details."" */
+  "input.nameDisabledHelper.integration": SimplePhrase;
+
   /** English: "No options found" */
   "input.noOptionsValue": SimplePhrase;
 
@@ -150,6 +171,9 @@ export interface InputPhrases {
 
   /** English: "Post URL" */
   "input.postUrlLabel": SimplePhrase;
+
+  /** English: "Prevent customer deployment" */
+  "input.preventCustomerDeploymentLabel": SimplePhrase;
 
   /** English: "Role" */
   "input.roleLabel": SimplePhrase;
@@ -193,8 +217,50 @@ export interface InputPhrases {
   /** English: "Step" */
   "input.stepLabel": SimplePhrase;
 
+  /** English: "Hours" */
+  "input.timeMeasurement.hoursValue": SimplePhrase;
+
+  /** English: "Minutes" */
+  "input.timeMeasurement.minutesValue": SimplePhrase;
+
+  /** English: "Seconds" */
+  "input.timeMeasurement.secondsValue": SimplePhrase;
+
+  /** English: "Time Range" */
+  "input.timeRangeLabel": SimplePhrase;
+
+  /** English: "Past 15 Minutes" */
+  "input.timeRange.past15MinutesValue": SimplePhrase;
+
+  /** English: "Past Hour" */
+  "input.timeRange.pastHourValue": SimplePhrase;
+
+  /** English: "Past 24 Hours" */
+  "input.timeRange.past24HoursValue": SimplePhrase;
+
+  /** English: "Custom" */
+  "input.timeRange.customValue": SimplePhrase;
+
+  /** English: "Surrounding" */
+  "input.timeRangeRange.surroundingValue": SimplePhrase;
+
+  /** English: "After" */
+  "input.timeRangeRange.afterValue": SimplePhrase;
+
+  /** English: "Before" */
+  "input.timeRangeRange.beforeValue": SimplePhrase;
+
+  /** English: "Trigger" */
+  "input.triggerLabel": SimplePhrase;
+
   /** English: "URL" */
   "input.urlLabel": SimplePhrase;
+
+  /** English: "Upload a photo" */
+  "input.uploadPhotoLabel": SimplePhrase;
+
+  /** English: "Customer photos make it easier to recognize them throughout your account" */
+  "input.uploadCustomerLogoText": SimplePhrase;
 
   /** English: "Value" */
   "input.valueLabel": SimplePhrase;
@@ -204,58 +270,33 @@ export interface InputPhrases {
 
   /** English: "Add value" */
   "input.valueAddButton": SimplePhrase;
-
-  /** English: "Upload a photo" */
-  "input.uploadPhotoLabel": SimplePhrase;
-
-  /** English: "Customer photos make it easier to recognize them throughout your account" */
-  "input.uploadCustomerLogoText": SimplePhrase;
-
-  /** English: "Description can only be updated in the integration details." */
-  "input.descriptionDisabledHelper.integration": SimplePhrase;
-
-  /** English: "Category can only be updated in the integration details." */
-  "input.categoryDisabledHelper.integration": SimplePhrase;
-
-  /** English: "Name can only be updated in the integration details."" */
-  "input.nameDisabledHelper.integration": SimplePhrase;
-
-  /** English: "Prevent customer deployment" */
-  "input.preventCustomerDeploymentLabel": SimplePhrase;
-
-  /** English: "Customer deployable" */
-  "input.customerDeployableLabel": SimplePhrase;
-
-  /** English: "Allow Multiple Instances" */
-  "input.allowMultipleInstancesLabel": SimplePhrase;
-
-  /** English: "Disable Logs." */
-  "input.disableLogsLabel": SimplePhrase;
-
-  /** English: "Disable step outputs" */
-  "input.disableStepOutputsLabel": SimplePhrase;
-
-  /** English: "Trigger" */
-  "input.triggerLabel": SimplePhrase;
 }
 
 export const inputPhrases: InputPhrases = {
   "input.alertMonitorLabel": "Monitor",
   "input.alertTriggerLabel": "Alert Trigger",
   "input.allowEmbeddedDesignerLabel": "Allow embedded designer",
+  "input.allowMultipleInstancesLabel": "Allow Multiple Instances",
   "input.apiKeyAddButton": "Add API key",
   "input.apiKeyLabel": "API key",
   "input.apiKeyPlaceholder": "No API key configured",
+  "input.categoryDisabledHelper.integration":
+    "Category can only be updated in the integration details.",
   "input.categoryLabel": "Category",
   "input.codePlaceholder": "Edit",
   "input.commentLabel": "Comment",
   "input.confirmRequiredTextLabel": "Confirmation text",
   "input.contentTypeLabel": "Content type",
+  "input.customerDeployableLabel": "Customer deployable",
   "input.customerLabel": "Customer",
   "input.dateError": "There was an error",
   "input.dateTimeError": "There was an error",
   "input.defaultValueLabel": "Default Value",
+  "input.descriptionDisabledHelper.integration":
+    "Description can only be updated in the integration details.",
   "input.descriptionLabel": "Description",
+  "input.disableLogsLabel": "Disable Logs.",
+  "input.disableStepOutputsLabel": "Disable step outputs",
   "input.emailLabel": "Email",
   "input.endDateHelperText": {
     _: "* Maximum filter range is %{hours} hours",
@@ -287,6 +328,8 @@ export const inputPhrases: InputPhrases = {
   "input.logType.integrationExecutionValue": "Execution Only",
   "input.logTypeLabel": "Log type",
   "input.marketplaceVersionLabel": "Marketplace Version",
+  "input.nameDisabledHelper.integration":
+    "Name can only be updated in the integration details.",
   "input.nameLabel": "Name",
   "input.noOptionsValue": "No options found",
   "input.noneValue": "None",
@@ -294,6 +337,7 @@ export const inputPhrases: InputPhrases = {
   "input.originalOnlyLabel": "Show original executions only",
   "input.payloadBodyLabel": "Payload body",
   "input.postUrlLabel": "Post URL",
+  "input.preventCustomerDeploymentLabel": "Prevent customer deployment",
   "input.roleLabel": "Role",
   "input.selectFlowLabel": "Flow Selector",
   "input.severityLabel": "Log severity",
@@ -308,23 +352,23 @@ export const inputPhrases: InputPhrases = {
   "input.status.successfulValue": "Successful",
   "input.statusLabel": "Status",
   "input.stepLabel": "Step",
+  "input.timeMeasurement.hoursValue": "Hours",
+  "input.timeMeasurement.minutesValue": "Minutes",
+  "input.timeMeasurement.secondsValue": "Seconds",
+  "input.timeRangeLabel": "Time Range",
+  "input.timeRange.past15MinutesValue": "Past 15 Minutes",
+  "input.timeRange.pastHourValue": "Past Hour",
+  "input.timeRange.past24HoursValue": "Past 24 Hours",
+  "input.timeRange.customValue": "Custom",
+  "input.timeRangeRange.surroundingValue": "Surrounding",
+  "input.timeRangeRange.afterValue": "After",
+  "input.timeRangeRange.beforeValue": "Before",
+  "input.triggerLabel": "Trigger",
+  "input.uploadCustomerLogoText":
+    "Customer photos make it easier to recognize them throughout your account",
+  "input.uploadPhotoLabel": "Upload a photo",
   "input.urlLabel": "URL",
   "input.valueAddButton": "Add value",
   "input.valueLabel": "Value",
   "input.valuePlaceholder": "Add a value",
-  "input.uploadPhotoLabel": "Upload a photo",
-  "input.uploadCustomerLogoText":
-    "Customer photos make it easier to recognize them throughout your account",
-  "input.descriptionDisabledHelper.integration":
-    "Description can only be updated in the integration details.",
-  "input.categoryDisabledHelper.integration":
-    "Category can only be updated in the integration details.",
-  "input.nameDisabledHelper.integration":
-    "Name can only be updated in the integration details.",
-  "input.preventCustomerDeploymentLabel": "Prevent customer deployment",
-  "input.customerDeployableLabel": "Customer deployable",
-  "input.allowMultipleInstancesLabel": "Allow Multiple Instances",
-  "input.disableLogsLabel": "Disable Logs.",
-  "input.disableStepOutputsLabel": "Disable step outputs",
-  "input.triggerLabel": "Trigger",
 };

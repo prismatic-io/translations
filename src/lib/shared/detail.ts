@@ -22,6 +22,9 @@ export interface DetailPhrases {
   /** English: "View in Execution Context" */
   "detail.executionText": SimplePhrase;
 
+  /** English: "Executions in the last 24 hours" */
+  "detail.executionslast24Hours": SimplePhrase;
+
   /** English: "Instance" */
   "detail.instanceLabel": SimplePhrase;
 
@@ -61,6 +64,12 @@ export interface DetailPhrases {
   /** English: "Paused" */
   "detail.statusPausedValue": SimplePhrase;
 
+  /** English: "Enabled" */
+  "detail.statusEnabledValue": SimplePhrase;
+
+  /** English: "Disabled" */
+  "detail.statusDisabledValue": SimplePhrase;
+
   /** English: "Running" */
   "detail.statusRunningValue": SimplePhrase;
 
@@ -94,9 +103,6 @@ export interface DetailPhrases {
   /** English: "Add attachment" */
   "detail.addAttachmentLabel": SimplePhrase;
 
-  /** English: "Load more" */
-  "detail.loadMore": SimplePhrase;
-
   /** English: "Documentation" */
   "detail.documentationLabel": SimplePhrase;
 
@@ -118,6 +124,7 @@ export const detailPhrases: DetailPhrases = {
   "detail.descriptionLabel": "Description",
   "detail.executionLabel": "Execution",
   "detail.executionText": "View in Execution Context",
+  "detail.executionslast24Hours": "Executions in the last 24 hours",
   "detail.instanceLabel": "Instance",
   "detail.instancesLabel": "Instances",
   "detail.integrationLabel": "Integration",
@@ -132,6 +139,8 @@ export const detailPhrases: DetailPhrases = {
     maxRetryCount: 0,
   },
   "detail.statusLabel": "Status",
+  "detail.statusEnabledValue": "Enabled",
+  "detail.statusDisabledValue": "Disabled",
   "detail.statusPausedValue": "Paused",
   "detail.statusRunningValue": "Running",
   "detail.statusUnconfiguredValue": "Activated but not configured",
@@ -145,7 +154,6 @@ export const detailPhrases: DetailPhrases = {
   "detail.flowCountLabel": "Flow count",
   "detail.triggeredAlertLabel": "Triggered Alert",
   "detail.addAttachmentLabel": "Add attachment",
-  "detail.loadMore": "Load more",
   "detail.documentationLabel": "Documentation",
   "detail.importLabel": "Import",
   "detail.previewLabel": "Preview",
