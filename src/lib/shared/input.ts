@@ -145,8 +145,8 @@ export interface InputPhrases {
   /** English: "Log type" */
   "input.logTypeLabel": SimplePhrase;
 
-  /** English: "Marketplace version" */
-  "input.marketplaceVersionLabel": SimplePhrase;
+  /** English: "%{marketplaceName} version" */
+  "input.marketplaceVersionLabel": ComplexPhrase<{ marketplaceName?: string }>;
 
   /** English: "Name" */
   "input.nameLabel": SimplePhrase;
@@ -327,7 +327,10 @@ export const inputPhrases: InputPhrases = {
     "Execution & Connection",
   "input.logType.integrationExecutionValue": "Execution Only",
   "input.logTypeLabel": "Log type",
-  "input.marketplaceVersionLabel": "Marketplace version",
+  "input.marketplaceVersionLabel": {
+    _: "%{marketplaceName} version",
+    marketplaceName: "Marketplace",
+  },
   "input.nameDisabledHelper.integration":
     "Name can only be updated in the integration details.",
   "input.nameLabel": "Name",

@@ -2,6 +2,7 @@ import { chipPhases, ChipPhases } from "./chip";
 import { commonPhrases, CommonPhrases } from "./common";
 import { configWizardPhrases, ConfigWizardPhrases } from "./configWizard";
 import { dataTablePhrases, DataTablePhrases } from "./dataTable";
+import { dateTimePhrases, DateTimePhrases } from "./dateTime";
 import { detailPhrases, DetailPhrases } from "./detail";
 import { dialogPhrases, DialogPhrases } from "./dialog";
 import { executionPhrases, ExecutionPhrases } from "./executions";
@@ -19,12 +20,12 @@ import { tabPhrases, TabPhrases } from "./tab";
 import { tooltipPhrases, TooltipPhrases } from "./tooltip";
 import { triggerDetailsPhrases, TriggerDetailsPhrases } from "./triggerDetails";
 import { userPhrases, UserPhrases } from "./user";
-import { dateTimePhrases, DateTimePhrases } from "./dateTime";
 
 export { chipPhases, ChipPhases };
 export { commonPhrases, CommonPhrases };
 export { configWizardPhrases, ConfigWizardPhrases };
 export { dataTablePhrases, DataTablePhrases };
+export { dateTimePhrases, DateTimePhrases };
 export { detailPhrases, DetailPhrases };
 export { dialogPhrases, DialogPhrases };
 export { executionPhrases, ExecutionPhrases };
@@ -39,7 +40,6 @@ export { tabPhrases, TabPhrases };
 export { tooltipPhrases, TooltipPhrases };
 export { triggerDetailsPhrases, TriggerDetailsPhrases };
 export { userPhrases, UserPhrases };
-export { dateTimePhrases, DateTimePhrases };
 
 export type SharedPhrases = ChipPhases &
   CommonPhrases &
