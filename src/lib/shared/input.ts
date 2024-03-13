@@ -4,19 +4,19 @@ export interface InputPhrases {
   /** English: "Monitor" */
   "input.alertMonitorLabel": SimplePhrase;
 
-  /** English: "Alert Trigger" */
+  /** English: "Alert trigger" */
   "input.alertTriggerLabel": SimplePhrase;
 
   /** English: "Allow embedded designer" */
   "input.allowEmbeddedDesignerLabel": SimplePhrase;
 
-  /** English: "Allow Multiple Instances" */
+  /** English: "Allow multiple instances" */
   "input.allowMultipleInstancesLabel": SimplePhrase;
 
   /** English: "Add API key" */
   "input.apiKeyAddButton": SimplePhrase;
 
-  /** English: "API Key" */
+  /** English: "API key" */
   "input.apiKeyLabel": SimplePhrase;
 
   /** English: "No API key configured" */
@@ -58,10 +58,10 @@ export interface InputPhrases {
   /** English: "Description can only be updated in the integration details." */
   "input.descriptionDisabledHelper.integration": SimplePhrase;
 
-  /** English: "Default Value" */
+  /** English: "Default value" */
   "input.defaultValueLabel": SimplePhrase;
 
-  /** English: "Disable Logs." */
+  /** English: "Disable logs" */
   "input.disableLogsLabel": SimplePhrase;
 
   /** English: "Disable step outputs" */
@@ -70,10 +70,10 @@ export interface InputPhrases {
   /** English: "Email" */
   "input.emailLabel": SimplePhrase;
 
-  /** English: "End Date/Time" */
+  /** English: "End date/time" */
   "input.endDateHelperText": ComplexPhrase<{ hours: number }>;
 
-  /** English: "End Date/Time" */
+  /** English: "End date/time" */
   "input.endDateLabel": SimplePhrase;
 
   /** English: "External ID" */
@@ -112,10 +112,10 @@ export interface InputPhrases {
   /** English: "Integration" */
   "input.integrationLabel": SimplePhrase;
 
-  /** English: "Integration Version" */
+  /** English: "Integration version" */
   "input.integrationVersionLabel": SimplePhrase;
 
-  /** English: "Designer Version" */
+  /** English: "Designer version" */
   "input.integrationVersionLatestLabel": SimplePhrase;
 
   /** English: "Labels" */
@@ -127,10 +127,10 @@ export interface InputPhrases {
   /** English: "Key" */
   "input.keyPlaceholder": SimplePhrase;
 
-  /** English: "Designer Version" */
+  /** English: "Designer version" */
   "input.latestVersionLabel": SimplePhrase;
 
-  /** English: "Log Severity" */
+  /** English: "Log severity" */
   "input.logSeverityLabel": SimplePhrase;
 
   /** English: "Connection Only" */
@@ -142,10 +142,10 @@ export interface InputPhrases {
   /** English: "Execution only" */
   "input.logType.integrationExecutionValue": SimplePhrase;
 
-  /** English: "Log Type" */
+  /** English: "Log type" */
   "input.logTypeLabel": SimplePhrase;
 
-  /** English: "Marketplace Version" */
+  /** English: "Marketplace version" */
   "input.marketplaceVersionLabel": SimplePhrase;
 
   /** English: "Name" */
@@ -178,13 +178,13 @@ export interface InputPhrases {
   /** English: "Role" */
   "input.roleLabel": SimplePhrase;
 
-  /** English: "Flow Selector" */
+  /** English: "Flow selector" */
   "input.selectFlowLabel": SimplePhrase;
 
   /** English: "Log severity" */
   "input.severityLabel": SimplePhrase;
 
-  /** English: "Start Date/Time" */
+  /** English: "Start date/time" */
   "input.startDateLabel": SimplePhrase;
 
   /** English: "Show only private components" */
@@ -226,7 +226,7 @@ export interface InputPhrases {
   /** English: "Seconds" */
   "input.timeMeasurement.secondsValue": SimplePhrase;
 
-  /** English: "Time Range" */
+  /** English: "Time range" */
   "input.timeRangeLabel": SimplePhrase;
 
   /** English: "Past 15 Minutes" */
@@ -274,9 +274,9 @@ export interface InputPhrases {
 
 export const inputPhrases: InputPhrases = {
   "input.alertMonitorLabel": "Monitor",
-  "input.alertTriggerLabel": "Alert Trigger",
+  "input.alertTriggerLabel": "Alert trigger",
   "input.allowEmbeddedDesignerLabel": "Allow embedded designer",
-  "input.allowMultipleInstancesLabel": "Allow Multiple Instances",
+  "input.allowMultipleInstancesLabel": "Allow multiple instances",
   "input.apiKeyAddButton": "Add API key",
   "input.apiKeyLabel": "API key",
   "input.apiKeyPlaceholder": "No API key configured",
@@ -291,18 +291,18 @@ export const inputPhrases: InputPhrases = {
   "input.customerLabel": "Customer",
   "input.dateError": "There was an error",
   "input.dateTimeError": "There was an error",
-  "input.defaultValueLabel": "Default Value",
+  "input.defaultValueLabel": "Default value",
   "input.descriptionDisabledHelper.integration":
     "Description can only be updated in the integration details.",
   "input.descriptionLabel": "Description",
-  "input.disableLogsLabel": "Disable Logs.",
+  "input.disableLogsLabel": "Disable logs",
   "input.disableStepOutputsLabel": "Disable step outputs",
   "input.emailLabel": "Email",
   "input.endDateHelperText": {
     _: "* Maximum filter range is %{hours} hours",
     hours: 48,
   },
-  "input.endDateLabel": "End Date/Time",
+  "input.endDateLabel": "End date/time",
   "input.externalIdLabel": "External ID",
   "input.failedPreprocessFlowsOnlyLabel": "Show only failed preprocess flows",
   "input.filterSearchPlaceholder": { _: "Search %{type}", type: "" },
@@ -315,19 +315,19 @@ export const inputPhrases: InputPhrases = {
   "input.includeCustomerIntegrationsLabel": "Include customer integrations",
   "input.instanceLabel": "Instance",
   "input.integrationLabel": "Integration",
-  "input.integrationVersionLabel": "Integration Version",
-  "input.integrationVersionLatestLabel": "Designer Version",
+  "input.integrationVersionLabel": "Integration version",
+  "input.integrationVersionLatestLabel": "Designer version",
   "input.keyLabel": "Key",
   "input.keyPlaceholder": "Key",
   "input.labelsLabel": "Labels",
-  "input.latestVersionLabel": "Designer Version",
-  "input.logSeverityLabel": "Log Severity",
+  "input.latestVersionLabel": "Designer version",
+  "input.logSeverityLabel": "Log severity",
   "input.logType.integrationConnectionValue": "Connection Only",
   "input.logType.integrationExecutionAndConnectionValue":
     "Execution & Connection",
   "input.logType.integrationExecutionValue": "Execution Only",
   "input.logTypeLabel": "Log type",
-  "input.marketplaceVersionLabel": "Marketplace Version",
+  "input.marketplaceVersionLabel": "Marketplace version",
   "input.nameDisabledHelper.integration":
     "Name can only be updated in the integration details.",
   "input.nameLabel": "Name",
@@ -339,11 +339,11 @@ export const inputPhrases: InputPhrases = {
   "input.postUrlLabel": "Post URL",
   "input.preventCustomerDeploymentLabel": "Prevent customer deployment",
   "input.roleLabel": "Role",
-  "input.selectFlowLabel": "Flow Selector",
+  "input.selectFlowLabel": "Flow selector",
   "input.severityLabel": "Log severity",
   "input.showOnlyPrivateComponentsLabel": "Show only private components",
   "input.showOnlyTemplatesLabel": "Show only templates",
-  "input.startDateLabel": "Start Date/Time",
+  "input.startDateLabel": "Start date/time",
   "input.status.allValue": "All",
   "input.status.disabledValue": "Disabled",
   "input.status.enabledValue": "Enabled",
@@ -355,7 +355,7 @@ export const inputPhrases: InputPhrases = {
   "input.timeMeasurement.hoursValue": "Hours",
   "input.timeMeasurement.minutesValue": "Minutes",
   "input.timeMeasurement.secondsValue": "Seconds",
-  "input.timeRangeLabel": "Time Range",
+  "input.timeRangeLabel": "Time range",
   "input.timeRange.past15MinutesValue": "Past 15 Minutes",
   "input.timeRange.pastHourValue": "Past Hour",
   "input.timeRange.past24HoursValue": "Past 24 Hours",
