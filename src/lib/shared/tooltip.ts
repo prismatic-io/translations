@@ -25,8 +25,10 @@ export interface TooltipPhrases {
   /** English: "Copy URL to clipboard" */
   "tooltip.copyUrl": SimplePhrase;
 
-  /** English: "Upgrade the Marketplace Configuration to this latest published version." */
-  "tooltip.marketplaceVersion": SimplePhrase;
+  /** English: "Upgrade the %{marketplaceName} configuration to this latest published version." */
+  "tooltip.marketplaceVersion": ComplexPhrase<{
+    marketplaceName?: string;
+  }>;
 
   /** English: "A new version "v${latestVersion}" is available for integration." */
   "tooltip.newIntegrationVersionAvailable": ComplexPhrase<{
@@ -49,8 +51,10 @@ export const tooltipPhrases: TooltipPhrases = {
   "tooltip.copyLog": "Copy log to clipboard",
   "tooltip.copyPayload": "Copy payload to clipboard",
   "tooltip.copyUrl": "Copy URL to clipboard",
-  "tooltip.marketplaceVersion":
-    "Upgrade the Marketplace Configuration to this latest published version.",
+  "tooltip.marketplaceVersion": {
+    _: "Upgrade the %{marketplaceName} configuration to this latest published version.",
+    marketplaceName: "Marketplace",
+  },
   "tooltip.newIntegrationVersionAvailable": {
     _: `A new version "v%{latestVersion}" is available for integration.`,
   },
