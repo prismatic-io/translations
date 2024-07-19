@@ -394,10 +394,10 @@ export const inputPhrases: InputPhrases = {
   "input.valuePlaceholder": "Add a value",
   "input.writeOnly.alert":
     "The value entered in this field will no longer be viewable once you click connect or save this page. However, you will still be able to enter a new value at any time.",
-  "input.writeOnly.replaceValueTooltip": "Replace Existing Value",
+  "input.writeOnly.replaceValueTooltip": "Replace existing value",
   "input.writeOnly.replaceValueConfirmation.message":
-    'The value entered in the field below will no longer be viewable once you click "Save Value."',
-  "input.writeOnly.replaceValueConfirmation.title": "Replace Existing Value",
+    'The value entered in the field below will no longer be viewable once you click "Save value".',
+  "input.writeOnly.replaceValueConfirmation.title": "Replace existing value",
   "input.writeOnly.replaceValueConfirmation.cancel": "Cancel",
-  "input.writeOnly.replaceValueConfirmation.submit": "Save Value",
+  "input.writeOnly.replaceValueConfirmation.submit": "Save value",
 };
