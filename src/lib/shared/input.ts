@@ -270,6 +270,24 @@ export interface InputPhrases {
 
   /** English: "Add value" */
   "input.valueAddButton": SimplePhrase;
+
+  /** English: "The value entered in this field will no longer be viewable once you click connect or save this page. However, you will still be able to enter a new value at any time." */
+  "input.writeOnly.alert": SimplePhrase;
+
+  /** English: "Replace Existing Value" */
+  "input.writeOnly.replaceValueTooltip": SimplePhrase;
+
+  /** English: "The value entered in the field below will no longer be viewable once you click “Save Value.”" */
+  "input.writeOnly.replaceValueConfirmation.message": SimplePhrase;
+
+  /** English: "Replace Existing Value" */
+  "input.writeOnly.replaceValueConfirmation.title": SimplePhrase;
+
+  /** English: "Cancel" */
+  "input.writeOnly.replaceValueConfirmation.cancel": SimplePhrase;
+
+  /** English: "Save Value" */
+  "input.writeOnly.replaceValueConfirmation.submit": SimplePhrase;
 }
 
 export const inputPhrases: InputPhrases = {
@@ -374,4 +392,12 @@ export const inputPhrases: InputPhrases = {
   "input.valueAddButton": "Add value",
   "input.valueLabel": "Value",
   "input.valuePlaceholder": "Add a value",
+  "input.writeOnly.alert":
+    "The value entered in this field will no longer be viewable once you click connect or save this page. However, you will still be able to enter a new value at any time.",
+  "input.writeOnly.replaceValueTooltip": "Replace existing value",
+  "input.writeOnly.replaceValueConfirmation.message":
+    'The value entered in the field below will no longer be viewable once you click "Save value".',
+  "input.writeOnly.replaceValueConfirmation.title": "Replace existing value",
+  "input.writeOnly.replaceValueConfirmation.cancel": "Cancel",
+  "input.writeOnly.replaceValueConfirmation.submit": "Save value",
 };
