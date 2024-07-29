@@ -18,7 +18,7 @@
     "url": "https://github.com/prismatic-io/translations.git"
   },
   "license": "MIT",
-  "version": "1.11.6",
+  "version": "1.11.7",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
