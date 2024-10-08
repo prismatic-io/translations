@@ -33,14 +33,18 @@ export interface DialogPhrases {
   /** English: "Webhook URLs" */
   "webhookUrlDialog.title": SimplePhrase;
 
-  /** English: "Remove Integration" */
-  "deleteUserConfigurationDialog.confirmButton": SimplePhrase;
+  /** English: "Remove %{integrationSingle}" */
+  "deleteUserConfigurationDialog.confirmButton": ComplexPhrase<{
+    integrationSingle: string;
+  }> | SimplePhrase;
 
   /** English: "Remove User Configuration" */
   "deleteUserConfigurationDialog.confirmButton--isAdmin": SimplePhrase;
 
-  /** English: "Deactivate Integration" */
-  "deleteUserConfigurationDialog.confirmButton--isCustomerMarketplaceUser": SimplePhrase;
+  /** English: "Deactivate %{integrationSingle}" */
+  "deleteUserConfigurationDialog.confirmButton--isCustomerMarketplaceUser": ComplexPhrase<{
+    integrationSingle: string;
+  }> | SimplePhrase;
 
   /** English: "Delete" */
   "deleteUserConfigurationDialog.openButton": SimplePhrase;
@@ -48,8 +52,10 @@ export interface DialogPhrases {
   /** English: "Are you sure?" */
   "deleteUserConfigurationDialog.title": SimplePhrase;
 
-  /** English: "This action cannot be undone. This will permanently delete the integration." */
-  "deleteUserConfigurationDialog.warningText": SimplePhrase;
+  /** English: "This action cannot be undone. This will permanently delete the %{integrationSingle}." */
+  "deleteUserConfigurationDialog.warningText": ComplexPhrase<{
+    integrationSingle: string;
+  }> | SimplePhrase;
 
   /** English: "This action cannot be undone. This will permanently delete the configuration for %{email}." */
   "deleteUserConfigurationDialog.warningText--isAdmin": ComplexPhrase<{
@@ -59,23 +65,33 @@ export interface DialogPhrases {
   /** English: "User Configuration" */
   "deleteUserConfigurationDialog.options.userConfigurationButton": SimplePhrase;
 
-  /** English: "This action cannot be undone. This will deactivate the integration." */
-  "deleteUserConfigurationDialog.warningText--isCustomerMarketplaceUser": SimplePhrase;
+  /** English: "This action cannot be undone. This will deactivate the %{integrationSingle}." */
+  "deleteUserConfigurationDialog.warningText--isCustomerMarketplaceUser": ComplexPhrase<{
+    integrationSingle: string;
+  }> | SimplePhrase;
 
-  /** English: "This will remove all user configurations and deactivate the integration." */
-  "deleteUserConfigurationDialog.warningText--hasUserConfiguration": SimplePhrase;
+  /** English: "This will remove all user configurations and deactivate the %{integrationSingle}." */
+  "deleteUserConfigurationDialog.warningText--hasUserConfiguration": ComplexPhrase<{
+    integrationSingle: string;
+  }> | SimplePhrase;
 
-  /** English: "Deactivate Integration" */
-  "deactivateIntegrationDialog.confirmButton": SimplePhrase;
+  /** English: "Deactivate %{integrationSingle}" */
+  "deactivateIntegrationDialog.confirmButton": ComplexPhrase<{
+    integrationSingle: string;
+  }> | SimplePhrase;
 
-  /** English: "Deactivate Integration" */
-  "deactivateIntegrationDialog.openButton": SimplePhrase;
+  /** English: "Deactivate %{integrationSingle}" */
+  "deactivateIntegrationDialog.openButton": ComplexPhrase<{
+    integrationSingle: string;
+  }> | SimplePhrase;
 
   /** English: "Are you sure?" */
   "deactivateIntegrationDialog.title": SimplePhrase;
 
-  /** English: "This will deactivate this integration." */
-  "deactivateIntegrationDialog.warningText": SimplePhrase;
+  /** English: "This will deactivate this %{integrationSingle}." */
+  "deactivateIntegrationDialog.warningText": ComplexPhrase<{
+    integrationSingle: string;
+  }> | SimplePhrase;
 
   /** English: "Cancel" */
   "configurationWizardDialog.cancelButton": SimplePhrase;
@@ -112,8 +128,9 @@ export interface DialogPhrases {
   /** English: "Update" */
   "apiKeyDialog.updateButton": SimplePhrase;
 
-  /** English: "Please contact %{organization} to configure this integration." */
+  /** English: "Please contact %{organization} to configure this %{integrationSingle}." */
   "activateIntegrationDialog.banner.text--isNotConfigurable": ComplexPhrase<{
+    integrationSingle: string;
     organization?: string;
   }>;
 
@@ -135,8 +152,10 @@ export interface DialogPhrases {
   /** English: "View" */
   "activateIntegrationDialog.viewButton": SimplePhrase;
 
-  /** English: "Contact organization to configure this integration" */
-  "activateIntegrationDialog.marketplaceConfigurationError": SimplePhrase;
+  /** English: "Contact organization to configure this %{integrationSingle}" */
+  "activateIntegrationDialog.marketplaceConfigurationError": ComplexPhrase<{
+    integrationSingle: string;
+  }> | SimplePhrase;
 
   /** English: "View configuration" */
   "activateIntegrationDialog.viewConfiguration": SimplePhrase;
@@ -144,11 +163,15 @@ export interface DialogPhrases {
   /** English: "View details" */
   "activateIntegrationDialog.viewDetails": SimplePhrase;
 
-  /** English: "Pause integration" */
-  "activateIntegrationDialog.pauseIntegration": SimplePhrase;
+  /** English: "Pause %{integrationSingle}" */
+  "activateIntegrationDialog.pauseIntegration": ComplexPhrase<{
+    integrationSingle: string;
+  }> | SimplePhrase;
 
-  /** English: "Unpause integration" */
-  "activateIntegrationDialog.unpauseIntegration": SimplePhrase;
+  /** English: "Unpause %{integrationSingle}" */
+  "activateIntegrationDialog.unpauseIntegration": ComplexPhrase<{
+    integrationSingle: string;
+  }> | SimplePhrase;
 
   /** English: "Create user configuration" */
   "activateIntegrationDialog.createUserConfiguration": SimplePhrase;
@@ -174,8 +197,11 @@ export interface DialogPhrases {
   /** English: "Role" */
   "addUserDialog.roleLabel": SimplePhrase;
 
-  /** English: "This will remove this integration from the integration marketplace." */
-  "removeIntegrationDialog.warningText": SimplePhrase;
+  /** English: "This will remove this ${integrationSingle} from the ${marketplaceSingle}." */
+  "removeIntegrationDialog.warningText": ComplexPhrase<{
+    marketplaceSingle: string;
+    integrationSingle: string;
+  }> | SimplePhrase;
 
   /** English: "Initial Configuration" */
   "configurationWizardDialog.initialConfiguration": SimplePhrase;
@@ -208,21 +234,30 @@ export const dialogPhrases: DialogPhrases = {
   // activate integration dialog
   "activateIntegrationDialog.addButton": "Add Instance",
   "activateIntegrationDialog.banner.text--isNotConfigurable": {
-    _: "Please contact %{organization} to configure this integration.",
+    _: "Please contact %{organization} to configure this %{integrationSingle}.",
     organization: "your organization",
+    integrationSingle: "Integration",
   },
   "activateIntegrationDialog.cancelButton": "Cancel",
   "activateIntegrationDialog.configureButton": "Configure",
   "activateIntegrationDialog.instancesText":
     "View an existing instance, or create a new one.",
   "activateIntegrationDialog.instancesTitle": "Instances",
-  "activateIntegrationDialog.marketplaceConfigurationError":
-    "Contact organization to configure this integration",
+  "activateIntegrationDialog.marketplaceConfigurationError": {
+    _: "Contact organization to configure this %{integrationSingle}",
+    integrationSingle: "Integration",
+  },
   "activateIntegrationDialog.viewButton": "View",
   "activateIntegrationDialog.viewConfiguration": "View configuration",
   "activateIntegrationDialog.viewDetails": "View details",
-  "activateIntegrationDialog.pauseIntegration": "Pause integration",
-  "activateIntegrationDialog.unpauseIntegration": "Unpause integration",
+  "activateIntegrationDialog.pauseIntegration": {
+    _: "Pause %{integrationSingle}",
+    integrationSingle: "Integration",
+  },
+  "activateIntegrationDialog.unpauseIntegration": {
+    _: "Unpause %{integrationSingle}",
+    integrationSingle: "Integration",
+  },
   "activateIntegrationDialog.createUserConfiguration":
     "Create user configuration",
   "activateIntegrationDialog.editUserConfiguration": "Edit user configuration",
@@ -231,32 +266,51 @@ export const dialogPhrases: DialogPhrases = {
     "Delete user configuration",
 
   // delete user configuration dialog
-  "deleteUserConfigurationDialog.confirmButton": "Remove Integration",
+  "deleteUserConfigurationDialog.confirmButton": {
+    _: "Remove %{integrationSingle}",
+    integrationSingle: "Integration",
+  },
   "deleteUserConfigurationDialog.confirmButton--isAdmin":
     "Remove User Configuration",
   "deleteUserConfigurationDialog.openButton": "Delete",
   "deleteUserConfigurationDialog.title": "Are you sure?",
-  "deleteUserConfigurationDialog.warningText":
-    "This action cannot be undone. This will permanently delete the integration.",
+  "deleteUserConfigurationDialog.warningText": {
+    _: "This action cannot be undone. This will permanently delete the %{integrationSingle}.",
+    integrationSingle: "Integration",
+  },
   "deleteUserConfigurationDialog.warningText--isAdmin": {
     _: "This action cannot be undone. This will permanently delete the configuration for %{email}.",
     email: "",
   },
-  "deleteUserConfigurationDialog.confirmButton--isCustomerMarketplaceUser":
-    "Deactivate Integration",
+  "deleteUserConfigurationDialog.confirmButton--isCustomerMarketplaceUser": {
+    _: "Deactivate %{integrationSingle}",
+    integrationSingle: "Integration",
+  },
   "deleteUserConfigurationDialog.options.userConfigurationButton":
     "User Configuration",
-  "deleteUserConfigurationDialog.warningText--isCustomerMarketplaceUser":
-    "This action cannot be undone. This will deactivate the integration.",
-  "deleteUserConfigurationDialog.warningText--hasUserConfiguration":
-    "This will remove all user configurations and deactivate the integration.",
+  "deleteUserConfigurationDialog.warningText--isCustomerMarketplaceUser": {
+    _: "This action cannot be undone. This will deactivate the %{integrationSingle}.",
+    integrationSingle: "Integration",
+  },
+  "deleteUserConfigurationDialog.warningText--hasUserConfiguration": {
+    _: "This will remove all user configurations and deactivate the %{integrationSingle}.",
+    integrationSingle: "Integration",
+  },
 
-  // deactivate integration dialog
-  "deactivateIntegrationDialog.openButton": "Deactivate Integration",
-  "deactivateIntegrationDialog.confirmButton": "Deactivate Integration",
+  // deactivate %{integrationSingle} dialog
+  "deactivateIntegrationDialog.openButton": {
+    _: "Deactivate %{integrationSingle}",
+    integrationSingle: "Integration",
+  },
+  "deactivateIntegrationDialog.confirmButton": {
+    _: "Deactivate %{integrationSingle}",
+    integrationSingle: "Integration",
+  },
   "deactivateIntegrationDialog.title": "Are you sure?",
-  "deactivateIntegrationDialog.warningText":
-    "This will deactivate this integration.",
+  "deactivateIntegrationDialog.warningText": {
+    _: "This will deactivate this %{integrationSingle}.",
+    integrationSingle: "Integration",
+  },
 
   // confirmation wizard dialog
   "configurationWizardDialog.cancelButton": "Cancel",
@@ -284,8 +338,11 @@ export const dialogPhrases: DialogPhrases = {
   "addUserDialog.roleLabel": "Role",
 
   // remove integration dialog
-  "removeIntegrationDialog.warningText":
-    "This will remove this integration from the integration marketplace.",
+  "removeIntegrationDialog.warningText": {
+    _: "This will remove this %{integrationSingle} from the %{marketplaceSingle}.",
+    marketplaceSingle: "Marketplace",
+    integrationSingle: "Integration",
+  },
 
   // initial configuration dialog
   "configurationWizardDialog.initialConfiguration": "Initial Configuration",

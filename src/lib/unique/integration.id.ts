@@ -5,8 +5,9 @@ import {
 } from "../../types";
 
 export interface IntegrationIdPhrases {
-  /** English: "Please contact %{organization} to activate this integration." */
+  /** English: "Please contact %{organization} to activate this %{integrationSingle}." */
   "integrations.id__banner.customerActivateText": ComplexPhrase<{
+    integrationSingle: string;
     organization: string;
   }>;
 
@@ -15,17 +16,25 @@ export interface IntegrationIdPhrases {
     organization: string;
   }>;
 
-  /** English: "Your integration is enabled" */
-  "integrations.id__banner.enabledText": SimplePhrase;
+  /** English: "Your %{integrationSingle} is enabled" */
+  "integrations.id__banner.enabledText": ComplexPhrase<{
+    integrationSingle: string;
+  }> | SimplePhrase;
 
-  /** English: "Pause Integration" */
-  "integrations.id__banner.pauseButton": SimplePhrase;
+  /** English: "Pause %{integrationSingle}" */
+  "integrations.id__banner.pauseButton": ComplexPhrase<{
+    integrationSingle: string;
+  }> | SimplePhrase;
 
-  /** English: "Your integration is paused" */
-  "integrations.id__banner.pausedText": SimplePhrase;
+  /** English: "Your %{integrationSingle} is paused" */
+  "integrations.id__banner.pausedText": ComplexPhrase<{
+    integrationSingle: string;
+  }> | SimplePhrase;
 
-  /** English: "Unpause Integration" */
-  "integrations.id__banner.unpauseButton": SimplePhrase;
+  /** English: "Unpause %{integrationSingle}" */
+  "integrations.id__banner.unpauseButton": ComplexPhrase<{
+    integrationSingle: string;
+  }> | SimplePhrase;
 
   /** English: "Update" */
   "integrations.id__banner.updateButton": SimplePhrase;
@@ -48,8 +57,10 @@ export interface IntegrationIdPhrases {
   /** English: "View User Level Configuration" */
   "integrations.id__filterBar.viewUserConfigurationButton": SimplePhrase;
 
-  /** English: This integration has a new version. Previous versions are read-only. */
-  "integrations.id__newVersionBanner.newVersionText": SimplePhrase;
+  /** English: This %{integrationSingle} has a new version. Previous versions are read-only. */
+  "integrations.id__newVersionBanner.newVersionText": ComplexPhrase<{
+    integrationSingle: string;
+  }> | SimplePhrase;
 
   /** English: "View Current" */
   "integrations.id__newVersionBanner.viewCurrentButton": SimplePhrase;
@@ -58,17 +69,30 @@ export interface IntegrationIdPhrases {
 export const integrationIdPhrases: NamespacedSharedAndUniquePhrases<IntegrationIdPhrases> =
   {
     "integrations.id__banner.customerActivateText": {
-      _: "Please contact %{organization} to activate this integration.",
+      _: "Please contact %{organization} to activate this %{integrationSingle}.",
       organization: "organization",
+      integrationSingle: "Integration",
     },
     "integrations.id__banner.customerUpdateText": {
       _: "Please contact %{organization} to update to latest version.",
       organization: "organization",
     },
-    "integrations.id__banner.enabledText": "Your integration is enabled",
-    "integrations.id__banner.pauseButton": "Pause Integration",
-    "integrations.id__banner.pausedText": "Your integration is paused",
-    "integrations.id__banner.unpauseButton": "Unpause Integration",
+    "integrations.id__banner.enabledText": {
+      _: "Your %{integrationSingle} is enabled",
+      integrationSingle: "Integration",
+    },
+    "integrations.id__banner.pauseButton": {
+      _: "Pause %{integrationSingle}",
+      integrationSingle: "Integration",
+    },
+    "integrations.id__banner.pausedText": {
+      _: "Your %{integrationSingle} is paused",
+      integrationSingle: "Integration",
+    },
+    "integrations.id__banner.unpauseButton": {
+      _: "Unpause %{integrationSingle}",
+      integrationSingle: "Integration",
+    },
     "integrations.id__banner.updateButton": "Update",
     "integrations.id__banner.updateText": "There is an update available",
     "integrations.id__filterBar.configureUserButton":
@@ -79,7 +103,9 @@ export const integrationIdPhrases: NamespacedSharedAndUniquePhrases<IntegrationI
     "integrations.id__filterBar.viewConfigurationButton": "View Configuration",
     "integrations.id__filterBar.viewUserConfigurationButton":
       "View User Level Configuration",
-    "integrations.id__newVersionBanner.newVersionText":
-      "This integration has a new version. Previous versions are read-only.",
+    "integrations.id__newVersionBanner.newVersionText": {
+      _: "This %{integrationSingle} has a new version. Previous versions are read-only.",
+      integrationSingle: "Integration",
+    },
     "integrations.id__newVersionBanner.viewCurrentButton": "View Current",
   };
