@@ -1,6 +1,10 @@
 import { NamespacedSharedAndUniquePhrases } from "../../types";
+import { SimplePhrase } from "../../types";
 
-export interface DashboardPhrases {}
+export interface DashboardPhrases {
+  /** English: "Dashboard" */
+  "dashboard__filterBar.title": SimplePhrase;
+}
 
 export const dashboardPhrases: NamespacedSharedAndUniquePhrases<DashboardPhrases> =
   {
