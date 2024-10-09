@@ -47,7 +47,7 @@ export interface DataTablePhrases {
 
   /** English: "Integration" */
   "dataTable.integrationLabel": ComplexPhrase<{
-    integrationSingle: string;
+    integrationSingular: string;
   }> | SimplePhrase;
 
   /** English: "Labels" */
@@ -112,8 +112,8 @@ export const dataTablePhrases: DataTablePhrases = {
   "dataTable.inputLabel": "Input",
   "dataTable.inputsText": { _: "%{count} inputs", count: 0 },
   "dataTable.integrationLabel": {
-    _: "%{integrationSingle}",
-    integrationSingle: "Integration"
+    _: "%{integrationSingular}",
+    integrationSingular: "Integration"
   },
   "dataTable.labelsLabel": "Labels",
   "dataTable.lastTriggeredAtLabel": "Last triggered",

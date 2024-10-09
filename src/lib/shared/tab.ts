@@ -32,7 +32,7 @@ export interface TabPhrases {
 
   /** English: "Marketplace" */
   "marketplaceTab.title": ComplexPhrase<{
-    marketplaceSingle: string;
+    marketplaceSingular: string;
   }> | SimplePhrase;
 
   /** English: "Payload" */
@@ -152,8 +152,8 @@ export const tabPhrases: TabPhrases = {
     integrationPlural: "Integrations",
   },
   "marketplaceTab.title": {
-    _: "%{marketplaceSingle}",
-    marketplaceSingle: "Marketplace",
+    _: "%{marketplaceSingular}",
+    marketplaceSingular: "Marketplace",
   },
   "payloadTab.title": "Payload",
   "summaryTab.title": "Summary",

@@ -19,19 +19,19 @@ export interface IntegrationMarketplacePhrases {
   /** English: "All" */
   "integration-marketplace__filterBar.allButton": SimplePhrase;
 
-  /** English: "${integrationSingle} is not configured." */
+  /** English: "${integrationSingular} is not configured." */
   "integration-marketplace.instanceUnconfiguredTooltip": ComplexPhrase<{
-    integrationSingle: string;
+    integrationSingular: string;
   }> | SimplePhrase;
 
-  /** English: "${integrationSingle} is paused." */
+  /** English: "${integrationSingular} is paused." */
   "integration-marketplace.instancePausedTooltip": ComplexPhrase<{
-    integrationSingle: string;
+    integrationSingular: string;
   }> | SimplePhrase;
 
-  /** English: "${integrationSingle} is activated." */
+  /** English: "${integrationSingular} is activated." */
   "integration-marketplace.instanceActivatedTooltip": ComplexPhrase<{
-    integrationSingle: string;
+    integrationSingular: string;
   }> | SimplePhrase;
 
   /** English: "Current user is not configured." */
@@ -55,14 +55,14 @@ export interface IntegrationMarketplacePhrases {
   /** English: "All users are activated." */
   "integration-marketplace.usersActivatedTooltip": SimplePhrase;
 
-  /** English: "Add ${integrationSingle}" */
+  /** English: "Add ${integrationSingular}" */
   "integration-marketplace.addIntegrationDialog.buttonText": ComplexPhrase<{
-    integrationSingle: string;
+    integrationSingular: string;
   }> | SimplePhrase;
 
-  /** English: "Select ${integrationSingle}" */
+  /** English: "Select ${integrationSingular}" */
   "integration-marketplace.addIntegrationDialog.title": ComplexPhrase<{
-    integrationSingle: string;
+    integrationSingular: string;
   }> | SimplePhrase;
 
   /** English: "Only published %{integrationPlural} can be used to create an instance." */
@@ -89,16 +89,16 @@ export const integrationMarketplacePhrases: NamespacedSharedAndUniquePhrases<Int
       _: "Search integrations",
     },
     "integration-marketplace.instanceUnconfiguredTooltip": {
-      _: "%{integrationSingle} is not configured.",
-      integrationSingle: "Integration",
+      _: "%{integrationSingular} is not configured.",
+      integrationSingular: "Integration",
     },
     "integration-marketplace.instancePausedTooltip": {
-      _: "%{integrationSingle} is paused.",
-      integrationSingle: "Integration",
+      _: "%{integrationSingular} is paused.",
+      integrationSingular: "Integration",
     },
     "integration-marketplace.instanceActivatedTooltip": {
-      _: "%{integrationSingle} is activated.",
-      integrationSingle: "Integration",
+      _: "%{integrationSingular} is activated.",
+      integrationSingular: "Integration",
     },
     "integration-marketplace.userUnconfiguredTooltip":
       "Current user is not configured.",
@@ -114,12 +114,12 @@ export const integrationMarketplacePhrases: NamespacedSharedAndUniquePhrases<Int
       "At least one instance is not configured for current user.",
     "integration-marketplace.usersActivatedTooltip": "All users are activated.",
     "integration-marketplace.addIntegrationDialog.buttonText": {
-      _: "Add %{integrationSingle}",
-      integrationSingle: "Integration",
+      _: "Add %{integrationSingular}",
+      integrationSingular: "Integration",
     },
     "integration-marketplace.addIntegrationDialog.title": {
-      _: "Select %{integrationSingle}",
-      integrationSingle: "Integration",
+      _: "Select %{integrationSingular}",
+      integrationSingular: "Integration",
     },
     "integration-marketplace.integrationPicker.text": {
       _: "Only published %{integrationPlural} can be used to create an instance.",

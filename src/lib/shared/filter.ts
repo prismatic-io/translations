@@ -3,7 +3,7 @@ import { ComplexPhrase, SimplePhrase } from "../../types";
 export interface FilterPhrases {
   /** English: "Marketplace" */
   "filterBar.breadcrumb.integrationMarketplace": ComplexPhrase<{
-    marketplaceSingle: string;
+    marketplaceSingular: string;
   }> | SimplePhrase;
 
   /** English: "Active ${integrationPlural}" */
@@ -62,9 +62,9 @@ export interface FilterPhrases {
   /** English: "Not all alerts are bad - you can also alert people when an instance is enabled, or when it runs successfully." */
   "emptyState.alertMonitorsTextTwo": SimplePhrase;
 
-  /** English: "Here you will see any alerts that have been configured for your ${integrationPlural}." */
+  /** English: "Here you will see any alerts that have been configured for your ${integrationPluralLower}." */
   "emptyState.alertMonitorsText--customer": ComplexPhrase<{
-    integrationPlural: string;
+    integrationPluralLower: string;
   }> | SimplePhrase;
 
   /** English: "Learn about alert monitors" */
@@ -88,9 +88,9 @@ export interface FilterPhrases {
   /** English: "Attachments" */
   "emptyState.attachmentsTitle--embedded": SimplePhrase;
 
-  /** English: "Place to store ${integrationSingle} documents that your team members can reference." */
+  /** English: "Place to store ${integrationSingularLower} documents that your team members can reference." */
   "emptyState.attachmentsText--embedded": ComplexPhrase<{
-    integrationSingle: string;
+    integrationSingularLower: string;
   }> | SimplePhrase;
 
   /** English: "Components" */
@@ -102,9 +102,9 @@ export interface FilterPhrases {
   /** English: "Components" */
   "emptyState.componentsTitle--embedded": SimplePhrase;
 
-  /** English: "Here you will see any components that have been built specifically for your organization to use in the ${integrationSingle} designer." */
+  /** English: "Here you will see any components that have been built specifically for your organization to use in the ${integrationSingular} designer." */
   "emptyState.componentsText--embedded": ComplexPhrase<{
-    integrationSingle: string;
+    integrationSingular: string;
   }> | SimplePhrase;
 
   /** English: "Organization credential" */
@@ -125,21 +125,23 @@ export interface FilterPhrases {
   /** English: "Customer credentials" */
   "emptyState.customerCredentialsTitle": SimplePhrase;
 
-  /** English: "When you deploy an instance of an integration to a customer, that customer's credentials are used to connect to third-party apps and services." */
-  "emptyState.customerCredentialsText": SimplePhrase;
+  /** English: "When you deploy an instance of an ${integrationSingularLower} to a customer, that customer's credentials are used to connect to third-party apps and services." */
+  "emptyState.customerCredentialsText": ComplexPhrase<{
+    integrationSingularLower: string;
+  }> | SimplePhrase;
 
   /** English: "Customers" */
   "emptyState.customersTitle": SimplePhrase;
 
-  /** English: "You'll manage your customers here. You can deploy any number of your ${integrationPlural} to each customer, or they can activate ${integrationPlural} themselves through the ${marketplaceSingle}." */
+  /** English: "You'll manage your customers here. You can deploy any number of your ${integrationPluralLower} to each customer, or they can activate ${integrationPlural} themselves through the ${marketplaceSingular}." */
   "emptyState.customersText": ComplexPhrase<{
-    integrationPlural: string;
-    marketplaceSingle: string;
+    integrationPluralLower: string;
+    marketplaceSingular: string;
   }> | SimplePhrase;
 
-  /** English: "From each customer record, you can deploy or reconfigure their ${integrationPlural}, review logs, manage their users, and more." */
+  /** English: "From each customer record, you can deploy or reconfigure their ${integrationPluralLower}, review logs, manage their users, and more." */
   "emptyState.customersTextTwo": ComplexPhrase<{
-    integrationPlural: string;
+    integrationPluralLower: string;
   }> | SimplePhrase;
 
   /** English: "Learn about customers" */
@@ -151,25 +153,25 @@ export interface FilterPhrases {
   /** English: "You can invite your customers to log in to Prismatic, so they can manage instances deployed to them and review their own executions and logs." */
   "emptyState.customerUsersText": SimplePhrase;
 
-  /** English: "Note: You do not need to add customer users to Prismatic if your users authenticate through an embedded ${marketplaceSingle}." */
+  /** English: "Note: You do not need to add customer users to Prismatic if your users authenticate through an embedded ${marketplaceSingular}." */
   "emptyState.customerUsersTextTwo": ComplexPhrase<{
-    marketplaceSingle: string;
+    marketplaceSingular: string;
   }> | SimplePhrase;
 
   /** English: "Learn about customer users" */
   "emptyState.customerUsersDocsButton": SimplePhrase;
 
-  /** English: "Embedded ${marketplaceSingle} user authentication" */
+  /** English: "Embedded ${marketplaceSingular} user authentication" */
   "emptyState.customerUsersDocsButtonTwo": ComplexPhrase<{
-    marketplaceSingle: string;
+    marketplaceSingular: string;
   }> | SimplePhrase;
 
   /** English: "Instance executions" */
   "emptyState.executionsTitle": SimplePhrase;
 
-  /** English: "Each time an instance of an ${integrationSingle} runs, that's called an execution. Execution details are available here." */
+  /** English: "Each time an instance of an ${integrationSingularLower} runs, that's called an execution. Execution details are available here." */
   "emptyState.executionsText": ComplexPhrase<{
-    integrationSingle: string;
+    integrationSingularLower: string;
   }> | SimplePhrase;
 
   /** English: "You can inspect execution logs and results of each step of the execution, which is useful for support and debugging purposes." */
@@ -182,20 +184,20 @@ export interface FilterPhrases {
   "emptyState.instancesTitle": SimplePhrase;
 
   // @TODO - Direct reference to Prismatic
-  /** English: "In Prismatic, ${integrationPlural} are reusable - they can be deployed to multiple customers and configured to behave differently from one customer to the next." */
+  /** English: "In Prismatic, ${integrationPluralLower} are reusable - they can be deployed to multiple customers and configured to behave differently from one customer to the next." */
   "emptyState.instancesText": ComplexPhrase<{
-    integrationPlural: string;
+    integrationPluralLower: string;
   }> | SimplePhrase;
 
-  /** English: "An instance is an ${integrationSingle} that has been deployed to a specific customer using customer-specific configuration." */
+  /** English: "An instance is an ${integrationSingularLower} that has been deployed to a specific customer using customer-specific configuration." */
   "emptyState.instancesTextTwo": ComplexPhrase<{
-    integrationSingle: string;
+    integrationSingularLower: string;
   }> | SimplePhrase;
 
-  /** English: "Here you will see any ${integrationPlural} that have been configured in the ${marketplaceSingle} or deployed directly to your organization." */
+  /** English: "Here you will see any ${integrationPluralLower} that have been configured in the ${marketplaceSingular} or deployed directly to your organization." */
   "emptyState.instancesText--customer": ComplexPhrase<{
-    integrationPlural: string;
-    marketplaceSingle: string;
+    integrationPluralLower: string;
+    marketplaceSingular: string;
   }> | SimplePhrase;
 
   /** English: "Learn about instances" */
@@ -211,15 +213,15 @@ export interface FilterPhrases {
     integrationPlural: string;
   }> | SimplePhrase;
 
-  /** English: "After building an ${integrationSingle}, you can deploy it to one or more of your customers, or add it to your ${marketplaceSingle}, where customers can activate it themselves." */
+  /** English: "After building an ${integrationSingularLower}, you can deploy it to one or more of your customers, or add it to your ${marketplaceSingular}, where customers can activate it themselves." */
   "emptyState.integrationsTextTwo": ComplexPhrase<{
-    marketplaceSingle: string;
-    integrationSingle: string;
+    marketplaceSingular: string;
+    integrationSingularLower: string;
   }> | SimplePhrase;
 
-  /** English: "Learn about ${integrationPlural}" */
+  /** English: "Learn about ${integrationPluralLower}" */
   "emptyState.integrationsDocsButton": ComplexPhrase<{
-    integrationPlural: string;
+    integrationPluralLower: string;
   }> | SimplePhrase;
 
   /** English: "${integrationPlural}" */
@@ -227,43 +229,43 @@ export interface FilterPhrases {
     integrationPlural: string;
   }> | SimplePhrase;
 
-  /** English: "Here you will see any ${integrationPlural} that your organization has built or can modify via the ${integrationSingle} designer." */
+  /** English: "Here you will see any ${integrationPluralLower} that your organization has built or can modify via the ${integrationSingularLower} designer." */
   "emptyState.integrationsText--embedded": ComplexPhrase<{
-    integrationPlural: string;
-    integrationSingle: string;
+    integrationPluralLower: string;
+    integrationSingularLower: string;
   }> | SimplePhrase;
 
   /** English: "Marketplace" by default. Will be overwritten by organization branded element values. */
   "emptyState.integrationMarketplaceTitle": ComplexPhrase<{
-    marketplaceSingle: string;
+    marketplaceSingular: string;
   }> | SimplePhrase;
 
-  /** English: "Your ${marketplaceSingle} is where your customers go to browse your ${integrationSingle} offerings and self-activate the ones they want. It can be white-labeled and embedded in your app to create a native ${integrationSingle} experience." */
+  /** English: "Your ${marketplaceSingular} is where your customers go to browse your ${integrationSingularLower} offerings and self-activate the ones they want. It can be white-labeled and embedded in your app to create a native ${integrationSingular} experience." */
   "emptyState.integrationMarketplaceText": ComplexPhrase<{
-    marketplaceSingle: string;
-    integrationSingle: string;
+    marketplaceSingular: string;
+    integrationSingularLower: string;
   }> | SimplePhrase;
 
-  /** English: "Here is where you set up which ${integrationPlural} are included in your ${marketplaceSingle} and how they appear." */
+  /** English: "Here is where you set up which ${integrationPluralLower} are included in your ${marketplaceSingular} and how they appear." */
   "emptyState.integrationMarketplaceTextTwo": ComplexPhrase<{
-    marketplaceSingle: string;
-    integrationPlural: string;
+    marketplaceSingular: string;
+    integrationPluralLower: string;
   }> | SimplePhrase;
 
-  /** English: "The ${marketplaceSingle} displays ${integrationPlural} that have been enabled or available for configuration." */
+  /** English: "The ${marketplaceSingular} displays ${integrationPluralLower} that have been enabled or available for configuration." */
   "emptyState.integrationMarketplaceText--customer": ComplexPhrase<{
-    marketplaceSingle: string;
-    integrationPlural: string;
+    marketplaceSingular: string;
+    integrationPluralLower: string;
   }> | SimplePhrase;
 
-  /** English: "Learn about the ${marketplaceSingle}" */
+  /** English: "Learn about the ${marketplaceSingular}" */
   "emptyState.integrationMarketplaceDocsButton": ComplexPhrase<{
-    marketplaceSingle: string;
+    marketplaceSingular: string;
   }> | SimplePhrase;
 
-  /** English: "Embedding ${marketplaceSingle} in your app" */
+  /** English: "Embedding ${marketplaceSingular} in your app" */
   "emptyState.integrationMarketplaceDocsButtonTwo": ComplexPhrase<{
-    marketplaceSingle: string;
+    marketplaceSingular: string;
   }> | SimplePhrase;
 
   /** English: "Logs" */
@@ -272,17 +274,17 @@ export interface FilterPhrases {
   /** English: "If actions in your deployed instances generate log messages, you'll find those here." */
   "emptyState.logsText": SimplePhrase;
 
-  /** English: "From this page you can search and filter logs so you can keep tabs on exactly what's going on with your customers' live ${integrationPlural}." */
+  /** English: "From this page you can search and filter logs so you can keep tabs on exactly what's going on with your customers' live ${integrationPluralLower}." */
   "emptyState.logsTextTwo": ComplexPhrase<{
-    integrationPlural: string;
+    integrationPluralLower: string;
   }> | SimplePhrase;
 
   /** English: "If actions in your deployed instances generate log messages, you'll find those here." */
   "emptyState.logsText--customer": SimplePhrase;
 
-  /** English: "From this page you can search and filter logs so you can keep tabs on exactly what's going on with your ${integrationPlural}." */
+  /** English: "From this page you can search and filter logs so you can keep tabs on exactly what's going on with your ${integrationPluralLower}." */
   "emptyState.logsTextTwo--customer": ComplexPhrase<{
-    integrationPlural: string;
+    integrationPluralLower: string;
   }> | SimplePhrase;
 
   /** English: "Learn about logs" */
@@ -300,9 +302,9 @@ export interface FilterPhrases {
   /** English: "Users" */
   "emptyState.usersTitle--embedded": SimplePhrase;
 
-  /** English: "Here you will see users within your organization that have access to manage ${integrationPlural}." */
+  /** English: "Here you will see users within your organization that have access to manage ${integrationPluralLower}." */
   "emptyState.usersText--embedded": ComplexPhrase<{
-    integrationPlural: string;
+    integrationPluralLower: string;
   }> | SimplePhrase;
 
   /** English: "Instance monitors" */
@@ -318,8 +320,8 @@ export const filterPhrases: FilterPhrases = {
   "filterBar.breadcrumb.instances": "Instances",
   "filterBar.breadcrumb.components": "Components",
   "filterBar.breadcrumb.integrationMarketplace": {
-    _: "%{marketplaceSingle}",
-    marketplaceSingle: "Marketplace",
+    _: "%{marketplaceSingular}",
+    marketplaceSingular: "Marketplace",
   },
   "filterBar.clearFiltersButton": "Clear filters",
   "filterBar.openFiltersButton": "Filter",
@@ -348,8 +350,8 @@ export const filterPhrases: FilterPhrases = {
   "emptyState.alertMonitorsTextTwo":
     "Not all alerts are bad - you can also alert people when an instance is enabled, or when it runs successfully.",
   "emptyState.alertMonitorsText--customer": {
-    _: "Here you will see any alerts that have been configured for your %{integrationPlural}.",
-    integrationPlural: "Integrations",
+    _: "Here you will see any alerts that have been configured for your %{integrationPluralLower}.",
+    integrationPluralLower: "integrations",
   },
   "emptyState.alertMonitorsDocsButton": "Learn about alert monitors",
 
@@ -366,8 +368,8 @@ export const filterPhrases: FilterPhrases = {
 
   "emptyState.attachmentsTitle--embedded": "Attachments",
   "emptyState.attachmentsText--embedded": {
-    _: "Place to store %{integrationSingle} documents that your team members can reference.",
-    integrationSingle: "Integration",
+    _: "Place to store %{integrationSingularLower} documents that your team members can reference.",
+    integrationSingularLower: "integration",
   },
 
   // components empty state
@@ -376,8 +378,8 @@ export const filterPhrases: FilterPhrases = {
 
   "emptyState.componentsTitle--embedded": "Components",
   "emptyState.componentsText--embedded": {
-    _: "Here you will see any components that have been built specifically for your organization to use in the %{integrationSingle} designer.",
-    integrationSingle: "Integration",
+    _: "Here you will see any components that have been built specifically for your organization to use in the %{integrationSingular} designer.",
+    integrationSingular: "Integration",
   },
 
   // credentials empty state
@@ -392,18 +394,21 @@ export const filterPhrases: FilterPhrases = {
   // customer credentials empty state
   "emptyState.customerCredentialsTitle": "Customer credentials",
   "emptyState.customerCredentialsText":
-    "When you deploy an instance of an integration to a customer, that customer's credentials are used to connect to third-party apps and services.",
+    {
+      _: "When you deploy an instance of an %{integrationSingularLower} to a customer, that customer's credentials are used to connect to third-party apps and services.",
+      integrationSingularLower: "integration",
+    },
 
   // customers empty state
   "emptyState.customersTitle": "Customers",
   "emptyState.customersText": {
-    _: "You'll manage your customers here. You can deploy any number of your %{integrationPlural} to each customer, or they can activate %{integrationPlural} themselves through the %{marketplaceSingle}.",
-    marketplaceSingle: "Marketplace",
-    integrationPlural: "Integrations",
+    _: "You'll manage your customers here. You can deploy any number of your %{integrationPlural} to each customer, or they can activate %{integrationPluralLower} themselves through the %{marketplaceSingular}.",
+    marketplaceSingular: "Marketplace",
+    integrationPluralLower: "integrations",
   },
   "emptyState.customersTextTwo": {
-    _: "From each customer record, you can deploy or reconfigure their %{integrationPlural}, review logs, manage their users, and more.",
-    integrationPlural: "Integrations",
+    _: "From each customer record, you can deploy or reconfigure their %{integrationPluralLower}, review logs, manage their users, and more.",
+    integrationPluralLower: "integrations",
   },
   "emptyState.customersDocsButton": "Learn about customers",
 
@@ -412,20 +417,20 @@ export const filterPhrases: FilterPhrases = {
   "emptyState.customerUsersText":
     "You can invite your customers to log in to Prismatic, so they can manage instances deployed to them and review their own executions and logs.",
   "emptyState.customerUsersTextTwo": {
-    _: "Note: You do not need to add customer users to Prismatic if your users authenticate through an embedded %{marketplaceSingle}.",
-    marketplaceSingle: "Marketplace",
+    _: "Note: You do not need to add customer users to Prismatic if your users authenticate through an embedded %{marketplaceSingular}.",
+    marketplaceSingular: "Marketplace",
   },
   "emptyState.customerUsersDocsButton": "Learn about customer users",
   "emptyState.customerUsersDocsButtonTwo": {
-    _: "Embedded %{marketplaceSingle} user authentication",
-    marketplaceSingle: "Marketplace",
+    _: "Embedded %{marketplaceSingular} user authentication",
+    marketplaceSingular: "Marketplace",
   },
 
   // executions empty state
   "emptyState.executionsTitle": "Instance executions",
   "emptyState.executionsText": {
-    _: "Each time an instance of an %{integrationSingle} runs, that's called an execution. Execution details are available here.",
-    integrationSingle: "Integration",
+    _: "Each time an instance of an %{integrationSingularLower} runs, that's called an execution. Execution details are available here.",
+    integrationSingularLower: "integration",
   },
   "emptyState.executionsTextTwo":
     "You can inspect execution logs and results of each step of the execution, which is useful for support and debugging purposes.",
@@ -434,17 +439,17 @@ export const filterPhrases: FilterPhrases = {
   // instances empty state
   "emptyState.instancesTitle": "Instances",
   "emptyState.instancesText": {
-    _: "In Prismatic, %{integrationPlural} are reusable - they can be deployed to multiple customers and configured to behave differently from one customer to the next.",
-    integrationPlural: "Integrations",
+    _: "In Prismatic, %{integrationPluralLower} are reusable - they can be deployed to multiple customers and configured to behave differently from one customer to the next.",
+    integrationPluralLower: "integrations",
   },
   "emptyState.instancesTextTwo": {
-    _: "An instance is an %{integrationSingle} that has been deployed to a specific customer using customer-specific configuration.",
-    integrationSingle: "Integration",
+    _: "An instance is an %{integrationSingularLower} that has been deployed to a specific customer using customer-specific configuration.",
+    integrationSingularLower: "integration",
   },
   "emptyState.instancesText--customer": {
-    _: "Here you will see any %{integrationPlural} that have been configured in the %{marketplaceSingle} or deployed directly to your organization.",
-    integrationPlural: "Integrations",
-    marketplaceSingle: "Marketplace",
+    _: "Here you will see any %{integrationPluralLower} that have been configured in the %{marketplaceSingular} or deployed directly to your organization.",
+    integrationPluralLower: "integrations",
+    marketplaceSingular: "Marketplace",
   },
   "emptyState.instancesDocsButton": "Learn about instances",
 
@@ -458,13 +463,13 @@ export const filterPhrases: FilterPhrases = {
     integrationPlural: "Integrations",
   },
   "emptyState.integrationsTextTwo": {
-    _: "After building an %{integrationSingle}, you can deploy it to one or more of your customers, or add it to your %{marketplaceSingle}, where customers can activate it themselves.",
-    marketplaceSingle: "Marketplace",
-    integrationSingle: "Integration",
+    _: "After building an %{integrationSingularLower}, you can deploy it to one or more of your customers, or add it to your %{marketplaceSingular}, where customers can activate it themselves.",
+    marketplaceSingular: "Marketplace",
+    integrationSingularLower: "integration",
   },
   "emptyState.integrationsDocsButton": {
-    _: "Learn about %{integrationPlural}",
-    integrationPlural: "Integrations",
+    _: "Learn about %{integrationPluralLower}",
+    integrationPluralLower: "integrations",
   },
 
   "emptyState.integrationsTitle--embedded": {
@@ -472,38 +477,38 @@ export const filterPhrases: FilterPhrases = {
     integrationPlural: "Integrations",
   },
   "emptyState.integrationsText--embedded": {
-    _: "Here you will see any %{integrationPlural} that your organization has built or can modify via the %{integrationSingle} designer.",
-    integrationPlural: "Integrations",
-    integrationSingle: "Integration",
+    _: "Here you will see any %{integrationPluralLower} that your organization has built or can modify via the %{integrationSingularLower} designer.",
+    integrationPluralLower: "integrations",
+    integrationSingularLower: "integration",
   },
 
   // integration marketplace empty state
   "emptyState.integrationMarketplaceTitle": {
-    _: "%{marketplaceSingle}",
-    marketplaceSingle: "Marketplace",
+    _: "%{marketplaceSingular}",
+    marketplaceSingular: "Marketplace",
   },
   "emptyState.integrationMarketplaceText": {
-    _: "Your %{marketplaceSingle} is where your customers go to browse your integration offerings and self-activate the ones they want. It can be white-labeled and embedded in your app to create a native %{integrationSingle} experience.",
-    marketplaceSingle: "Marketplace",
-    integrationSingle: "Integration",
+    _: "Your %{marketplaceSingular} is where your customers go to browse your %{integrationSingularLower} offerings and self-activate the ones they want. It can be white-labeled and embedded in your app to create a native %{integrationSingularLower} experience.",
+    marketplaceSingular: "Marketplace",
+    integrationSingularLower: "integration",
   },
   "emptyState.integrationMarketplaceTextTwo": {
-    _: "Here is where you set up which %{integrationPlural} are included in your %{marketplaceSingle} and how they appear.",
-    marketplaceSingle: "Marketplace",
-    integrationPlural: "Integrations",
+    _: "Here is where you set up which %{integrationPluralLower} are included in your %{marketplaceSingular} and how they appear.",
+    marketplaceSingular: "Marketplace",
+    integrationPluralLower: "integrations",
   },
   "emptyState.integrationMarketplaceText--customer": {
-    _: "The %{marketplaceSingle} displays %{integrationPlural} that have been enabled or available for configuration.",
-    marketplaceSingle: "Marketplace",
-    integrationPlural: "Integrations",
+    _: "The %{marketplaceSingular} displays %{integrationPluralLower} that have been enabled or available for configuration.",
+    marketplaceSingular: "Marketplace",
+    integrationPluralLower: "integrations",
   },
   "emptyState.integrationMarketplaceDocsButton": {
-    _: "Learn about the %{marketplaceSingle}",
-    marketplaceSingle: "Marketplace",
+    _: "Learn about the %{marketplaceSingular}",
+    marketplaceSingular: "Marketplace",
   },
   "emptyState.integrationMarketplaceDocsButtonTwo": {
-    _: "Embedding %{marketplaceSingle} in your app",
-    marketplaceSingle: "Marketplace",
+    _: "Embedding %{marketplaceSingular} in your app",
+    marketplaceSingular: "Marketplace",
   },
 
   // logs empty state
@@ -511,14 +516,14 @@ export const filterPhrases: FilterPhrases = {
   "emptyState.logsText":
     "If actions in your deployed instances generate log messages, you'll find those here.",
   "emptyState.logsTextTwo": {
-    _: "From this page you can search and filter logs so you can keep tabs on exactly what's going on with your customers' live %{integrationPlural}.",
-    integrationPlural: "Integrations",
+    _: "From this page you can search and filter logs so you can keep tabs on exactly what's going on with your customers' live %{integrationPluralLower}.",
+    integrationPluralLower: "integrations",
   },
   "emptyState.logsText--customer":
     "If actions in your deployed instances generate log messages, you'll find those here.",
   "emptyState.logsTextTwo--customer": {
-    _: "From this page you can search and filter logs so you can keep tabs on exactly what's going on with your %{integrationPlural}.",
-    integrationPlural: "Integrations",
+    _: "From this page you can search and filter logs so you can keep tabs on exactly what's going on with your %{integrationPluralLower}.",
+    integrationPluralLower: "integrations",
   },
   "emptyState.logsDocsButton": "Learn about logs",
 
@@ -531,8 +536,8 @@ export const filterPhrases: FilterPhrases = {
   // users
   "emptyState.usersTitle--embedded": "Users",
   "emptyState.usersText--embedded": {
-    _: "Here you will see users within your organization that have access to manage %{integrationPlural}.",
-    integrationPlural: "Integrations",
+    _: "Here you will see users within your organization that have access to manage %{integrationPluralLower}.",
+    integrationPluralLower: "integrations",
   },
 
   // instance monitors

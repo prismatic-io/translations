@@ -25,9 +25,9 @@ export interface InputPhrases {
   /** English: "Category" */
   "input.categoryLabel": SimplePhrase;
 
-  /** English: "Category can only be updated in the ${integrationSingle} details." */
+  /** English: "Category can only be updated in the ${integrationSingularLower} details." */
   "input.categoryDisabledHelper.integration": ComplexPhrase<{
-    integrationSingle: string;
+    integrationSingularLower: string;
   }> | SimplePhrase;
 
   /** English: "Edit" */
@@ -57,9 +57,9 @@ export interface InputPhrases {
   /** English: "Description" */
   "input.descriptionLabel": SimplePhrase;
 
-  /** English: "Description can only be updated in the ${integrationSingle} details." */
+  /** English: "Description can only be updated in the ${integrationSingularLower} details." */
   "input.descriptionDisabledHelper.integration": ComplexPhrase<{
-    integrationSingle: string;
+    integrationSingularLower: string;
   }> | SimplePhrase;
 
   /** English: "Default value" */
@@ -115,14 +115,14 @@ export interface InputPhrases {
   /** English: "Instance" */
   "input.instanceLabel": SimplePhrase;
 
-  /** English: "${integrationSingle}" */
+  /** English: "${integrationSingular}" */
   "input.integrationLabel": ComplexPhrase<{
-    integrationSingle: string;
+    integrationSingular: string;
   }> | SimplePhrase;
 
-  /** English: "${integrationSingle} version" */
+  /** English: "${integrationSingular} version" */
   "input.integrationVersionLabel": ComplexPhrase<{
-    integrationSingle: string;
+    integrationSingular: string;
   }> | SimplePhrase;
 
   /** English: "Designer version" */
@@ -155,15 +155,15 @@ export interface InputPhrases {
   /** English: "Log type" */
   "input.logTypeLabel": SimplePhrase;
 
-  /** English: "%{marketplaceSingle} version" */
-  "input.marketplaceVersionLabel": ComplexPhrase<{ marketplaceSingle?: string }>;
+  /** English: "%{marketplaceSingular} version" */
+  "input.marketplaceVersionLabel": ComplexPhrase<{ marketplaceSingular?: string }>;
 
   /** English: "Name" */
   "input.nameLabel": SimplePhrase;
 
-  /** English: "Name can only be updated in the ${integrationSingle} details." */
+  /** English: "Name can only be updated in the ${integrationSingularLower} details." */
   "input.nameDisabledHelper.integration": ComplexPhrase<{
-    integrationSingle: string;
+    integrationSingularLower: string;
   }> | SimplePhrase;
 
   /** English: "No options found" */
@@ -311,8 +311,8 @@ export const inputPhrases: InputPhrases = {
   "input.apiKeyLabel": "API key",
   "input.apiKeyPlaceholder": "No API key configured",
   "input.categoryDisabledHelper.integration": {
-    _: "Category can only be updated in the ${integrationSingle} details.",
-    integrationSingle: "Integration",
+    _: "Category can only be updated in the ${integrationSingularLower} details.",
+    integrationSingularLower: "Integration",
   },
   "input.categoryLabel": "Category",
   "input.codePlaceholder": "Edit",
@@ -325,8 +325,8 @@ export const inputPhrases: InputPhrases = {
   "input.dateTimeError": "There was an error",
   "input.defaultValueLabel": "Default value",
   "input.descriptionDisabledHelper.integration": {
-    _: "Description can only be updated in the ${integrationSingle} details.",
-    integrationSingle: "Integration",
+    _: "Description can only be updated in the ${integrationSingularLower} details.",
+    integrationSingularLower: "Integration",
   },
   "input.descriptionLabel": "Description",
   "input.disableLogsLabel": "Disable logs",
@@ -352,12 +352,12 @@ export const inputPhrases: InputPhrases = {
   },
   "input.instanceLabel": "Instance",
   "input.integrationLabel": {
-    _: "${integrationSingle}",
-    integrationSingle: "Integration",
+    _: "${integrationSingular}",
+    integrationSingular: "Integration",
   },
   "input.integrationVersionLabel": {
-    _: "${integrationSingle} version",
-    integrationSingle: "Integration",
+    _: "${integrationSingular} version",
+    integrationSingular: "Integration",
   },
   "input.integrationVersionLatestLabel": "Designer version",
   "input.keyLabel": "Key",
@@ -371,12 +371,12 @@ export const inputPhrases: InputPhrases = {
   "input.logType.integrationExecutionValue": "Execution Only",
   "input.logTypeLabel": "Log type",
   "input.marketplaceVersionLabel": {
-    _: "%{marketplaceSingle} version",
-    marketplaceSingle: "Marketplace",
+    _: "%{marketplaceSingular} version",
+    marketplaceSingular: "Marketplace",
   },
   "input.nameDisabledHelper.integration": {
-    _: "Name can only be updated in the ${integrationSingle} details.",
-    integrationSingle: "Integration",
+    _: "Name can only be updated in the ${integrationSingularLower} details.",
+    integrationSingularLower: "Integration",
   },
   "input.nameLabel": "Name",
   "input.noOptionsValue": "No options found",

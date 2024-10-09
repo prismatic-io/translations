@@ -21,12 +21,12 @@ export interface UserPhrases {
 
   /** English: "Marketplace" */
   "user.marketplaceRole": ComplexPhrase<{
-    marketplaceSingle: string;
+    marketplaceSingular: string;
   }> | SimplePhrase;
 
   /** English: "Marketplace User" */
   "user.marketplaceUserRole": ComplexPhrase<{
-    marketplaceSingle: string;
+    marketplaceSingular: string;
   }> | SimplePhrase;
 
   /** English: "Third-Party" */
@@ -39,12 +39,12 @@ export const userPhrases: UserPhrases = {
   "user.guestRole": "Guest",
   "user.integratorRole": "Integrator",
   "user.marketplaceRole": {
-    _: "%{marketplaceSingle}",
-    marketplaceSingle: "Marketplace"
+    _: "%{marketplaceSingular}",
+    marketplaceSingular: "Marketplace"
   },
   "user.marketplaceUserRole": {
-    _: "%{marketplaceSingle}",
-    marketplaceSingle: "Marketplace User"
+    _: "%{marketplaceSingular} User",
+    marketplaceSingular: "Marketplace"
   },
   "user.memberRole": "Member",
   "user.ownerRole": "Owner",

@@ -1,9 +1,9 @@
 import { ComplexPhrase, NamespacedSharedAndUniquePhrases, SimplePhrase } from "../../types";
 
 export interface IntegrationsPhrases {
-  /** English: "Add %{integrationSingle}" */
+  /** English: "Add %{integrationSingular}" */
   "integrations__filterBar.addButton": ComplexPhrase<{
-    integrationSingle: string;
+    integrationSingular: string;
   }> | SimplePhrase;
 }
 
@@ -12,7 +12,7 @@ export const integrationsPhrases: NamespacedSharedAndUniquePhrases<IntegrationsP
     "integrations__filterBar.title": "Integrations",
 
     "integrations__filterBar.addButton": {
-      _: "Add %{integrationSingle}",
-      integrationSingle: "Integration",
+      _: "Add %{integrationSingular}",
+      integrationSingular: "Integration",
     },
   };
