@@ -26,10 +26,14 @@ export interface TabPhrases {
   "instancesTab.title": SimplePhrase;
 
   /** English: "Integrations" */
-  "integrationsTab.title": SimplePhrase;
+  "integrationsTab.title": ComplexPhrase<{
+    integrationPlural: string;
+  }> | SimplePhrase;
 
   /** English: "Marketplace" */
-  "marketplaceTab.title": SimplePhrase;
+  "marketplaceTab.title": ComplexPhrase<{
+    marketplaceSingle: string;
+  }> | SimplePhrase;
 
   /** English: "Payload" */
   "payloadTab.title": SimplePhrase;
@@ -143,8 +147,14 @@ export const tabPhrases: TabPhrases = {
   "detailsTab.title": "Details",
   "executionsTab.title": "Executions",
   "instancesTab.title": "Instances",
-  "integrationsTab.title": "Integrations",
-  "marketplaceTab.title": "Marketplace",
+  "integrationsTab.title": {
+    _: "%{integrationPlural}",
+    integrationPlural: "Integrations",
+  },
+  "marketplaceTab.title": {
+    _: "%{marketplaceSingle}",
+    marketplaceSingle: "Marketplace",
+  },
   "payloadTab.title": "Payload",
   "summaryTab.title": "Summary",
   "teamMembersTab.title": "Team Members",
