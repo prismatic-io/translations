@@ -37,7 +37,7 @@ export interface DataTablePhrases {
   /** English: "Input" */
   "dataTable.inputLabel": SimplePhrase;
 
-  /** English: "Inputs ${count}" */
+  /** English: "Inputs %{count}" */
   "dataTable.inputsText": ComplexPhrase<{
     count: number;
   }>;

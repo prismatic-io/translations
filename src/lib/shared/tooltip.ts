@@ -25,12 +25,12 @@ export interface TooltipPhrases {
   /** English: "Copy URL to clipboard" */
   "tooltip.copyUrl": SimplePhrase;
 
-  /** English: "Upgrade the ${marketplaceSingular} configuration to this latest published version." */
+  /** English: "Upgrade the %{marketplaceSingular} configuration to this latest published version." */
   "tooltip.marketplaceVersion": ComplexPhrase<{
     marketplaceSingular?: string;
   }>;
 
-  /** English: "A new version "v${latestVersion}" is available for this ${integrationSingularLower}." */
+  /** English: "A new version "v%{latestVersion}" is available for this %{integrationSingularLower}." */
   "tooltip.newIntegrationVersionAvailable": ComplexPhrase<{
     latestVersion?: number;
     integrationSingularLower?: string;
@@ -58,7 +58,7 @@ export const tooltipPhrases: TooltipPhrases = {
   },
   "tooltip.newIntegrationVersionAvailable": {
     _: `A new version "v%{latestVersion}" is available for this %{integrationSingularLower}.`,
-    integrationSingularLower: "Integration",
+    integrationSingularLower: "integration",
   },
   "tooltip.passApiKeyToHeader": "Pass this API key via an HTTP header",
   "tooltip.restoreDefault": "Restore default",

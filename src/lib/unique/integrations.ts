@@ -1,12 +1,12 @@
 import { ComplexPhrase, NamespacedSharedAndUniquePhrases, SimplePhrase } from "../../types";
 
 export interface IntegrationsPhrases {
-  /** English: "${integrationPlural}" */
+  /** English: "%{integrationPlural}" */
   "integrations__filterBar.title": ComplexPhrase<{
     integrationPlural: string;
   }> | SimplePhrase;
 
-  /** English: "Add ${integrationSingular}" */
+  /** English: "Add %{integrationSingular}" */
   "integrations__filterBar.addButton": ComplexPhrase<{
     integrationSingular: string;
   }> | SimplePhrase;

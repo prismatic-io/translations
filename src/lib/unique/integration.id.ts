@@ -5,33 +5,33 @@ import {
 } from "../../types";
 
 export interface IntegrationIdPhrases {
-  /** English: "Please contact ${organization} to activate this ${integrationSingularLower}." */
+  /** English: "Please contact %{organization} to activate this %{integrationSingularLower}." */
   "integrations.id__banner.customerActivateText": ComplexPhrase<{
     integrationSingularLower: string;
     organization: string;
   }>;
 
-  /** English: "Please contact ${organization} to update to latest version." */
+  /** English: "Please contact %{organization} to update to latest version." */
   "integrations.id__banner.customerUpdateText": ComplexPhrase<{
     organization: string;
   }>;
 
-  /** English: "Your ${integrationSingularLower} is enabled" */
+  /** English: "Your %{integrationSingularLower} is enabled" */
   "integrations.id__banner.enabledText": ComplexPhrase<{
     integrationSingularLower: string;
   }> | SimplePhrase;
 
-  /** English: "Pause ${integrationSingular}" */
+  /** English: "Pause %{integrationSingular}" */
   "integrations.id__banner.pauseButton": ComplexPhrase<{
     integrationSingular: string;
   }> | SimplePhrase;
 
-  /** English: "Your ${integrationSingularLower} is paused" */
+  /** English: "Your %{integrationSingularLower} is paused" */
   "integrations.id__banner.pausedText": ComplexPhrase<{
     integrationSingularLower: string;
   }> | SimplePhrase;
 
-  /** English: "Unpause ${integrationSingular}" */
+  /** English: "Unpause %{integrationSingular}" */
   "integrations.id__banner.unpauseButton": ComplexPhrase<{
     integrationSingular: string;
   }> | SimplePhrase;
@@ -57,7 +57,7 @@ export interface IntegrationIdPhrases {
   /** English: "View User Level Configuration" */
   "integrations.id__filterBar.viewUserConfigurationButton": SimplePhrase;
 
-  /** English: This ${integrationSingularLower} has a new version. Previous versions are read-only. */
+  /** English: This %{integrationSingularLower} has a new version. Previous versions are read-only. */
   "integrations.id__newVersionBanner.newVersionText": ComplexPhrase<{
     integrationSingularLower: string;
   }> | SimplePhrase;
@@ -87,7 +87,7 @@ export const integrationIdPhrases: NamespacedSharedAndUniquePhrases<IntegrationI
     },
     "integrations.id__banner.pausedText": {
       _: "Your %{integrationSingularLower} is paused",
-      integrationSingularLower: "Integration",
+      integrationSingularLower: "integration",
     },
     "integrations.id__banner.unpauseButton": {
       _: "Unpause %{integrationSingular}",

@@ -19,22 +19,22 @@ export interface IntegrationMarketplacePhrases {
   /** English: "All" */
   "integration-marketplace__filterBar.allButton": SimplePhrase;
 
-  /** English: "${marketplaceSingular}" */
+  /** English: "%{marketplaceSingular}" */
   "integration-marketplace__filterBar.title": ComplexPhrase<{
     marketplaceSingular: string;
   }> | SimplePhrase;
 
-  /** English: "${integrationSingular} is not configured." */
+  /** English: "%{integrationSingular} is not configured." */
   "integration-marketplace.instanceUnconfiguredTooltip": ComplexPhrase<{
     integrationSingular: string;
   }> | SimplePhrase;
 
-  /** English: "${integrationSingular} is paused." */
+  /** English: "%{integrationSingular} is paused." */
   "integration-marketplace.instancePausedTooltip": ComplexPhrase<{
     integrationSingular: string;
   }> | SimplePhrase;
 
-  /** English: "${integrationSingular} is activated." */
+  /** English: "%{integrationSingular} is activated." */
   "integration-marketplace.instanceActivatedTooltip": ComplexPhrase<{
     integrationSingular: string;
   }> | SimplePhrase;
@@ -60,12 +60,12 @@ export interface IntegrationMarketplacePhrases {
   /** English: "All users are activated." */
   "integration-marketplace.usersActivatedTooltip": SimplePhrase;
 
-  /** English: "Add ${integrationSingular}" */
+  /** English: "Add %{integrationSingular}" */
   "integration-marketplace.addIntegrationDialog.buttonText": ComplexPhrase<{
     integrationSingular: string;
   }> | SimplePhrase;
 
-  /** English: "Select ${integrationSingular}" */
+  /** English: "Select %{integrationSingular}" */
   "integration-marketplace.addIntegrationDialog.title": ComplexPhrase<{
     integrationSingular: string;
   }> | SimplePhrase;
@@ -135,7 +135,7 @@ export const integrationMarketplacePhrases: NamespacedSharedAndUniquePhrases<Int
       integrationSingular: "Integration",
     },
     "integration-marketplace.integrationPicker.text": {
-      _: "Only published %{integrationPlural} can be used to create an instance.",
+      _: "Only published %{integrationPluralLower} can be used to create an instance.",
       integrationPluralLower: "integrations",
     }
   };

@@ -33,7 +33,7 @@ export interface DialogPhrases {
   /** English: "Webhook URLs" */
   "webhookUrlDialog.title": SimplePhrase;
 
-  /** English: "Remove ${integrationSingular}" */
+  /** English: "Remove %{integrationSingular}" */
   "deleteUserConfigurationDialog.confirmButton": ComplexPhrase<{
     integrationSingular: string;
   }> | SimplePhrase;
@@ -41,7 +41,7 @@ export interface DialogPhrases {
   /** English: "Remove User Configuration" */
   "deleteUserConfigurationDialog.confirmButton--isAdmin": SimplePhrase;
 
-  /** English: "Deactivate ${integrationSingular}" */
+  /** English: "Deactivate %{integrationSingular}" */
   "deleteUserConfigurationDialog.confirmButton--isCustomerMarketplaceUser": ComplexPhrase<{
     integrationSingular: string;
   }> | SimplePhrase;
@@ -52,12 +52,12 @@ export interface DialogPhrases {
   /** English: "Are you sure?" */
   "deleteUserConfigurationDialog.title": SimplePhrase;
 
-  /** English: "This action cannot be undone. This will permanently delete the ${integrationSingularLower}." */
+  /** English: "This action cannot be undone. This will permanently delete the %{integrationSingularLower}." */
   "deleteUserConfigurationDialog.warningText": ComplexPhrase<{
     integrationSingularLower: string;
   }> | SimplePhrase;
 
-  /** English: "This action cannot be undone. This will permanently delete the configuration for ${email}." */
+  /** English: "This action cannot be undone. This will permanently delete the configuration for %{email}." */
   "deleteUserConfigurationDialog.warningText--isAdmin": ComplexPhrase<{
     email: string;
   }>;
@@ -65,22 +65,22 @@ export interface DialogPhrases {
   /** English: "User Configuration" */
   "deleteUserConfigurationDialog.options.userConfigurationButton": SimplePhrase;
 
-  /** English: "This action cannot be undone. This will deactivate the ${integrationSingularLower}." */
+  /** English: "This action cannot be undone. This will deactivate the %{integrationSingularLower}." */
   "deleteUserConfigurationDialog.warningText--isCustomerMarketplaceUser": ComplexPhrase<{
     integrationSingularLower: string;
   }> | SimplePhrase;
 
-  /** English: "This will remove all user configurations and deactivate the ${integrationSingularLower}." */
+  /** English: "This will remove all user configurations and deactivate the %{integrationSingularLower}." */
   "deleteUserConfigurationDialog.warningText--hasUserConfiguration": ComplexPhrase<{
     integrationSingularLower: string;
   }> | SimplePhrase;
 
-  /** English: "Deactivate ${integrationSingular}" */
+  /** English: "Deactivate %{integrationSingular}" */
   "deactivateIntegrationDialog.confirmButton": ComplexPhrase<{
     integrationSingular: string;
   }> | SimplePhrase;
 
-  /** English: "Deactivate ${integrationSingular}" */
+  /** English: "Deactivate %{integrationSingular}" */
   "deactivateIntegrationDialog.openButton": ComplexPhrase<{
     integrationSingular: string;
   }> | SimplePhrase;
@@ -88,7 +88,7 @@ export interface DialogPhrases {
   /** English: "Are you sure?" */
   "deactivateIntegrationDialog.title": SimplePhrase;
 
-  /** English: "This will deactivate this ${integrationSingularLower}." */
+  /** English: "This will deactivate this %{integrationSingularLower}." */
   "deactivateIntegrationDialog.warningText": ComplexPhrase<{
     integrationSingularLower: string;
   }> | SimplePhrase;
@@ -108,7 +108,7 @@ export interface DialogPhrases {
   /** English: "Returning to the previous page will discard unsaved changes on this page. Are you sure?" */
   "configurationWizardDialog.previousWarningText": SimplePhrase;
 
-  /** English: "This page contains non-visible config variables that need to be set by ${organizationName} before continuing." */
+  /** English: "This page contains non-visible config variables that need to be set by %{organizationName} before continuing." */
   "configurationWizardDialog.missingEmbeddedConfigVariablesWarningText": ComplexPhrase<{
     organizationName: string;
   }>;
@@ -128,7 +128,7 @@ export interface DialogPhrases {
   /** English: "Update" */
   "apiKeyDialog.updateButton": SimplePhrase;
 
-  /** English: "Please contact ${organization} to configure this ${integrationSingularLower}." */
+  /** English: "Please contact %{organization} to configure this %{integrationSingularLower}." */
   "activateIntegrationDialog.banner.text--isNotConfigurable": ComplexPhrase<{
     integrationSingularLower?: string;
     organization?: string;
@@ -152,7 +152,7 @@ export interface DialogPhrases {
   /** English: "View" */
   "activateIntegrationDialog.viewButton": SimplePhrase;
 
-  /** English: "Contact organization to configure this ${integrationSingularLower}" */
+  /** English: "Contact organization to configure this %{integrationSingularLower}" */
   "activateIntegrationDialog.marketplaceConfigurationError": ComplexPhrase<{
     integrationSingularLower: string;
   }> | SimplePhrase;
@@ -163,12 +163,12 @@ export interface DialogPhrases {
   /** English: "View details" */
   "activateIntegrationDialog.viewDetails": SimplePhrase;
 
-  /** English: "Pause ${integrationSingular}" */
+  /** English: "Pause %{integrationSingular}" */
   "activateIntegrationDialog.pauseIntegration": ComplexPhrase<{
     integrationSingular: string;
   }> | SimplePhrase;
 
-  /** English: "Unpause ${integrationSingular}" */
+  /** English: "Unpause %{integrationSingular}" */
   "activateIntegrationDialog.unpauseIntegration": ComplexPhrase<{
     integrationSingular: string;
   }> | SimplePhrase;
@@ -197,7 +197,7 @@ export interface DialogPhrases {
   /** English: "Role" */
   "addUserDialog.roleLabel": SimplePhrase;
 
-  /** English: "This will remove this ${integrationSingular} from the ${marketplaceSingular}." */
+  /** English: "This will remove this %{integrationSingularLower} from the %{marketplaceSingular}." */
   "removeIntegrationDialog.warningText": ComplexPhrase<{
     marketplaceSingular: string;
     integrationSingularLower: string;
