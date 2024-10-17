@@ -1,12 +1,26 @@
-import { NamespacedSharedAndUniquePhrases, SimplePhrase } from "../../types";
+import { ComplexPhrase, NamespacedSharedAndUniquePhrases, SimplePhrase } from "../../types";
 
 export interface IntegrationsPhrases {
-  /** English: "Add integration" */
-  "integrations__filterBar.addButton": SimplePhrase;
+  /** English: "%{integrationPlural}" */
+  "integrations__filterBar.title": ComplexPhrase<{
+    integrationPlural: string;
+  }> | SimplePhrase;
+
+  /** English: "Add %{integrationSingular}" */
+  "integrations__filterBar.addButton": ComplexPhrase<{
+    integrationSingular: string;
+  }> | SimplePhrase;
 }
 
 export const integrationsPhrases: NamespacedSharedAndUniquePhrases<IntegrationsPhrases> =
   {
-    "integrations__filterBar.addButton": "Add integration",
-    "integrations__filterBar.title": "Integrations",
+    "integrations__filterBar.title": {
+      _: "%{integrationPlural}",
+      integrationPlural: "Integrations",
+    },
+
+    "integrations__filterBar.addButton": {
+      _: "Add %{integrationSingular}",
+      integrationSingular: "Integration",
+    },
   };

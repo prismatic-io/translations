@@ -1,4 +1,4 @@
-import { SimplePhrase } from "../../types";
+import { ComplexPhrase, SimplePhrase } from "../../types";
 
 export interface UserPhrases {
   /** English: "Admin" */
@@ -20,10 +20,14 @@ export interface UserPhrases {
   "user.integratorRole": SimplePhrase;
 
   /** English: "Marketplace" */
-  "user.marketplaceRole": SimplePhrase;
+  "user.marketplaceRole": ComplexPhrase<{
+    marketplaceSingular: string;
+  }> | SimplePhrase;
 
   /** English: "Marketplace User" */
-  "user.marketplaceUserRole": SimplePhrase;
+  "user.marketplaceUserRole": ComplexPhrase<{
+    marketplaceSingular: string;
+  }> | SimplePhrase;
 
   /** English: "Third-Party" */
   "user.thirdPartyRole": SimplePhrase;
@@ -34,8 +38,14 @@ export const userPhrases: UserPhrases = {
   "user.customerManagerRole": "Customer Manager",
   "user.guestRole": "Guest",
   "user.integratorRole": "Integrator",
-  "user.marketplaceRole": "Marketplace",
-  "user.marketplaceUserRole": "Marketplace User",
+  "user.marketplaceRole": {
+    _: "%{marketplaceSingular}",
+    marketplaceSingular: "Marketplace"
+  },
+  "user.marketplaceUserRole": {
+    _: "%{marketplaceSingular} User",
+    marketplaceSingular: "Marketplace"
+  },
   "user.memberRole": "Member",
   "user.ownerRole": "Owner",
   "user.thirdPartyRole": "Third-Party",
