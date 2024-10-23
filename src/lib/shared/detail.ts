@@ -32,9 +32,11 @@ export interface DetailPhrases {
   "detail.instancesLabel": SimplePhrase;
 
   /** English: "Integration" */
-  "detail.integrationLabel": ComplexPhrase<{
-    integrationSingular: string;
-  }> | SimplePhrase;
+  "detail.integrationLabel":
+    | ComplexPhrase<{
+        integrationSingular: string;
+      }>
+    | SimplePhrase;
 
   /** English: "Labels" */
   "detail.labelsLabel": SimplePhrase;
@@ -131,7 +133,7 @@ export const detailPhrases: DetailPhrases = {
   "detail.instancesLabel": "Instances",
   "detail.integrationLabel": {
     _: "%{integrationSingular}",
-    integrationSingular: "Integration"
+    integrationSingular: "Integration",
   },
   "detail.labelsLabel": "Labels",
   "detail.lastRunLabel": "Last Run",

@@ -26,9 +26,11 @@ export interface InputPhrases {
   "input.categoryLabel": SimplePhrase;
 
   /** English: "Category can only be updated in the %{integrationSingularLower} details." */
-  "input.categoryDisabledHelper.integration": ComplexPhrase<{
-    integrationSingularLower: string;
-  }> | SimplePhrase;
+  "input.categoryDisabledHelper.integration":
+    | ComplexPhrase<{
+        integrationSingularLower: string;
+      }>
+    | SimplePhrase;
 
   /** English: "Edit" */
   "input.codePlaceholder": SimplePhrase;
@@ -58,9 +60,11 @@ export interface InputPhrases {
   "input.descriptionLabel": SimplePhrase;
 
   /** English: "Description can only be updated in the %{integrationSingularLower} details." */
-  "input.descriptionDisabledHelper.integration": ComplexPhrase<{
-    integrationSingularLower: string;
-  }> | SimplePhrase;
+  "input.descriptionDisabledHelper.integration":
+    | ComplexPhrase<{
+        integrationSingularLower: string;
+      }>
+    | SimplePhrase;
 
   /** English: "Default value" */
   "input.defaultValueLabel": SimplePhrase;
@@ -87,7 +91,10 @@ export interface InputPhrases {
   "input.failedPreprocessFlowsOnlyLabel": SimplePhrase;
 
   /** English: "Search %{type}" */
-  "input.filterSearchPlaceholder": ComplexPhrase<{ type?: string, integrationPluralLower?: string }>;
+  "input.filterSearchPlaceholder": ComplexPhrase<{
+    type?: string;
+    integrationPluralLower?: string;
+  }>;
 
   /** English: "Has outdated components" */
   "input.hasOutdatedComponentsLabel": SimplePhrase;
@@ -108,22 +115,28 @@ export interface InputPhrases {
   "input.includeCustomerComponentsLabel": SimplePhrase;
 
   /** English: "Include customer %{integrationPluralLower}" */
-  "input.includeCustomerIntegrationsLabel": ComplexPhrase<{
-    integrationPluralLower: string;
-  }> | SimplePhrase;
+  "input.includeCustomerIntegrationsLabel":
+    | ComplexPhrase<{
+        integrationPluralLower: string;
+      }>
+    | SimplePhrase;
 
   /** English: "Instance" */
   "input.instanceLabel": SimplePhrase;
 
   /** English: "%{integrationSingular}" */
-  "input.integrationLabel": ComplexPhrase<{
-    integrationSingular: string;
-  }> | SimplePhrase;
+  "input.integrationLabel":
+    | ComplexPhrase<{
+        integrationSingular: string;
+      }>
+    | SimplePhrase;
 
   /** English: "%{integrationSingular} version" */
-  "input.integrationVersionLabel": ComplexPhrase<{
-    integrationSingular: string;
-  }> | SimplePhrase;
+  "input.integrationVersionLabel":
+    | ComplexPhrase<{
+        integrationSingular: string;
+      }>
+    | SimplePhrase;
 
   /** English: "Designer version" */
   "input.integrationVersionLatestLabel": SimplePhrase;
@@ -156,15 +169,19 @@ export interface InputPhrases {
   "input.logTypeLabel": SimplePhrase;
 
   /** English: "%{marketplaceSingular} version" */
-  "input.marketplaceVersionLabel": ComplexPhrase<{ marketplaceSingular?: string }>;
+  "input.marketplaceVersionLabel": ComplexPhrase<{
+    marketplaceSingular?: string;
+  }>;
 
   /** English: "Name" */
   "input.nameLabel": SimplePhrase;
 
   /** English: "Name can only be updated in the %{integrationSingularLower} details." */
-  "input.nameDisabledHelper.integration": ComplexPhrase<{
-    integrationSingularLower: string;
-  }> | SimplePhrase;
+  "input.nameDisabledHelper.integration":
+    | ComplexPhrase<{
+        integrationSingularLower: string;
+      }>
+    | SimplePhrase;
 
   /** English: "No options found" */
   "input.noOptionsValue": SimplePhrase;
