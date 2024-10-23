@@ -240,6 +240,12 @@ export interface InputPhrases {
   /** English: "Successful" */
   "input.status.successfulValue": SimplePhrase;
 
+  /** English: "Cleared" */
+  "input.status.clearedValue": SimplePhrase;
+
+  /** English: "Uncleared" */
+  "input.status.unclearedValue": SimplePhrase;
+
   /** English: "Status" */
   "input.statusLabel": SimplePhrase;
 
@@ -415,6 +421,8 @@ export const inputPhrases: InputPhrases = {
   "input.status.failedValue": "Failed",
   "input.status.runningValue": "Running",
   "input.status.successfulValue": "Successful",
+  "input.status.clearedValue": "Cleared",
+  "input.status.unclearedValue": "Uncleared",
   "input.statusLabel": "Status",
   "input.stepLabel": "Step",
   "input.timeMeasurement.hoursValue": "Hours",
