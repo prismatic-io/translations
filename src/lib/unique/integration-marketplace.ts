@@ -1,4 +1,8 @@
-import { NamespacedSharedAndUniquePhrases, ComplexPhrase, SimplePhrase } from "../../types";
+import {
+  NamespacedSharedAndUniquePhrases,
+  ComplexPhrase,
+  SimplePhrase,
+} from "../../types";
 
 export interface IntegrationMarketplacePhrases {
   /** English: "Activated but not configured" */
@@ -20,24 +24,32 @@ export interface IntegrationMarketplacePhrases {
   "integration-marketplace__filterBar.allButton": SimplePhrase;
 
   /** English: "%{marketplaceSingular}" */
-  "integration-marketplace__filterBar.title": ComplexPhrase<{
-    marketplaceSingular: string;
-  }> | SimplePhrase;
+  "integration-marketplace__filterBar.title":
+    | ComplexPhrase<{
+        marketplaceSingular: string;
+      }>
+    | SimplePhrase;
 
   /** English: "%{integrationSingular} is not configured." */
-  "integration-marketplace.instanceUnconfiguredTooltip": ComplexPhrase<{
-    integrationSingular: string;
-  }> | SimplePhrase;
+  "integration-marketplace.instanceUnconfiguredTooltip":
+    | ComplexPhrase<{
+        integrationSingular: string;
+      }>
+    | SimplePhrase;
 
   /** English: "%{integrationSingular} is paused." */
-  "integration-marketplace.instancePausedTooltip": ComplexPhrase<{
-    integrationSingular: string;
-  }> | SimplePhrase;
+  "integration-marketplace.instancePausedTooltip":
+    | ComplexPhrase<{
+        integrationSingular: string;
+      }>
+    | SimplePhrase;
 
   /** English: "%{integrationSingular} is activated." */
-  "integration-marketplace.instanceActivatedTooltip": ComplexPhrase<{
-    integrationSingular: string;
-  }> | SimplePhrase;
+  "integration-marketplace.instanceActivatedTooltip":
+    | ComplexPhrase<{
+        integrationSingular: string;
+      }>
+    | SimplePhrase;
 
   /** English: "Current user is not configured." */
   "integration-marketplace.userUnconfiguredTooltip": SimplePhrase;
@@ -61,23 +73,31 @@ export interface IntegrationMarketplacePhrases {
   "integration-marketplace.usersActivatedTooltip": SimplePhrase;
 
   /** English: "Add %{integrationSingular}" */
-  "integration-marketplace.addIntegrationDialog.buttonText": ComplexPhrase<{
-    integrationSingular: string;
-  }> | SimplePhrase;
+  "integration-marketplace.addIntegrationDialog.buttonText":
+    | ComplexPhrase<{
+        integrationSingular: string;
+      }>
+    | SimplePhrase;
 
   /** English: "Select %{integrationSingular}" */
-  "integration-marketplace.addIntegrationDialog.title": ComplexPhrase<{
-    integrationSingular: string;
-  }> | SimplePhrase;
+  "integration-marketplace.addIntegrationDialog.title":
+    | ComplexPhrase<{
+        integrationSingular: string;
+      }>
+    | SimplePhrase;
 
   /** English: "Only published %{integrationPluralLower} can be used to create an instance." */
-  "integration-marketplace.integrationPicker.text": ComplexPhrase<{
-    integrationPluralLower: string;
-  }> | SimplePhrase;
+  "integration-marketplace.integrationPicker.text":
+    | ComplexPhrase<{
+        integrationPluralLower: string;
+      }>
+    | SimplePhrase;
 
-  "integration-marketplace__input.filterSearchPlaceholder": ComplexPhrase<{
-    integrationPluralLower?: string;
-  }> | SimplePhrase;
+  "integration-marketplace__input.filterSearchPlaceholder":
+    | ComplexPhrase<{
+        integrationPluralLower?: string;
+      }>
+    | SimplePhrase;
 }
 
 export const integrationMarketplacePhrases: NamespacedSharedAndUniquePhrases<IntegrationMarketplacePhrases> =
@@ -137,5 +157,5 @@ export const integrationMarketplacePhrases: NamespacedSharedAndUniquePhrases<Int
     "integration-marketplace.integrationPicker.text": {
       _: "Only published %{integrationPluralLower} can be used to create an instance.",
       integrationPluralLower: "integrations",
-    }
+    },
   };

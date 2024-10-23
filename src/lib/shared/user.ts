@@ -20,14 +20,18 @@ export interface UserPhrases {
   "user.integratorRole": SimplePhrase;
 
   /** English: "Marketplace" */
-  "user.marketplaceRole": ComplexPhrase<{
-    marketplaceSingular: string;
-  }> | SimplePhrase;
+  "user.marketplaceRole":
+    | ComplexPhrase<{
+        marketplaceSingular: string;
+      }>
+    | SimplePhrase;
 
   /** English: "Marketplace User" */
-  "user.marketplaceUserRole": ComplexPhrase<{
-    marketplaceSingular: string;
-  }> | SimplePhrase;
+  "user.marketplaceUserRole":
+    | ComplexPhrase<{
+        marketplaceSingular: string;
+      }>
+    | SimplePhrase;
 
   /** English: "Third-Party" */
   "user.thirdPartyRole": SimplePhrase;
@@ -40,11 +44,11 @@ export const userPhrases: UserPhrases = {
   "user.integratorRole": "Integrator",
   "user.marketplaceRole": {
     _: "%{marketplaceSingular}",
-    marketplaceSingular: "Marketplace"
+    marketplaceSingular: "Marketplace",
   },
   "user.marketplaceUserRole": {
     _: "%{marketplaceSingular} User",
-    marketplaceSingular: "Marketplace"
+    marketplaceSingular: "Marketplace",
   },
   "user.memberRole": "Member",
   "user.ownerRole": "Owner",

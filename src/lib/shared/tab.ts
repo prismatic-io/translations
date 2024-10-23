@@ -29,14 +29,18 @@ export interface TabPhrases {
   "instancesTab.title": SimplePhrase;
 
   /** English: "Integrations" */
-  "integrationsTab.title": ComplexPhrase<{
-    integrationPlural: string;
-  }> | SimplePhrase;
+  "integrationsTab.title":
+    | ComplexPhrase<{
+        integrationPlural: string;
+      }>
+    | SimplePhrase;
 
   /** English: "Marketplace" */
-  "marketplaceTab.title": ComplexPhrase<{
-    marketplaceSingular: string;
-  }> | SimplePhrase;
+  "marketplaceTab.title":
+    | ComplexPhrase<{
+        marketplaceSingular: string;
+      }>
+    | SimplePhrase;
 
   /** English: "Payload" */
   "payloadTab.title": SimplePhrase;

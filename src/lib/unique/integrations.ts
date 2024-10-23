@@ -1,15 +1,23 @@
-import { ComplexPhrase, NamespacedSharedAndUniquePhrases, SimplePhrase } from "../../types";
+import {
+  ComplexPhrase,
+  NamespacedSharedAndUniquePhrases,
+  SimplePhrase,
+} from "../../types";
 
 export interface IntegrationsPhrases {
   /** English: "%{integrationPlural}" */
-  "integrations__filterBar.title": ComplexPhrase<{
-    integrationPlural: string;
-  }> | SimplePhrase;
+  "integrations__filterBar.title":
+    | ComplexPhrase<{
+        integrationPlural: string;
+      }>
+    | SimplePhrase;
 
   /** English: "Add %{integrationSingular}" */
-  "integrations__filterBar.addButton": ComplexPhrase<{
-    integrationSingular: string;
-  }> | SimplePhrase;
+  "integrations__filterBar.addButton":
+    | ComplexPhrase<{
+        integrationSingular: string;
+      }>
+    | SimplePhrase;
 }
 
 export const integrationsPhrases: NamespacedSharedAndUniquePhrases<IntegrationsPhrases> =

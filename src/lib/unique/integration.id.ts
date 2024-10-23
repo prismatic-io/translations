@@ -17,24 +17,32 @@ export interface IntegrationIdPhrases {
   }>;
 
   /** English: "Your %{integrationSingularLower} is enabled" */
-  "integrations.id__banner.enabledText": ComplexPhrase<{
-    integrationSingularLower: string;
-  }> | SimplePhrase;
+  "integrations.id__banner.enabledText":
+    | ComplexPhrase<{
+        integrationSingularLower: string;
+      }>
+    | SimplePhrase;
 
   /** English: "Pause %{integrationSingular}" */
-  "integrations.id__banner.pauseButton": ComplexPhrase<{
-    integrationSingular: string;
-  }> | SimplePhrase;
+  "integrations.id__banner.pauseButton":
+    | ComplexPhrase<{
+        integrationSingular: string;
+      }>
+    | SimplePhrase;
 
   /** English: "Your %{integrationSingularLower} is paused" */
-  "integrations.id__banner.pausedText": ComplexPhrase<{
-    integrationSingularLower: string;
-  }> | SimplePhrase;
+  "integrations.id__banner.pausedText":
+    | ComplexPhrase<{
+        integrationSingularLower: string;
+      }>
+    | SimplePhrase;
 
   /** English: "Unpause %{integrationSingular}" */
-  "integrations.id__banner.unpauseButton": ComplexPhrase<{
-    integrationSingular: string;
-  }> | SimplePhrase;
+  "integrations.id__banner.unpauseButton":
+    | ComplexPhrase<{
+        integrationSingular: string;
+      }>
+    | SimplePhrase;
 
   /** English: "Update" */
   "integrations.id__banner.updateButton": SimplePhrase;
@@ -58,9 +66,11 @@ export interface IntegrationIdPhrases {
   "integrations.id__filterBar.viewUserConfigurationButton": SimplePhrase;
 
   /** English: This %{integrationSingularLower} has a new version. Previous versions are read-only. */
-  "integrations.id__newVersionBanner.newVersionText": ComplexPhrase<{
-    integrationSingularLower: string;
-  }> | SimplePhrase;
+  "integrations.id__newVersionBanner.newVersionText":
+    | ComplexPhrase<{
+        integrationSingularLower: string;
+      }>
+    | SimplePhrase;
 
   /** English: "View Current" */
   "integrations.id__newVersionBanner.viewCurrentButton": SimplePhrase;
