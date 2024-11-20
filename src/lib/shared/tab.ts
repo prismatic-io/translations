@@ -143,6 +143,15 @@ export interface TabPhrases {
 
   /** English: "Customers" */
   "customersTab.title": SimplePhrase;
+
+  /** English: "Linked Executions" */
+  "linkedExecutionsTab.title": SimplePhrase;
+
+  /** English: "Invoked By Execution" */
+  "linkedExecutionsTab.invokedByTitle": SimplePhrase;
+
+  /** English: "Invoked Executions" */
+  "linkedExecutionsTab.invokedExecutionsTitle": SimplePhrase;
 }
 
 export const tabPhrases: TabPhrases = {
@@ -219,4 +228,7 @@ export const tabPhrases: TabPhrases = {
   "retryTab.retriesTitle": "Retry Attempts",
   "retryTab.replaysTitle": "Manual Replays",
   "retryTab.replayedExecutionTitle": "Replay for Execution",
+  "linkedExecutionsTab.title": "Linked Executions",
+  "linkedExecutionsTab.invokedByTitle": "Invoked By Execution",
+  "linkedExecutionsTab.invokedExecutionsTitle": "Invoked Executions",
 };
