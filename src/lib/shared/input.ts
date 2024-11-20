@@ -195,6 +195,9 @@ export interface InputPhrases {
   /** English: "Show original executions only" */
   "input.originalOnlyLabel": SimplePhrase;
 
+  /** English: "Exclude executions without trigger-detected changes" */
+  "input.excludePolledNoChanges": SimplePhrase;
+
   /** English: "Payload body" */
   "input.payloadBodyLabel": SimplePhrase;
 
@@ -403,6 +406,8 @@ export const inputPhrases: InputPhrases = {
   },
   "input.nameLabel": "Name",
   "input.noOptionsValue": "No options found",
+  "input.excludePolledNoChanges":
+    "Exclude executions without trigger-detected changes",
   "input.noneValue": "None",
   "input.objectFieldMapPlaceholder": "Edit",
   "input.originalOnlyLabel": "Show original executions only",
