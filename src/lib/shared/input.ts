@@ -156,14 +156,38 @@ export interface InputPhrases {
   /** English: "Log severity" */
   "input.logSeverityLabel": SimplePhrase;
 
-  /** English: "Connection Only" */
+  /**
+   * English: "Connection Only"
+   * @deprecated Use `input.logType.connectionsValue` instead.
+   */
   "input.logType.integrationConnectionValue": SimplePhrase;
 
-  /** English: "Execution & Connection" */
+  /**
+   * English: "Execution & Connection"
+   * @deprecated Use `input.logType.allValue` instead.
+   */
   "input.logType.integrationExecutionAndConnectionValue": SimplePhrase;
 
-  /** English: "Execution only" */
+  /**
+   * English: "Execution only"
+   * @deprecated Use `input.logType.executionsValue` instead.
+   */
   "input.logType.integrationExecutionValue": SimplePhrase;
+
+  /** English: "All" */
+  "input.logType.allValue": SimplePhrase;
+
+  /** English: "Executions" */
+  "input.logType.executionsValue": SimplePhrase;
+
+  /** English: "Connections" */
+  "input.logType.connectionsValue": SimplePhrase;
+
+  /** English: "Management" */
+  "input.logType.managementValue": SimplePhrase;
+
+  /** English: "Data Sources" */
+  "input.logType.dataSourcesValue": SimplePhrase;
 
   /** English: "Log type" */
   "input.logTypeLabel": SimplePhrase;
@@ -395,6 +419,11 @@ export const inputPhrases: InputPhrases = {
   "input.logType.integrationExecutionAndConnectionValue":
     "Execution & Connection",
   "input.logType.integrationExecutionValue": "Execution Only",
+  "input.logType.allValue": "All",
+  "input.logType.executionsValue": "Executions",
+  "input.logType.connectionsValue": "Connections",
+  "input.logType.managementValue": "Management",
+  "input.logType.dataSourcesValue": "Data Sources",
   "input.logTypeLabel": "Log type",
   "input.marketplaceVersionLabel": {
     _: "%{marketplaceSingular} version",
