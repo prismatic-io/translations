@@ -44,6 +44,15 @@ export interface IntegrationIdPhrases {
       }>
     | SimplePhrase;
 
+  /** English: "Confirm update" */
+  "integrations.id__banner.update.confirmationTitle": SimplePhrase;
+
+  /** English: "This will cancel any pending configuration changes and upgrade to the newest version." */
+  "integrations.id__banner.update.confirmationText": SimplePhrase;
+
+  /** English: "Cancel" */
+  "integrations.id__banner.update.cancelText": SimplePhrase;
+
   /** English: "Update" */
   "integrations.id__banner.updateButton": SimplePhrase;
 
@@ -103,6 +112,10 @@ export const integrationIdPhrases: NamespacedSharedAndUniquePhrases<IntegrationI
       _: "Unpause %{integrationSingular}",
       integrationSingular: "Integration",
     },
+    "integrations.id__banner.update.confirmationTitle": "Confirm update",
+    "integrations.id__banner.update.cancelText": "Cancel",
+    "integrations.id__banner.update.confirmationText":
+      "This will cancel any pending configuration changes and upgrade to the newest version.",
     "integrations.id__banner.updateButton": "Update",
     "integrations.id__banner.updateText": "There is an update available",
     "integrations.id__filterBar.configureUserButton":
