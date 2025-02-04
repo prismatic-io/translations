@@ -183,7 +183,7 @@ export interface InputPhrases {
   /** English: "Connections" */
   "input.logType.connectionsValue": SimplePhrase;
 
-  /** English: "Management" */
+  /** English: "Management Triggers" */
   "input.logType.managementValue": SimplePhrase;
 
   /** English: "Data Sources" */
@@ -422,7 +422,7 @@ export const inputPhrases: InputPhrases = {
   "input.logType.allValue": "All",
   "input.logType.executionsValue": "Executions",
   "input.logType.connectionsValue": "Connections",
-  "input.logType.managementValue": "Management",
+  "input.logType.managementValue": "Management Triggers",
   "input.logType.dataSourcesValue": "Data Sources",
   "input.logTypeLabel": "Log type",
   "input.marketplaceVersionLabel": {
