@@ -10,6 +10,9 @@ export interface InputPhrases {
   /** English: "Allow embedded designer" */
   "input.allowEmbeddedDesignerLabel": SimplePhrase;
 
+  /** English: "Allow embedded workflow builder" */
+  "input.allowEmbeddedWorkflowBuilderLabel": SimplePhrase;
+
   /** English: "Allow multiple instances" */
   "input.allowMultipleInstancesLabel": SimplePhrase;
 
@@ -356,6 +359,7 @@ export const inputPhrases: InputPhrases = {
   "input.alertMonitorLabel": "Monitor",
   "input.alertTriggerLabel": "Alert trigger",
   "input.allowEmbeddedDesignerLabel": "Allow embedded designer",
+  "input.allowEmbeddedWorkflowBuilderLabel": "Allow embedded workflow builder",
   "input.allowMultipleInstancesLabel": "Allow multiple instances",
   "input.apiKeyAddButton": "Add API key",
   "input.apiKeyLabel": "API key",
