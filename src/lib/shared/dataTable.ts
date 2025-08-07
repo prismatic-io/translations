@@ -102,6 +102,9 @@ export interface DataTablePhrases {
 
   /** English: "User Identifier" */
   "dataTable.userIdentifierLabel": SimplePhrase;
+
+  /** English: "Source" */
+  "dataTable.sourceLabel": SimplePhrase;
 }
 
 export const dataTablePhrases: DataTablePhrases = {
@@ -140,4 +143,5 @@ export const dataTablePhrases: DataTablePhrases = {
   "dataTable.typeLabel": "Type",
   "dataTable.versionLabel": "Version",
   "dataTable.userIdentifierLabel": "User Identifier",
+  "dataTable.sourceLabel": "Source",
 };

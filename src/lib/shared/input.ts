@@ -350,6 +350,12 @@ export interface InputPhrases {
 
   /** English: "Save Value" */
   "input.writeOnly.replaceValueConfirmation.submit": SimplePhrase;
+
+  /** English: "Instance Type" */
+  "input.instanceTypeLabel": SimplePhrase;
+
+  /** English: "Created By" */
+  "input.createdByLabel": SimplePhrase;
 }
 
 export const inputPhrases: InputPhrases = {
@@ -486,4 +492,6 @@ export const inputPhrases: InputPhrases = {
   "input.writeOnly.replaceValueConfirmation.title": "Replace existing value",
   "input.writeOnly.replaceValueConfirmation.cancel": "Cancel",
   "input.writeOnly.replaceValueConfirmation.submit": "Save value",
+  "input.instanceTypeLabel": "Instance Type",
+  "input.createdByLabel": "Created By",
 };

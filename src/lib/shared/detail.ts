@@ -25,6 +25,9 @@ export interface DetailPhrases {
   /** English: "Executions in the last 24 hours" */
   "detail.executionslast24Hours": SimplePhrase;
 
+  /** English: "Executions in 24h" */
+  "detail.executions24h": SimplePhrase;
+
   /** English: "Instance" */
   "detail.instanceLabel": SimplePhrase;
 
@@ -118,6 +121,24 @@ export interface DetailPhrases {
 
   /** English: "Available" */
   "detail.availableLabel": SimplePhrase;
+
+  /** English: "Instance Type" */
+  "detail.instanceTypeLabel": SimplePhrase;
+
+  /** English: "Created On" */
+  "detail.createdOnLabel": SimplePhrase;
+
+  /** English: "Never" */
+  "detail.neverValue": SimplePhrase;
+
+  /** English: "Customer-built instances" */
+  "detail.customerBuiltInstancesLabel": SimplePhrase;
+
+  /** English: "Organization-built instances" */
+  "detail.organizationBuiltInstancesLabel": SimplePhrase;
+
+  /** English: "Workflow" */
+  "detail.workflowLabel": SimplePhrase;
 }
 
 export const detailPhrases: DetailPhrases = {
@@ -129,6 +150,7 @@ export const detailPhrases: DetailPhrases = {
   "detail.executionLabel": "Execution",
   "detail.executionText": "View in Execution Context",
   "detail.executionslast24Hours": "Executions in the last 24 hours",
+  "detail.executions24h": "Executions in 24h",
   "detail.instanceLabel": "Instance",
   "detail.instancesLabel": "Instances",
   "detail.integrationLabel": {
@@ -165,4 +187,10 @@ export const detailPhrases: DetailPhrases = {
   "detail.importLabel": "Import",
   "detail.previewLabel": "Preview",
   "detail.availableLabel": "Available",
+  "detail.instanceTypeLabel": "Instance Type",
+  "detail.createdOnLabel": "Created On",
+  "detail.neverValue": "Never",
+  "detail.customerBuiltInstancesLabel": "Customer-built instances",
+  "detail.organizationBuiltInstancesLabel": "Organization-built instances",
+  "detail.workflowLabel": "Workflow",
 };
