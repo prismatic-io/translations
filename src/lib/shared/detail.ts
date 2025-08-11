@@ -136,9 +136,6 @@ export interface DetailPhrases {
 
   /** English: "Organization-built instances" */
   "detail.organizationBuiltInstancesLabel": SimplePhrase;
-
-  /** English: "Workflow" */
-  "detail.workflowLabel": SimplePhrase;
 }
 
 export const detailPhrases: DetailPhrases = {
@@ -192,5 +189,4 @@ export const detailPhrases: DetailPhrases = {
   "detail.neverValue": "Never",
   "detail.customerBuiltInstancesLabel": "Customer-built instances",
   "detail.organizationBuiltInstancesLabel": "Organization-built instances",
-  "detail.workflowLabel": "Workflow",
 };
