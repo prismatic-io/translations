@@ -25,6 +25,9 @@ export interface DetailPhrases {
   /** English: "Executions in the last 24 hours" */
   "detail.executionslast24Hours": SimplePhrase;
 
+  /** English: "Execution in 24h" */
+  "detail.execution24h": SimplePhrase;
+
   /** English: "Executions in 24h" */
   "detail.executions24h": SimplePhrase;
 
@@ -156,6 +159,7 @@ export const detailPhrases: DetailPhrases = {
   "detail.executionLabel": "Execution",
   "detail.executionText": "View in Execution Context",
   "detail.executionslast24Hours": "Executions in the last 24 hours",
+  "detail.execution24h": "Execution in 24h",
   "detail.executions24h": "Executions in 24h",
   "detail.instanceLabel": "Instance",
   "detail.instancesLabel": "Instances",
