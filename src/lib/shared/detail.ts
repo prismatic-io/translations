@@ -104,8 +104,11 @@ export interface DetailPhrases {
   /** English: "Flow count" */
   "detail.flowCountLabel": SimplePhrase;
 
-  /** English: "Triggered Alert" */
+  /** English: "Triggered alert" */
   "detail.triggeredAlertLabel": SimplePhrase;
+
+  /** English: "Triggered alerts" */
+  "detail.triggeredAlertsLabel": SimplePhrase;
 
   /** English: "Add attachment" */
   "detail.addAttachmentLabel": SimplePhrase;
@@ -131,8 +134,14 @@ export interface DetailPhrases {
   /** English: "Never" */
   "detail.neverValue": SimplePhrase;
 
+  /** English: "Customer-built instance" */
+  "detail.customerBuiltInstanceLabel": SimplePhrase;
+
   /** English: "Customer-built instances" */
   "detail.customerBuiltInstancesLabel": SimplePhrase;
+
+  /** English: "Organization-built instance" */
+  "detail.organizationBuiltInstanceLabel": SimplePhrase;
 
   /** English: "Organization-built instances" */
   "detail.organizationBuiltInstancesLabel": SimplePhrase;
@@ -178,7 +187,8 @@ export const detailPhrases: DetailPhrases = {
   "detail.createdLabel": "Created",
   "detail.tagsLabel": "Tags",
   "detail.flowCountLabel": "Flow count",
-  "detail.triggeredAlertLabel": "Triggered Alert",
+  "detail.triggeredAlertLabel": "Triggered alert",
+  "detail.triggeredAlertsLabel": "Triggered alerts",
   "detail.addAttachmentLabel": "Add attachment",
   "detail.documentationLabel": "Documentation",
   "detail.importLabel": "Import",
@@ -187,6 +197,8 @@ export const detailPhrases: DetailPhrases = {
   "detail.instanceTypeLabel": "Instance Type",
   "detail.createdOnLabel": "Created On",
   "detail.neverValue": "Never",
+  "detail.customerBuiltInstanceLabel": "Customer-built instance",
   "detail.customerBuiltInstancesLabel": "Customer-built instances",
+  "detail.organizationBuiltInstanceLabel": "Organization-built instance",
   "detail.organizationBuiltInstancesLabel": "Organization-built instances",
 };
