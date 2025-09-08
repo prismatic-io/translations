@@ -89,6 +89,12 @@ export interface ConfigWizardPhrases {
   /** English: "Cancel" */
   "configWizard.configPage.configVariableField.schedule.cancel": SimplePhrase;
 
+  /** English: "Connection" */
+  "configWizard.configPage.connection.field.label": SimplePhrase;
+
+  /** English: "Add new connection" */
+  "configWizard.configPage.connection.field.addNew.label": SimplePhrase;
+
   /** English: "Connection logs" */
   "configWizard.configPage.connection.connectionLogs.title": SimplePhrase;
 
@@ -97,6 +103,37 @@ export interface ConfigWizardPhrases {
 
   /** English: "Connection" */
   "configWizard.configPage.connection.connection.label": SimplePhrase;
+
+  /** English: "Disconnect Connection" */
+  "configWizard.configPage.connection.disconnect.confirmation.title": SimplePhrase;
+
+  /** English: "Disconnecting this connection will apply to all locations where it's used. This may cause those locations to stop working as expected." */
+  "configWizard.configPage.connection.disconnect.confirmation.message": SimplePhrase;
+
+  /** English: "Connection usage" */
+  "configWizard.configPage.connection.usage.label": SimplePhrase;
+
+  /** English: "Warning" */
+  "configWizard.configPage.connection.usage.warning.label": SimplePhrase;
+
+  /** English: "Updates made to this shared connection will be applied to %{usageCount} other locations where it is used" */
+  "configWizard.configPage.connection.usage.warning": ComplexPhrase<{
+    usageCount: number;
+  }>;
+
+  /** English: "Name" */
+  "configWizard.configPage.connection.name.label": SimplePhrase;
+
+  /** English: "Name is required" */
+  "configWizard.configPage.connection.name.requiredValidation": SimplePhrase;
+
+  /** English: "Edit %{connectionName}" */
+  "configWizard.configPage.connection.edit.title": ComplexPhrase<{
+    connectionName: string;
+  }>;
+
+  /** English: "New shared connection" */
+  "configWizard.configPage.connection.add.title": SimplePhrase;
 }
 
 export const configWizardPhrases: ConfigWizardPhrases = {
@@ -143,8 +180,28 @@ export const configWizardPhrases: ConfigWizardPhrases = {
     "Close",
   "configWizard.configPage.configVariableField.schedule.save": "Save",
   "configWizard.configPage.configVariableField.schedule.cancel": "Cancel",
+  "configWizard.configPage.connection.field.label": "Connection",
+  "configWizard.configPage.connection.field.addNew.label": "Add new connection",
   "configWizard.configPage.connection.connectionLogs.title": "Connection logs",
   "configWizard.configPage.connection.useOnPremConnection.label":
     "Use On-Prem Connection",
   "configWizard.configPage.connection.connection.label": "Connection",
+  "configWizard.configPage.connection.disconnect.confirmation.title":
+    "Disconnect Connection",
+  "configWizard.configPage.connection.disconnect.confirmation.message":
+    "Disconnecting this connection will apply to all locations where it's used. This may cause those locations to stop working as expected.",
+  "configWizard.configPage.connection.usage.label": "Connection usage",
+  "configWizard.configPage.connection.usage.warning.label": "Warning",
+  "configWizard.configPage.connection.usage.warning": {
+    _: "Updates made to this shared connection will be applied to %{usageCount} other locations where it is used",
+    usageCount: 0,
+  },
+  "configWizard.configPage.connection.name.label": "Name",
+  "configWizard.configPage.connection.name.requiredValidation":
+    "Name is required",
+  "configWizard.configPage.connection.add.title": "New shared connection",
+  "configWizard.configPage.connection.edit.title": {
+    _: "Edit %{connectionName}",
+    connectionName: "",
+  },
 };
