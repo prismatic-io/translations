@@ -1,6 +1,10 @@
 import { chipPhases, ChipPhases } from "./chip";
 import { commonPhrases, CommonPhrases } from "./common";
 import { configWizardPhrases, ConfigWizardPhrases } from "./configWizard";
+import {
+  customerConnectionsPhrases,
+  CustomerConnectionsPhrases,
+} from "./customerConnections";
 import { dataTablePhrases, DataTablePhrases } from "./dataTable";
 import { dateTimePhrases, DateTimePhrases } from "./dateTime";
 import { detailPhrases, DetailPhrases } from "./detail";
@@ -24,6 +28,7 @@ import { userPhrases, UserPhrases } from "./user";
 export { chipPhases, ChipPhases };
 export { commonPhrases, CommonPhrases };
 export { configWizardPhrases, ConfigWizardPhrases };
+export { customerConnectionsPhrases, CustomerConnectionsPhrases };
 export { dataTablePhrases, DataTablePhrases };
 export { dateTimePhrases, DateTimePhrases };
 export { detailPhrases, DetailPhrases };
@@ -44,6 +49,7 @@ export { userPhrases, UserPhrases };
 export type SharedPhrases = ChipPhases &
   CommonPhrases &
   ConfigWizardPhrases &
+  CustomerConnectionsPhrases &
   DataTablePhrases &
   DetailPhrases &
   DialogPhrases &
@@ -65,6 +71,7 @@ export const sharedPhrases: SharedPhrases = {
   ...chipPhases,
   ...commonPhrases,
   ...configWizardPhrases,
+  ...customerConnectionsPhrases,
   ...dataTablePhrases,
   ...detailPhrases,
   ...dialogPhrases,
