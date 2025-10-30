@@ -41,6 +41,9 @@ export interface CommonPhrases {
 
   /** English: "Help" */
   "common.helpButton": SimplePhrase;
+
+  /** English: "Example" */
+  "common.example": SimplePhrase;
 }
 
 export const commonPhrases: CommonPhrases = {
@@ -57,4 +60,5 @@ export const commonPhrases: CommonPhrases = {
   "common.enabledStatus": "Enabled",
   "common.notEnabledStatus": "Not Enabled",
   "common.helpButton": "Help",
+  "common.example": "Example",
 };
