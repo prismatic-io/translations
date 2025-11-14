@@ -1,29 +1,30 @@
-import { chipPhases, ChipPhases } from "./chip";
-import { commonPhrases, CommonPhrases } from "./common";
-import { configWizardPhrases, ConfigWizardPhrases } from "./configWizard";
+import { ChipPhases, chipPhases } from "./chip";
+import { CommonPhrases, commonPhrases } from "./common";
+import { ConfigWizardPhrases, configWizardPhrases } from "./configWizard";
 import {
-  customerConnectionsPhrases,
   CustomerConnectionsPhrases,
+  customerConnectionsPhrases,
 } from "./customerConnections";
-import { dataTablePhrases, DataTablePhrases } from "./dataTable";
-import { dateTimePhrases, DateTimePhrases } from "./dateTime";
-import { detailPhrases, DetailPhrases } from "./detail";
-import { dialogPhrases, DialogPhrases } from "./dialog";
-import { executionPhrases, ExecutionPhrases } from "./executions";
-import { filterPhrases, FilterPhrases } from "./filter";
-import { headerPhrases, HeaderPhrases } from "./header";
-import { inputPhrases, InputPhrases } from "./input";
-import { logSeverityPhrases, LogSeverityPhrases } from "./logSeverity";
-import { noResultsPhrases, NoResultsPhrases } from "./noResults";
+import { DataTablePhrases, dataTablePhrases } from "./dataTable";
+import { DateTimePhrases, dateTimePhrases } from "./dateTime";
+import { DetailPhrases, detailPhrases } from "./detail";
+import { DialogPhrases, dialogPhrases } from "./dialog";
+import { ExecutionPhrases, executionPhrases } from "./executions";
+import { FilterPhrases, filterPhrases } from "./filter";
+import { HeaderPhrases, headerPhrases } from "./header";
+import { InputPhrases, inputPhrases } from "./input";
+import { LogSeverityPhrases, logSeverityPhrases } from "./logSeverity";
+import { NoResultsPhrases, noResultsPhrases } from "./noResults";
+import { NullStatePhrases, nullStatePhrases } from "./nullState";
 import {
-  oAuthConnectionPhrases,
   OAuthConnectionPhrases,
+  oAuthConnectionPhrases,
 } from "./oauthConnection";
-import { popoverPhrases, PopoverPhrases } from "./popover";
-import { tabPhrases, TabPhrases } from "./tab";
-import { tooltipPhrases, TooltipPhrases } from "./tooltip";
-import { triggerDetailsPhrases, TriggerDetailsPhrases } from "./triggerDetails";
-import { userPhrases, UserPhrases } from "./user";
+import { PopoverPhrases, popoverPhrases } from "./popover";
+import { TabPhrases, tabPhrases } from "./tab";
+import { TooltipPhrases, tooltipPhrases } from "./tooltip";
+import { TriggerDetailsPhrases, triggerDetailsPhrases } from "./triggerDetails";
+import { UserPhrases, userPhrases } from "./user";
 
 export { chipPhases, ChipPhases };
 export { commonPhrases, CommonPhrases };
@@ -36,6 +37,7 @@ export { dialogPhrases, DialogPhrases };
 export { executionPhrases, ExecutionPhrases };
 export { filterPhrases, FilterPhrases };
 export { headerPhrases, HeaderPhrases };
+export { nullStatePhrases, NullStatePhrases };
 export { inputPhrases, InputPhrases };
 export { logSeverityPhrases, LogSeverityPhrases };
 export { noResultsPhrases, NoResultsPhrases };
@@ -65,7 +67,8 @@ export type SharedPhrases = ChipPhases &
   TooltipPhrases &
   TriggerDetailsPhrases &
   UserPhrases &
-  DateTimePhrases;
+  DateTimePhrases &
+  NullStatePhrases;
 
 export const sharedPhrases: SharedPhrases = {
   ...chipPhases,
@@ -88,4 +91,5 @@ export const sharedPhrases: SharedPhrases = {
   ...triggerDetailsPhrases,
   ...userPhrases,
   ...dateTimePhrases,
+  ...nullStatePhrases,
 };
