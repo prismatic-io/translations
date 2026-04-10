@@ -1,0 +1,8 @@
+{
+  "extends": "./tsconfig.json",
+  "compilerOptions": {
+    "noEmit": true,
+    "noUnusedLocals": false
+  },
+  "include": ["src", "__typetests__/phrases.test-d.ts"]
+}
