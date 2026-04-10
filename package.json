@@ -30,12 +30,21 @@
     "check-format": "prettier --check './src/**/*.{js,jsx,ts,tsx,css,html,json,scss}'",
     "format": "prettier --loglevel error --write './src/**/*.{js,jsx,ts,tsx,css,html,json,scss}'",
     "lint": "echo \"Warning: no lint specified\"",
-    "test": "echo \"Warning: no test specified\""
+    "test": "echo \"Warning: no test specified\"",
+    "typecheck": "node_modules/typescript/bin/tsc -p tsconfig.typetest.json",
+    "typecheck:compat": "node_modules/typescript-41/bin/tsc -p tsconfig.compat-legacy.json && node_modules/typescript-49/bin/tsc -p tsconfig.compat.json && node_modules/typescript-50/bin/tsc -p tsconfig.compat.json && node_modules/typescript-52/bin/tsc -p tsconfig.compat.json && node_modules/typescript-55/bin/tsc -p tsconfig.compat.json && node_modules/typescript/bin/tsc -p tsconfig.compat.json"
   },
   "devDependencies": {
+    "@typescript/analyze-trace": "^0.10.1",
+    "expect-type": "^1.3.0",
     "prettier": "2.8.3",
     "ts-loader": "9.4.2",
-    "typescript": "4.9.5",
+    "typescript": "~5.8",
+    "typescript-41": "npm:typescript@~4.1",
+    "typescript-49": "npm:typescript@~4.9",
+    "typescript-50": "npm:typescript@~5.0",
+    "typescript-52": "npm:typescript@~5.2",
+    "typescript-55": "npm:typescript@~5.5",
     "webpack": "^5.96.1",
     "webpack-cli": "5.0.1"
   }

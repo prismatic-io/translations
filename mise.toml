@@ -1,0 +1,29 @@
+[tools]
+"github-cli" = "2.42.1"
+node = "24"
+
+[tasks.build]
+description = "Build the project"
+run = "npm run build"
+
+[tasks."format:check"]
+description = "Check source file formatting"
+run = "npm run check-format"
+
+[tasks.typecheck]
+description = "Run type regression tests against source"
+run = "npm run typecheck"
+
+[tasks."typecheck:compat"]
+description = "Run type compatibility tests against built output for TS 4.1 through 5.8"
+depends = ["build"]
+run = "npm run typecheck:compat"
+
+[tasks.benchmark]
+description = "Run type-checking benchmarks across all TS versions"
+depends = ["build"]
+run = "scripts/benchmark.sh"
+
+[tasks.validate]
+description = "Run all validation checks"
+depends = ["format:check", "typecheck", "typecheck:compat"]
