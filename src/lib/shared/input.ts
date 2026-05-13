@@ -177,19 +177,25 @@ export interface InputPhrases {
   /** English: "All" */
   "input.logType.allValue": SimplePhrase;
 
-  /** English: "Executions" */
+  /** English: "Log | Executions" */
   "input.logType.executionsValue": SimplePhrase;
 
-  /** English: "Connections" */
+  /** English: "Log | Connections" */
   "input.logType.connectionsValue": SimplePhrase;
 
-  /** English: "Management Triggers" */
+  /** English: "Log | Management Triggers" */
   "input.logType.managementValue": SimplePhrase;
 
-  /** English: "Data Sources" */
+  /** English: "Log | Data Sources" */
   "input.logType.dataSourcesValue": SimplePhrase;
 
-  /** English: "Log type" */
+  /** English: "Step Results" */
+  "input.logType.stepResultsValue": SimplePhrase;
+
+  /** English: "Trigger Payloads" */
+  "input.logType.triggerPayloadsValue": SimplePhrase;
+
+  /** English: "Type" */
   "input.logTypeLabel": SimplePhrase;
 
   /** English: "%{marketplaceSingular} version" */
@@ -426,11 +432,13 @@ export const inputPhrases: InputPhrases = {
     "Execution & Connection",
   "input.logType.integrationExecutionValue": "Execution Only",
   "input.logType.allValue": "All",
-  "input.logType.executionsValue": "Executions",
-  "input.logType.connectionsValue": "Connections",
-  "input.logType.managementValue": "Management Triggers",
-  "input.logType.dataSourcesValue": "Data Sources",
-  "input.logTypeLabel": "Log type",
+  "input.logType.executionsValue": "Log | Executions",
+  "input.logType.connectionsValue": "Log | Connections",
+  "input.logType.managementValue": "Log | Management Triggers",
+  "input.logType.dataSourcesValue": "Log | Data Sources",
+  "input.logType.stepResultsValue": "Step Results",
+  "input.logType.triggerPayloadsValue": "Trigger Payloads",
+  "input.logTypeLabel": "Type",
   "input.marketplaceVersionLabel": {
     _: "%{marketplaceSingular} version",
     marketplaceSingular: "Marketplace",

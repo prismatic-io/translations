@@ -10,7 +10,7 @@ export interface DataTablePhrases {
   /** English: "Connection" */
   "dataTable.connectionLabel": SimplePhrase;
 
-  /** English: "Log Type" */
+  /** English: "Type" */
   "dataTable.logTypeLabel": SimplePhrase;
 
   /** English: "Config Variable" */
@@ -111,7 +111,7 @@ export const dataTablePhrases: DataTablePhrases = {
   "dataTable.activeInstancesLabel": "Active Instances",
   "dataTable.categoryLabel": "Category",
   "dataTable.connectionLabel": "Connection",
-  "dataTable.logTypeLabel": "Log Type",
+  "dataTable.logTypeLabel": "Type",
   "dataTable.commentsLabel": "Comments",
   "dataTable.configVariableLabel": "Config Variable",
   "dataTable.customerLabel": "Customer",
