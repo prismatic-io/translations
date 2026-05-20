@@ -50,7 +50,7 @@ printf "%-12s  %-10s  %12s  %14s  %12s  %12s  %12s\n" \
 printf "%-12s  %-10s  %12s  %14s  %12s  %12s  %12s\n" \
   "----" "-------" "-----" "--------------" "------" "-----" "-----"
 
-run_benchmark "ts-5.8" "node_modules/typescript/bin/tsc" "tsconfig.typetest.json"
+run_benchmark "ts-current" "node_modules/typescript/bin/tsc" "tsconfig.typetest.json"
 
 echo ""
 
@@ -67,6 +67,7 @@ run_benchmark "ts-4.9" "node_modules/typescript-49/bin/tsc" "tsconfig.compat.jso
 run_benchmark "ts-5.0" "node_modules/typescript-50/bin/tsc" "tsconfig.compat.json"
 run_benchmark "ts-5.2" "node_modules/typescript-52/bin/tsc" "tsconfig.compat.json"
 run_benchmark "ts-5.5" "node_modules/typescript-55/bin/tsc" "tsconfig.compat.json"
-run_benchmark "ts-5.8" "node_modules/typescript/bin/tsc" "tsconfig.compat.json"
+run_benchmark "ts-5.8" "node_modules/typescript-58/bin/tsc" "tsconfig.compat.json"
+run_benchmark "ts-current" "node_modules/typescript/bin/tsc" "tsconfig.compat-current.json"
 
 echo ""
