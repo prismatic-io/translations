@@ -1,51 +1,62 @@
-import { notFoundPhrases, NotFoundPhrases } from "./404";
+import { NotFoundPhrases, notFoundPhrases } from "./404";
 import {
-  appMarketplaceNotFoundPhrases,
   AppMarketplaceNotFoundPhrases,
+  appMarketplaceNotFoundPhrases,
 } from "./app.marketplace-not-found";
-import { componentsPhrases, ComponentsPhrases } from "./components";
-import { dashboardPhrases, DashboardPhrases } from "./dashboard";
+import { ComponentsPhrases, componentsPhrases } from "./components";
+import { DashboardPhrases, dashboardPhrases } from "./dashboard";
+import { IntegrationIdPhrases, integrationIdPhrases } from "./integration.id";
 import {
-  integrationMarketplacePhrases,
-  IntegrationMarketplacePhrases,
-} from "./integration-marketplace";
-import { integrationIdPhrases, IntegrationIdPhrases } from "./integration.id";
-import {
-  integrationIdAlertMonitorsPhrases,
   IntegrationIdAlertMonitorsPhrases,
+  integrationIdAlertMonitorsPhrases,
 } from "./integration.id.alert-monitors";
 import {
-  integrationIdConfigurationsPhrases,
   IntegrationIdConfigurationsPhrases,
+  integrationIdConfigurationsPhrases,
 } from "./integration.id.configurations";
 import {
-  integrationIdExecutionsPhrases,
   IntegrationIdExecutionsPhrases,
+  integrationIdExecutionsPhrases,
 } from "./integration.id.executions";
 import {
-  integrationIdLogsPhrases,
   IntegrationIdLogsPhrases,
+  integrationIdLogsPhrases,
 } from "./integration.id.logs";
 import {
-  integrationIdTestPhrases,
   IntegrationIdTestPhrases,
+  integrationIdTestPhrases,
 } from "./integration.id.test";
-import { integrationsPhrases, IntegrationsPhrases } from "./integrations";
+import {
+  IntegrationMarketplacePhrases,
+  integrationMarketplacePhrases,
+} from "./integration-marketplace";
+import type { IntegrationsPhrases } from "./integrations";
+import { integrationsPhrases } from "./integrations";
 
-export { notFoundPhrases, NotFoundPhrases };
-export { appMarketplaceNotFoundPhrases, AppMarketplaceNotFoundPhrases };
-export { componentsPhrases, ComponentsPhrases };
-export { dashboardPhrases, DashboardPhrases };
-export { integrationMarketplacePhrases, IntegrationMarketplacePhrases };
-export { integrationIdPhrases, IntegrationIdPhrases };
-export { integrationIdAlertMonitorsPhrases, IntegrationIdAlertMonitorsPhrases };
 export {
-  integrationIdConfigurationsPhrases,
+  AppMarketplaceNotFoundPhrases,
+  appMarketplaceNotFoundPhrases,
+  ComponentsPhrases,
+  componentsPhrases,
+  DashboardPhrases,
+  dashboardPhrases,
+  IntegrationIdAlertMonitorsPhrases,
   IntegrationIdConfigurationsPhrases,
+  IntegrationIdExecutionsPhrases,
+  IntegrationIdLogsPhrases,
+  IntegrationIdPhrases,
+  IntegrationIdTestPhrases,
+  IntegrationMarketplacePhrases,
+  integrationIdAlertMonitorsPhrases,
+  integrationIdConfigurationsPhrases,
+  integrationIdExecutionsPhrases,
+  integrationIdLogsPhrases,
+  integrationIdPhrases,
+  integrationIdTestPhrases,
+  integrationMarketplacePhrases,
+  NotFoundPhrases,
+  notFoundPhrases,
 };
-export { integrationIdExecutionsPhrases, IntegrationIdExecutionsPhrases };
-export { integrationIdLogsPhrases, IntegrationIdLogsPhrases };
-export { integrationIdTestPhrases, IntegrationIdTestPhrases };
 
 export type UniquePhrases = NotFoundPhrases &
   AppMarketplaceNotFoundPhrases &

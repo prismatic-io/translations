@@ -1,6 +1,6 @@
-import {
-  NamespacedSharedAndUniquePhrases,
+import type {
   ComplexPhrase,
+  NamespacedSharedAndUniquePhrases,
   SimplePhrase,
 } from "../../types";
 

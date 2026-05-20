@@ -5,26 +5,22 @@
  *
  * This imports from dist/ (what consumers actually get from npm).
  */
-import {
-  Phrases,
-  Phrase,
-  PhraseWithNamespace,
-  SharedPhrases,
-  UniquePhrases,
-  SharedAndUniquePhrases,
+import type {
+  ComplexPhrase,
   DynamicPhrases,
-  NamespacedSharedPhrases,
-  NamespacedSharedAndSharedAndUniquePhrases,
   NamespacedSharedAndUniquePhrases,
+  NamespacedSharedPhrases,
+  Phrase,
+  Phrases,
+  PhraseWithNamespace,
+  PickByType,
+  SharedAndUniquePhrases,
+  SharedPhrases,
   SimplePhrase,
   SimplePhrases,
-  ComplexPhrase,
-  ComplexPhrases,
-  PickByType,
-  Namespace,
-  sharedPhrases,
-  uniquePhrases,
+  UniquePhrases,
 } from "../dist";
+import { Namespace, sharedPhrases, uniquePhrases } from "../dist";
 
 import { phrases } from "../dist/lib";
 
@@ -36,7 +32,10 @@ import { phrases } from "../dist/lib";
 const _simple: SimplePhrase = "hello";
 
 // ComplexPhrase has _ and custom params
-const _complex: ComplexPhrase<{ name: string }> = { _: "Hi %{name}", name: "World" };
+const _complex: ComplexPhrase<{ name: string }> = {
+  _: "Hi %{name}",
+  name: "World",
+};
 const _complexDefault: ComplexPhrase = { _: "test", someKey: "val" };
 
 // DynamicPhrases shape
@@ -53,7 +52,11 @@ const _nsVal: "components" = Namespace.COMPONENTS;
 // SharedAndUniquePhrases extends both
 const _shared: SharedPhrases = sharedPhrases;
 const _unique: UniquePhrases = uniquePhrases;
-const _combined: SharedAndUniquePhrases = { ...sharedPhrases, ...uniquePhrases, dynamicPhrase: {} };
+const _combined: SharedAndUniquePhrases = {
+  ...sharedPhrases,
+  ...uniquePhrases,
+  dynamicPhrase: {},
+};
 
 // Phrase is a key of SharedAndUniquePhrases
 const _phrase: Phrase = "chip.templateLabel";
@@ -74,7 +77,8 @@ const _bad: Phrases = { notAValidKey: "nope" };
 // ---------------------------------------------------------------------------
 
 // NamespacedSharedPhrases has specific namespaced keys with per-key types
-const _nspVal: NamespacedSharedPhrases["components__chip.templateLabel"] = "Template";
+const _nspVal: NamespacedSharedPhrases["components__chip.templateLabel"] =
+  "Template";
 
 // PhraseWithNamespace includes both namespaced and plain keys
 const _pwn1: PhraseWithNamespace = "chip.templateLabel";

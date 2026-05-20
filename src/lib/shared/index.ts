@@ -26,27 +26,50 @@ import { TooltipPhrases, tooltipPhrases } from "./tooltip";
 import { TriggerDetailsPhrases, triggerDetailsPhrases } from "./triggerDetails";
 import { UserPhrases, userPhrases } from "./user";
 
-export { chipPhases, ChipPhases };
-export { commonPhrases, CommonPhrases };
-export { configWizardPhrases, ConfigWizardPhrases };
-export { customerConnectionsPhrases, CustomerConnectionsPhrases };
-export { dataTablePhrases, DataTablePhrases };
-export { dateTimePhrases, DateTimePhrases };
-export { detailPhrases, DetailPhrases };
-export { dialogPhrases, DialogPhrases };
-export { executionPhrases, ExecutionPhrases };
-export { filterPhrases, FilterPhrases };
-export { headerPhrases, HeaderPhrases };
-export { nullStatePhrases, NullStatePhrases };
-export { inputPhrases, InputPhrases };
-export { logSeverityPhrases, LogSeverityPhrases };
-export { noResultsPhrases, NoResultsPhrases };
-export { oAuthConnectionPhrases, OAuthConnectionPhrases };
-export { popoverPhrases, PopoverPhrases };
-export { tabPhrases, TabPhrases };
-export { tooltipPhrases, TooltipPhrases };
-export { triggerDetailsPhrases, TriggerDetailsPhrases };
-export { userPhrases, UserPhrases };
+export {
+  ChipPhases,
+  CommonPhrases,
+  ConfigWizardPhrases,
+  CustomerConnectionsPhrases,
+  chipPhases,
+  commonPhrases,
+  configWizardPhrases,
+  customerConnectionsPhrases,
+  DataTablePhrases,
+  DateTimePhrases,
+  DetailPhrases,
+  DialogPhrases,
+  dataTablePhrases,
+  dateTimePhrases,
+  detailPhrases,
+  dialogPhrases,
+  ExecutionPhrases,
+  executionPhrases,
+  FilterPhrases,
+  filterPhrases,
+  HeaderPhrases,
+  headerPhrases,
+  InputPhrases,
+  inputPhrases,
+  LogSeverityPhrases,
+  logSeverityPhrases,
+  NoResultsPhrases,
+  NullStatePhrases,
+  noResultsPhrases,
+  nullStatePhrases,
+  OAuthConnectionPhrases,
+  oAuthConnectionPhrases,
+  PopoverPhrases,
+  popoverPhrases,
+  TabPhrases,
+  TooltipPhrases,
+  TriggerDetailsPhrases,
+  tabPhrases,
+  tooltipPhrases,
+  triggerDetailsPhrases,
+  UserPhrases,
+  userPhrases,
+};
 
 export type SharedPhrases = ChipPhases &
   CommonPhrases &

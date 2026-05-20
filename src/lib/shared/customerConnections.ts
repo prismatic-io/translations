@@ -1,4 +1,4 @@
-import { ComplexPhrase, SimplePhrase } from "../../types";
+import type { ComplexPhrase, SimplePhrase } from "../../types";
 
 export interface CustomerConnectionsPhrases {
   /** English: "App" */

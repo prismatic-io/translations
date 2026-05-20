@@ -1,4 +1,7 @@
-import { NamespacedSharedAndUniquePhrases, SimplePhrase } from "../../types";
+import type {
+  NamespacedSharedAndUniquePhrases,
+  SimplePhrase,
+} from "../../types";
 
 export interface IntegrationIdLogsPhrases {
   /** English: "Go to instances" */
