@@ -1,4 +1,4 @@
-import { Phrases } from "../types";
+import type { Phrases } from "../types";
 import { sharedPhrases } from "./shared";
 import { uniquePhrases } from "./unique";
 

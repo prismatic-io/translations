@@ -38,7 +38,7 @@ export type ComplexPhrase<
   T extends Record<string, string | boolean | number> = Record<
     string,
     string | boolean | number
-  >
+  >,
 > = T & {
   _?: string;
 };
@@ -60,9 +60,8 @@ export type SharedAndUniquePhrases = SharedPhrases &
 export type NamespacedSharedAndSharedAndUniquePhrases =
   Partial<NamespacedSharedPhrases> & SharedAndUniquePhrases;
 
-export type NamespacedSharedAndUniquePhrases<
-  T extends unknown = UniquePhrases
-> = Partial<NamespacedSharedPhrases> & T;
+export type NamespacedSharedAndUniquePhrases<T = UniquePhrases> =
+  Partial<NamespacedSharedPhrases> & T;
 
 export type Phrases = Partial<NamespacedSharedAndSharedAndUniquePhrases>;
 

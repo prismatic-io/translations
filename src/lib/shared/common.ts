@@ -1,6 +1,4 @@
-import { SimplePhrase } from "../../types";
-
-export interface CommonPhrases {}
+import type { SimplePhrase } from "../../types";
 
 export interface CommonPhrases {
   /** English: "Cancel" */

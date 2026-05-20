@@ -1,6 +1,7 @@
-import { NamespacedSharedAndUniquePhrases } from "../../types";
+import type { NamespacedSharedAndUniquePhrases } from "../../types";
 
-export interface IntegrationIdConfigurationsPhrases {}
+// biome-ignore lint/complexity/noBannedTypes: placeholder intersected into UniquePhrases; Record<string, never> would forbid valid keys.
+export type IntegrationIdConfigurationsPhrases = {};
 
 export const integrationIdConfigurationsPhrases: NamespacedSharedAndUniquePhrases<IntegrationIdConfigurationsPhrases> =
   {

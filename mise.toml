@@ -6,9 +6,9 @@ node = "24"
 description = "Build the project"
 run = "npm run build"
 
-[tasks."format:check"]
-description = "Check source file formatting"
-run = "npm run check-format"
+[tasks.check]
+description = "Run Biome formatter, linter, and import-organizer checks"
+run = "npm run check"
 
 [tasks.typecheck]
 description = "Run type regression tests against source"
@@ -26,7 +26,7 @@ run = "scripts/benchmark.sh"
 
 [tasks.validate]
 description = "Run all validation checks"
-depends = ["format:check", "typecheck", "typecheck:compat"]
+depends = ["check", "typecheck", "typecheck:compat"]
 
 [tasks.version-bump]
 description = "Bump package.json version (set BUMP_TYPE=patch|minor|major|preview)"

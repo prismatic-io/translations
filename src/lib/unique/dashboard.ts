@@ -1,5 +1,7 @@
-import { NamespacedSharedAndUniquePhrases } from "../../types";
-import { SimplePhrase } from "../../types";
+import type {
+  NamespacedSharedAndUniquePhrases,
+  SimplePhrase,
+} from "../../types";
 
 export interface DashboardPhrases {
   /** English: "Dashboard" */

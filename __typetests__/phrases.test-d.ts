@@ -1,37 +1,32 @@
 import { expectTypeOf } from "expect-type";
-import {
+import type {
+  ComplexPhrase,
+  DynamicPhrases,
+  NamespacedSharedAndUniquePhrases,
+  NamespacedSharedPhrases,
+  Phrase,
   // Core types
   Phrases,
-  Phrase,
   PhraseWithNamespace,
-  SharedPhrases,
-  UniquePhrases,
+  PickByType,
   SharedAndUniquePhrases,
-  DynamicPhrases,
-  NamespacedSharedPhrases,
-  NamespacedSharedAndSharedAndUniquePhrases,
-  NamespacedSharedAndUniquePhrases,
+  SharedPhrases,
   SimplePhrase,
   SimplePhrases,
-  ComplexPhrase,
-  ComplexPhrases,
-  PickByType,
+  UniquePhrases,
+} from "../src";
+import {
+  getComplexPhase,
+  isComplexPhrase,
+  // Utils
+  isSimplePhrase,
   Namespace,
-
+  phrases,
   // Runtime values
   sharedPhrases,
   uniquePhrases,
-  phrases,
-
-  // Utils
-  isSimplePhrase,
-  isComplexPhrase,
-  getComplexPhase,
 } from "../src";
-
-// Individual phrase types are not re-exported from the main barrel;
-// import them from their sub-module barrels.
-import {
+import type {
   ChipPhases,
   CommonPhrases,
   ConfigWizardPhrases,
@@ -53,25 +48,27 @@ import {
   TooltipPhrases,
   TriggerDetailsPhrases,
   UserPhrases,
+} from "../src/lib/shared";
+import {
   chipPhases,
   commonPhrases,
   configWizardPhrases,
 } from "../src/lib/shared";
 
-import {
-  NotFoundPhrases,
+import type {
   AppMarketplaceNotFoundPhrases,
   ComponentsPhrases,
   DashboardPhrases,
-  IntegrationMarketplacePhrases,
-  IntegrationIdPhrases,
   IntegrationIdAlertMonitorsPhrases,
   IntegrationIdConfigurationsPhrases,
   IntegrationIdExecutionsPhrases,
   IntegrationIdLogsPhrases,
+  IntegrationIdPhrases,
   IntegrationIdTestPhrases,
+  IntegrationMarketplacePhrases,
+  NotFoundPhrases,
 } from "../src/lib/unique";
-import { IntegrationsPhrases } from "../src/lib/unique/integrations";
+import type { IntegrationsPhrases } from "../src/lib/unique/integrations";
 
 // ---------------------------------------------------------------------------
 // SimplePhrase and ComplexPhrase base types
@@ -174,8 +171,7 @@ const _nspCheck3: NamespacedSharedPhrases["integrations__executionDetails.title"
 // PhraseWithNamespace = keyof NamespacedSharedAndSharedAndUniquePhrases
 // Includes both namespaced and non-namespaced keys
 const _pwnShared: PhraseWithNamespace = "chip.templateLabel";
-const _pwnNamespaced: PhraseWithNamespace =
-  "components__chip.templateLabel";
+const _pwnNamespaced: PhraseWithNamespace = "components__chip.templateLabel";
 const _pwnUnique: PhraseWithNamespace = "404__title";
 const _pwnDynamic: PhraseWithNamespace = "dynamicPhrase";
 
@@ -221,32 +217,45 @@ type Expect<T extends true> = T;
 
 // Simple phrase accessed through Phrases: string | undefined
 type PhrasesSimpleValue = Phrases["chip.templateLabel"];
-type _CheckSimple = Expect<PhrasesSimpleValue extends string | undefined ? true : false>;
+type _CheckSimple = Expect<
+  PhrasesSimpleValue extends string | undefined ? true : false
+>;
 const _phraseSimpleAssign: PhrasesSimpleValue = "hello";
 // @ts-expect-error — ComplexPhrase is NOT assignable to a simple key's value type
 const _phraseSimpleBadAssign: PhrasesSimpleValue = { _: "hello", value: "x" };
 
 // Complex phrase accessed through Phrases: retains specific shape
-type PhrasesComplexValue = Phrases["configWizard.triggerDetails.schedule.configVariable"];
+type PhrasesComplexValue =
+  Phrases["configWizard.triggerDetails.schedule.configVariable"];
 type _CheckComplex = Expect<
-  PhrasesComplexValue extends ComplexPhrase<{ value: string }> | undefined ? true : false
+  PhrasesComplexValue extends ComplexPhrase<{ value: string }> | undefined
+    ? true
+    : false
 >;
 
 // --- Namespaced keys also retain per-key types ---
 
 type NSPPartial = Partial<NamespacedSharedPhrases>;
 type NamespacedSimpleValue = NSPPartial["components__chip.templateLabel"];
-type NamespacedComplexValue = NSPPartial["components__configWizard.triggerDetails.schedule.configVariable"];
+type NamespacedComplexValue =
+  NSPPartial["components__configWizard.triggerDetails.schedule.configVariable"];
 
 // Simple namespaced key: string | undefined
-type _CheckNSString = Expect<NamespacedSimpleValue extends string | undefined ? true : false>;
+type _CheckNSString = Expect<
+  NamespacedSimpleValue extends string | undefined ? true : false
+>;
 const _nsSimpleAssign: NamespacedSimpleValue = "hello";
 // @ts-expect-error — ComplexPhrase is NOT assignable to a simple namespaced key
-const _nsSimpleBadAssign: NamespacedSimpleValue = { _: "hello", value: "x" } as ComplexPhrase<{ value: string }>;
+const _nsSimpleBadAssign: NamespacedSimpleValue = {
+  _: "hello",
+  value: "x",
+} as ComplexPhrase<{ value: string }>;
 
 // Complex namespaced key retains its specific shape
 type _CheckNSComplexSpecific = Expect<
-  NamespacedComplexValue extends ComplexPhrase<{ value: string }> | undefined ? true : false
+  NamespacedComplexValue extends ComplexPhrase<{ value: string }> | undefined
+    ? true
+    : false
 >;
 
 // ---------------------------------------------------------------------------
@@ -277,12 +286,9 @@ const _nsConfig: "integrations.id.configurations" =
   Namespace.MARKETPLACE_INTEGRATION_CONFIGURATION;
 const _nsExec: "integrations.id.executions" =
   Namespace.MARKETPLACE_INTEGRATION_EXECUTIONS;
-const _nsLogs: "integrations.id.logs" =
-  Namespace.MARKETPLACE_INTEGRATION_LOGS;
-const _nsSummary: "integrations.id" =
-  Namespace.MARKETPLACE_INTEGRATION_SUMMARY;
-const _nsTest: "integrations.id.test" =
-  Namespace.MARKETPLACE_INTEGRATION_TEST;
+const _nsLogs: "integrations.id.logs" = Namespace.MARKETPLACE_INTEGRATION_LOGS;
+const _nsSummary: "integrations.id" = Namespace.MARKETPLACE_INTEGRATION_SUMMARY;
+const _nsTest: "integrations.id.test" = Namespace.MARKETPLACE_INTEGRATION_TEST;
 const _nsNotFound: "app.marketplace-not-found" =
   Namespace.MARKETPLACE_NOT_FOUND;
 

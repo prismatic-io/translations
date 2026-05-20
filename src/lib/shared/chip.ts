@@ -1,4 +1,4 @@
-import { SimplePhrase } from "../../types";
+import type { SimplePhrase } from "../../types";
 
 export interface ChipPhases {
   /** English: "Template" */
