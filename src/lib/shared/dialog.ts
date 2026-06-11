@@ -354,7 +354,7 @@ export const dialogPhrases: DialogPhrases = {
     organizationName: "the organization",
   },
   "configurationWizardDialog.dataSourceResetText":
-    "Do you want to reset this value to the data source result?",
+    "Do you want to reset this value to the latest value?",
   "configurationWizardDialog.dataSourceResetButton": "Reset",
 
   // api key dialog
