@@ -129,6 +129,12 @@ export interface DialogPhrases {
     organizationName: string;
   }>;
 
+  /** English: "Do you want to reset this value to the data source result?" */
+  "configurationWizardDialog.dataSourceResetText": SimplePhrase;
+
+  /** English: "Reset" */
+  "configurationWizardDialog.dataSourceResetButton": SimplePhrase;
+
   /** English: "Cancel" */
   "apiKeyDialog.cancelButton": SimplePhrase;
 
@@ -347,6 +353,9 @@ export const dialogPhrases: DialogPhrases = {
     _: "This page contains non-visible config variables that need to be set by %{organizationName} before continuing.",
     organizationName: "the organization",
   },
+  "configurationWizardDialog.dataSourceResetText":
+    "Do you want to reset this value to the data source result?",
+  "configurationWizardDialog.dataSourceResetButton": "Reset",
 
   // api key dialog
   "apiKeyDialog.cancelButton": "Cancel",
