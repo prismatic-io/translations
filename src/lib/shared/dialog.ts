@@ -129,7 +129,7 @@ export interface DialogPhrases {
     organizationName: string;
   }>;
 
-  /** English: "Do you want to reset this value to the data source result?" */
+  /** English: "Do you want to reset this value to the latest value?" */
   "configurationWizardDialog.dataSourceResetText": SimplePhrase;
 
   /** English: "Reset" */
