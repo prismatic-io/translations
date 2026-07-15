@@ -51,6 +51,6 @@
     "typescript-55": "npm:typescript@~5.5",
     "typescript-58": "npm:typescript@~5.8",
     "webpack": "^5.107.0",
-    "webpack-cli": "7.0.3"
+    "webpack-cli": "7.1.0"
   }
 }
