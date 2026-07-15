@@ -16,14 +16,13 @@ updates:
       - dependency-name: "@types/node"
         update-types:
           - "version-update:semver-major"
+      # typescript-* aliases are pinned to specific older versions for the
+      # typecheck:compat matrix. Bump manually.
+      - dependency-name: "typescript-*"
     groups:
       all-dependencies:
         patterns:
           - "*"
-    ignore:
-      # typescript-* aliases are pinned to specific older versions for the
-      # typecheck:compat matrix. Bump manually.
-      - dependency-name: "typescript-*"
 
   - package-ecosystem: "github-actions"
     directory: "/"
