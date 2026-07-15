@@ -9,6 +9,13 @@ updates:
       interval: "weekly"
     cooldown:
       default-days: 14
+    ignore:
+      # Node 26 types use TypeScript syntax that our TS 4.1 compatibility
+      # check cannot parse. Keep Dependabot on the latest 25.x release until
+      # that compatibility guarantee is intentionally dropped.
+      - dependency-name: "@types/node"
+        update-types:
+          - "version-update:semver-major"
     groups:
       all-dependencies:
         patterns:
