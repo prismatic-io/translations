@@ -141,7 +141,7 @@ export const integrationMarketplacePhrases: NamespacedSharedAndUniquePhrases<Int
     "integration-marketplace__card.connectionErrorLabel": "Connection error",
     "integration-marketplace__card.connectionFailedLabel": "Connection failed",
     "integration-marketplace__card.noConnectionsText":
-      "No connections configured yet",
+      "No connections configured",
     "integration-marketplace__filterBar.activateButton": "Activated",
     "integration-marketplace__filterBar.allButton": "All",
     "integration-marketplace__filterBar.title": {
