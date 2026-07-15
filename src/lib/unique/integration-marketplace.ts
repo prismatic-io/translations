@@ -17,6 +17,21 @@ export interface IntegrationMarketplacePhrases {
   /** English: "Activated but not configured" */
   "integration-marketplace__card.ulcUnconfiguredLabel": SimplePhrase;
 
+  /** English: "Connected" */
+  "integration-marketplace__card.connectionConnectedLabel": SimplePhrase;
+
+  /** English: "Connection pending" */
+  "integration-marketplace__card.connectionPendingLabel": SimplePhrase;
+
+  /** English: "Connection error" */
+  "integration-marketplace__card.connectionErrorLabel": SimplePhrase;
+
+  /** English: "Connection failed" */
+  "integration-marketplace__card.connectionFailedLabel": SimplePhrase;
+
+  /** English: "No connections configured yet" */
+  "integration-marketplace__card.noConnectionsText": SimplePhrase;
+
   /** English: "Activated" */
   "integration-marketplace__filterBar.activateButton": SimplePhrase;
 
@@ -72,6 +87,18 @@ export interface IntegrationMarketplacePhrases {
   /** English: "All users are activated." */
   "integration-marketplace.usersActivatedTooltip": SimplePhrase;
 
+  /** English: "All connections active" */
+  "integration-marketplace.connectionConnectedTooltip": SimplePhrase;
+
+  /** English: "A connection hasn't been authorized yet. Finish configuring the connection." */
+  "integration-marketplace.connectionPendingTooltip": SimplePhrase;
+
+  /** English: "A connection has an error. Check the connection's configuration." */
+  "integration-marketplace.connectionErrorTooltip": SimplePhrase;
+
+  /** English: "A connection is failing. Check the connection's configuration." */
+  "integration-marketplace.connectionFailedTooltip": SimplePhrase;
+
   /** English: "Add %{integrationSingular}" */
   "integration-marketplace.addIntegrationDialog.buttonText":
     | ComplexPhrase<{
@@ -108,6 +135,13 @@ export const integrationMarketplacePhrases: NamespacedSharedAndUniquePhrases<Int
     "integration-marketplace__card.runningLabel": "Activated",
     "integration-marketplace__card.ulcUnconfiguredLabel":
       "Activated but not configured",
+    "integration-marketplace__card.connectionConnectedLabel": "Connected",
+    "integration-marketplace__card.connectionPendingLabel":
+      "Connection pending",
+    "integration-marketplace__card.connectionErrorLabel": "Connection error",
+    "integration-marketplace__card.connectionFailedLabel": "Connection failed",
+    "integration-marketplace__card.noConnectionsText":
+      "No connections configured yet",
     "integration-marketplace__filterBar.activateButton": "Activated",
     "integration-marketplace__filterBar.allButton": "All",
     "integration-marketplace__filterBar.title": {
@@ -146,6 +180,14 @@ export const integrationMarketplacePhrases: NamespacedSharedAndUniquePhrases<Int
     "integration-marketplace.usersUnconfiguredTooltip":
       "At least one instance is not configured for current user.",
     "integration-marketplace.usersActivatedTooltip": "All users are activated.",
+    "integration-marketplace.connectionConnectedTooltip":
+      "All connections active",
+    "integration-marketplace.connectionPendingTooltip":
+      "A connection hasn't been authorized yet. Finish configuring the connection.",
+    "integration-marketplace.connectionErrorTooltip":
+      "A connection has an error. Check the connection's configuration.",
+    "integration-marketplace.connectionFailedTooltip":
+      "A connection is failing. Check the connection's configuration.",
     "integration-marketplace.addIntegrationDialog.buttonText": {
       _: "Add %{integrationSingular}",
       integrationSingular: "Integration",
