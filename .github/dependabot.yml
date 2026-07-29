@@ -16,6 +16,12 @@ updates:
       - dependency-name: "@types/node"
         update-types:
           - "version-update:semver-major"
+      # TypeScript 7 is not compatible with ts-loader 9 or the repository's
+      # current TypeScript 4.1-through-6 compatibility matrix. Stay on the
+      # latest 6.x release until the build tooling and matrix are upgraded.
+      - dependency-name: "typescript"
+        update-types:
+          - "version-update:semver-major"
       # typescript-* aliases are pinned to specific older versions for the
       # typecheck:compat matrix. Bump manually.
       - dependency-name: "typescript-*"
