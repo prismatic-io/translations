@@ -36,6 +36,7 @@ import type {
   DetailPhrases,
   DialogPhrases,
   ExecutionPhrases,
+  ExecutionRunPhrases,
   FilterPhrases,
   HeaderPhrases,
   InputPhrases,
@@ -44,6 +45,7 @@ import type {
   NullStatePhrases,
   OAuthConnectionPhrases,
   PopoverPhrases,
+  QueryBuilderPhrases,
   TabPhrases,
   TooltipPhrases,
   TriggerDetailsPhrases,
@@ -99,6 +101,7 @@ expectTypeOf<SharedPhrases>().toMatchTypeOf<DateTimePhrases>();
 expectTypeOf<SharedPhrases>().toMatchTypeOf<DetailPhrases>();
 expectTypeOf<SharedPhrases>().toMatchTypeOf<DialogPhrases>();
 expectTypeOf<SharedPhrases>().toMatchTypeOf<ExecutionPhrases>();
+expectTypeOf<SharedPhrases>().toMatchTypeOf<ExecutionRunPhrases>();
 expectTypeOf<SharedPhrases>().toMatchTypeOf<FilterPhrases>();
 expectTypeOf<SharedPhrases>().toMatchTypeOf<HeaderPhrases>();
 expectTypeOf<SharedPhrases>().toMatchTypeOf<InputPhrases>();
@@ -107,6 +110,7 @@ expectTypeOf<SharedPhrases>().toMatchTypeOf<NoResultsPhrases>();
 expectTypeOf<SharedPhrases>().toMatchTypeOf<NullStatePhrases>();
 expectTypeOf<SharedPhrases>().toMatchTypeOf<OAuthConnectionPhrases>();
 expectTypeOf<SharedPhrases>().toMatchTypeOf<PopoverPhrases>();
+expectTypeOf<SharedPhrases>().toMatchTypeOf<QueryBuilderPhrases>();
 expectTypeOf<SharedPhrases>().toMatchTypeOf<TabPhrases>();
 expectTypeOf<SharedPhrases>().toMatchTypeOf<TooltipPhrases>();
 expectTypeOf<SharedPhrases>().toMatchTypeOf<TriggerDetailsPhrases>();

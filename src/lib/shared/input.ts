@@ -273,6 +273,9 @@ export interface InputPhrases {
   /** English: "Successful" */
   "input.status.successfulValue": SimplePhrase;
 
+  /** English: "Success" */
+  "input.status.successValue": SimplePhrase;
+
   /** English: "Cleared" */
   "input.status.clearedValue": SimplePhrase;
 
@@ -305,6 +308,12 @@ export interface InputPhrases {
 
   /** English: "Past 24 Hours" */
   "input.timeRange.past24HoursValue": SimplePhrase;
+
+  /** English: "Past Week" */
+  "input.timeRange.pastWeekValue": SimplePhrase;
+
+  /** English: "Past 2 Weeks" */
+  "input.timeRange.past2WeeksValue": SimplePhrase;
 
   /** English: "Custom" */
   "input.timeRange.customValue": SimplePhrase;
@@ -469,6 +478,7 @@ export const inputPhrases: InputPhrases = {
   "input.status.failedValue": "Failed",
   "input.status.runningValue": "Running",
   "input.status.successfulValue": "Successful",
+  "input.status.successValue": "Success",
   "input.status.clearedValue": "Cleared",
   "input.status.unclearedValue": "Uncleared",
   "input.statusLabel": "Status",
@@ -480,6 +490,8 @@ export const inputPhrases: InputPhrases = {
   "input.timeRange.past15MinutesValue": "Past 15 Minutes",
   "input.timeRange.pastHourValue": "Past Hour",
   "input.timeRange.past24HoursValue": "Past 24 Hours",
+  "input.timeRange.pastWeekValue": "Past Week",
+  "input.timeRange.past2WeeksValue": "Past 2 Weeks",
   "input.timeRange.customValue": "Custom",
   "input.timeRangeRange.surroundingValue": "Surrounding",
   "input.timeRangeRange.afterValue": "After",
