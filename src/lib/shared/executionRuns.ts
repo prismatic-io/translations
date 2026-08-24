@@ -312,10 +312,18 @@ export interface ExecutionRunPhrases {
   "executionRuns.invokeType.instanceSyncFlowValue": SimplePhrase;
 
   /** English: "Integration Endpoint Test" */
-  "executionRuns.invokeType.integrationEndpointTestValue": SimplePhrase;
+  "executionRuns.invokeType.integrationEndpointTestValue":
+    | ComplexPhrase<{
+        integrationSingular: string;
+      }>
+    | SimplePhrase;
 
   /** English: "Integration Flow Test" */
-  "executionRuns.invokeType.integrationFlowTestValue": SimplePhrase;
+  "executionRuns.invokeType.integrationFlowTestValue":
+    | ComplexPhrase<{
+        integrationSingular: string;
+      }>
+    | SimplePhrase;
 
   /** English: "Scheduled" */
   "executionRuns.invokeType.scheduledValue": SimplePhrase;
@@ -522,9 +530,14 @@ export const executionRunPhrases: ExecutionRunPhrases = {
   "executionRuns.invokeType.crossFlowValue": "Cross Flow",
   "executionRuns.invokeType.deployFlowValue": "Deploy Flow",
   "executionRuns.invokeType.instanceSyncFlowValue": "Instance Sync Flow",
-  "executionRuns.invokeType.integrationEndpointTestValue":
-    "Integration Endpoint Test",
-  "executionRuns.invokeType.integrationFlowTestValue": "Integration Flow Test",
+  "executionRuns.invokeType.integrationEndpointTestValue": {
+    _: "%{integrationSingular} Endpoint Test",
+    integrationSingular: "Integration",
+  },
+  "executionRuns.invokeType.integrationFlowTestValue": {
+    _: "%{integrationSingular} Flow Test",
+    integrationSingular: "Integration",
+  },
   "executionRuns.invokeType.scheduledValue": "Scheduled",
   "executionRuns.invokeType.tearDownFlowValue": "Tear Down Flow",
   "executionRuns.invokeType.webhookValue": "Webhook",
