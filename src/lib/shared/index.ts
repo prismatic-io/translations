@@ -9,6 +9,7 @@ import { DataTablePhrases, dataTablePhrases } from "./dataTable";
 import { DateTimePhrases, dateTimePhrases } from "./dateTime";
 import { DetailPhrases, detailPhrases } from "./detail";
 import { DialogPhrases, dialogPhrases } from "./dialog";
+import { ExecutionRunPhrases, executionRunPhrases } from "./executionRuns";
 import { ExecutionPhrases, executionPhrases } from "./executions";
 import { FilterPhrases, filterPhrases } from "./filter";
 import { HeaderPhrases, headerPhrases } from "./header";
@@ -21,6 +22,7 @@ import {
   oAuthConnectionPhrases,
 } from "./oauthConnection";
 import { PopoverPhrases, popoverPhrases } from "./popover";
+import { QueryBuilderPhrases, queryBuilderPhrases } from "./queryBuilder";
 import { TabPhrases, tabPhrases } from "./tab";
 import { TooltipPhrases, tooltipPhrases } from "./tooltip";
 import { TriggerDetailsPhrases, triggerDetailsPhrases } from "./triggerDetails";
@@ -44,7 +46,9 @@ export {
   detailPhrases,
   dialogPhrases,
   ExecutionPhrases,
+  ExecutionRunPhrases,
   executionPhrases,
+  executionRunPhrases,
   FilterPhrases,
   filterPhrases,
   HeaderPhrases,
@@ -61,6 +65,8 @@ export {
   oAuthConnectionPhrases,
   PopoverPhrases,
   popoverPhrases,
+  QueryBuilderPhrases,
+  queryBuilderPhrases,
   TabPhrases,
   TooltipPhrases,
   TriggerDetailsPhrases,
@@ -79,6 +85,7 @@ export type SharedPhrases = ChipPhases &
   DetailPhrases &
   DialogPhrases &
   ExecutionPhrases &
+  ExecutionRunPhrases &
   FilterPhrases &
   HeaderPhrases &
   InputPhrases &
@@ -86,6 +93,7 @@ export type SharedPhrases = ChipPhases &
   NoResultsPhrases &
   OAuthConnectionPhrases &
   PopoverPhrases &
+  QueryBuilderPhrases &
   TabPhrases &
   TooltipPhrases &
   TriggerDetailsPhrases &
@@ -102,6 +110,7 @@ export const sharedPhrases: SharedPhrases = {
   ...detailPhrases,
   ...dialogPhrases,
   ...executionPhrases,
+  ...executionRunPhrases,
   ...filterPhrases,
   ...headerPhrases,
   ...inputPhrases,
@@ -109,6 +118,7 @@ export const sharedPhrases: SharedPhrases = {
   ...noResultsPhrases,
   ...oAuthConnectionPhrases,
   ...popoverPhrases,
+  ...queryBuilderPhrases,
   ...tabPhrases,
   ...tooltipPhrases,
   ...triggerDetailsPhrases,

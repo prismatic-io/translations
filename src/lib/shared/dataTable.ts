@@ -105,6 +105,66 @@ export interface DataTablePhrases {
 
   /** English: "Source" */
   "dataTable.sourceLabel": SimplePhrase;
+
+  /** English: "Columns" */
+  "dataTable.columnsButton": SimplePhrase;
+
+  /** English: "Table columns" */
+  "dataTable.columnsTitle": SimplePhrase;
+
+  /** English: "Drag between the lists to show or hide, and to reorder" */
+  "dataTable.columnsDescription": SimplePhrase;
+
+  /** English: "Done" */
+  "dataTable.columnsDoneButton": SimplePhrase;
+
+  /** English: "Drag a column here" */
+  "dataTable.columnsEmptyText": SimplePhrase;
+
+  /** English: "Hidden" */
+  "dataTable.columnsHiddenLabel": SimplePhrase;
+
+  /** English: "Visible" */
+  "dataTable.columnsVisibleLabel": SimplePhrase;
+
+  /** English: "This column can't be removed" */
+  "dataTable.columnsLockedText": SimplePhrase;
+
+  /** English: "Hide column" */
+  "dataTable.hideColumnOption": SimplePhrase;
+
+  /** English: "Manage columns" */
+  "dataTable.manageColumnsOption": SimplePhrase;
+
+  /** English: "%{columnLabel} value options" */
+  "dataTable.cellMenuLabel": ComplexPhrase<{
+    columnLabel: string;
+  }>;
+
+  /** English: "%{columnLabel} column options" */
+  "dataTable.headerMenuLabel": ComplexPhrase<{
+    columnLabel: string;
+  }>;
+
+  /** English: "Hide %{columnLabel}" */
+  "dataTable.hideColumnLabel": ComplexPhrase<{
+    columnLabel: string;
+  }>;
+
+  /** English: "Reorder %{columnLabel}" */
+  "dataTable.reorderColumnLabel": ComplexPhrase<{
+    columnLabel: string;
+  }>;
+
+  /** English: "Resize %{columnLabel}" */
+  "dataTable.resizeColumnLabel": ComplexPhrase<{
+    columnLabel: string;
+  }>;
+
+  /** English: "Show %{columnLabel}" */
+  "dataTable.showColumnLabel": ComplexPhrase<{
+    columnLabel: string;
+  }>;
 }
 
 export const dataTablePhrases: DataTablePhrases = {
@@ -144,4 +204,41 @@ export const dataTablePhrases: DataTablePhrases = {
   "dataTable.versionLabel": "Version",
   "dataTable.userIdentifierLabel": "User Identifier",
   "dataTable.sourceLabel": "Source",
+
+  // configurable table affordances
+  "dataTable.columnsButton": "Columns",
+  "dataTable.columnsTitle": "Table columns",
+  "dataTable.columnsDescription":
+    "Drag between the lists to show or hide, and to reorder",
+  "dataTable.columnsDoneButton": "Done",
+  "dataTable.columnsEmptyText": "Drag a column here",
+  "dataTable.columnsHiddenLabel": "Hidden",
+  "dataTable.columnsVisibleLabel": "Visible",
+  "dataTable.columnsLockedText": "This column can't be removed",
+  "dataTable.hideColumnOption": "Hide column",
+  "dataTable.manageColumnsOption": "Manage columns",
+  "dataTable.cellMenuLabel": {
+    _: "%{columnLabel} value options",
+    columnLabel: "",
+  },
+  "dataTable.headerMenuLabel": {
+    _: "%{columnLabel} column options",
+    columnLabel: "",
+  },
+  "dataTable.hideColumnLabel": {
+    _: "Hide %{columnLabel}",
+    columnLabel: "",
+  },
+  "dataTable.reorderColumnLabel": {
+    _: "Reorder %{columnLabel}",
+    columnLabel: "",
+  },
+  "dataTable.resizeColumnLabel": {
+    _: "Resize %{columnLabel}",
+    columnLabel: "",
+  },
+  "dataTable.showColumnLabel": {
+    _: "Show %{columnLabel}",
+    columnLabel: "",
+  },
 };
