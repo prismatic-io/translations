@@ -29,7 +29,11 @@ export interface ExecutionRunPhrases {
   "executionRuns.field.customerLabel": SimplePhrase;
 
   /** English: "Integration" */
-  "executionRuns.field.integrationLabel": SimplePhrase;
+  "executionRuns.field.integrationLabel":
+    | ComplexPhrase<{
+        integrationSingular: string;
+      }>
+    | SimplePhrase;
 
   /** English: "Flow" */
   "executionRuns.field.flowLabel": SimplePhrase;
@@ -89,10 +93,18 @@ export interface ExecutionRunPhrases {
   "executionRuns.field.customerExternalIdLabel": SimplePhrase;
 
   /** English: "Integration ID" */
-  "executionRuns.field.integrationIdLabel": SimplePhrase;
+  "executionRuns.field.integrationIdLabel":
+    | ComplexPhrase<{
+        integrationSingular: string;
+      }>
+    | SimplePhrase;
 
   /** English: "Integration Version Sequence ID" */
-  "executionRuns.field.integrationVersionSequenceIdLabel": SimplePhrase;
+  "executionRuns.field.integrationVersionSequenceIdLabel":
+    | ComplexPhrase<{
+        integrationSingular: string;
+      }>
+    | SimplePhrase;
 
   /** English: "Flow ID" */
   "executionRuns.field.flowIdLabel": SimplePhrase;
@@ -254,7 +266,12 @@ export interface ExecutionRunPhrases {
   "executionRuns.filterOptions.instancePlaceholder": SimplePhrase;
 
   /** English: "Select an integration" */
-  "executionRuns.filterOptions.integrationPlaceholder": SimplePhrase;
+  "executionRuns.filterOptions.integrationPlaceholder":
+    | ComplexPhrase<{
+        integrationSingularArticle: string;
+        integrationSingularLower: string;
+      }>
+    | SimplePhrase;
 
   /** English: "Select an instance type" */
   "executionRuns.filterOptions.instanceTypePlaceholder": SimplePhrase;
@@ -269,10 +286,18 @@ export interface ExecutionRunPhrases {
   "executionRuns.filterOptions.statusPlaceholder": SimplePhrase;
 
   /** English: "Integration" */
-  "executionRuns.instanceType.integrationValue": SimplePhrase;
+  "executionRuns.instanceType.integrationValue":
+    | ComplexPhrase<{
+        integrationSingular: string;
+      }>
+    | SimplePhrase;
 
   /** English: "Workflow" */
-  "executionRuns.instanceType.workflowValue": SimplePhrase;
+  "executionRuns.instanceType.workflowValue":
+    | ComplexPhrase<{
+        workflowSingular: string;
+      }>
+    | SimplePhrase;
 
   /** English: "AI Agent" */
   "executionRuns.invokeType.aiAgentValue": SimplePhrase;
@@ -351,7 +376,10 @@ export const executionRunPhrases: ExecutionRunPhrases = {
   "executionRuns.field.resultTypeLabel": "Result Type",
   "executionRuns.field.instanceLabel": "Instance",
   "executionRuns.field.customerLabel": "Customer",
-  "executionRuns.field.integrationLabel": "Integration",
+  "executionRuns.field.integrationLabel": {
+    _: "%{integrationSingular}",
+    integrationSingular: "Integration",
+  },
   "executionRuns.field.flowLabel": "Flow",
   "executionRuns.field.errorLabel": "Error",
   "executionRuns.field.errorStepLabel": "Error Step",
@@ -371,9 +399,14 @@ export const executionRunPhrases: ExecutionRunPhrases = {
   "executionRuns.field.instanceIdLabel": "Instance ID",
   "executionRuns.field.customerIdLabel": "Customer ID",
   "executionRuns.field.customerExternalIdLabel": "Customer External ID",
-  "executionRuns.field.integrationIdLabel": "Integration ID",
-  "executionRuns.field.integrationVersionSequenceIdLabel":
-    "Integration Version Sequence ID",
+  "executionRuns.field.integrationIdLabel": {
+    _: "%{integrationSingular} ID",
+    integrationSingular: "Integration",
+  },
+  "executionRuns.field.integrationVersionSequenceIdLabel": {
+    _: "%{integrationSingular} Version Sequence ID",
+    integrationSingular: "Integration",
+  },
   "executionRuns.field.flowIdLabel": "Flow ID",
   "executionRuns.field.flowStableIdLabel": "Flow Stable ID",
   "executionRuns.field.flowConfigIdLabel": "Flow Config ID",
@@ -465,7 +498,11 @@ export const executionRunPhrases: ExecutionRunPhrases = {
   // filter value option pickers
   "executionRuns.filterOptions.customerPlaceholder": "Select a customer",
   "executionRuns.filterOptions.instancePlaceholder": "Select an instance",
-  "executionRuns.filterOptions.integrationPlaceholder": "Select an integration",
+  "executionRuns.filterOptions.integrationPlaceholder": {
+    _: "Select %{integrationSingularArticle} %{integrationSingularLower}",
+    integrationSingularArticle: "an",
+    integrationSingularLower: "integration",
+  },
   "executionRuns.filterOptions.instanceTypePlaceholder":
     "Select an instance type",
   "executionRuns.filterOptions.invokeTypePlaceholder": "Select a type",
@@ -473,8 +510,14 @@ export const executionRunPhrases: ExecutionRunPhrases = {
   "executionRuns.filterOptions.statusPlaceholder": "Select a status",
 
   // enum value labels
-  "executionRuns.instanceType.integrationValue": "Integration",
-  "executionRuns.instanceType.workflowValue": "Workflow",
+  "executionRuns.instanceType.integrationValue": {
+    _: "%{integrationSingular}",
+    integrationSingular: "Integration",
+  },
+  "executionRuns.instanceType.workflowValue": {
+    _: "%{workflowSingular}",
+    workflowSingular: "Workflow",
+  },
   "executionRuns.invokeType.aiAgentValue": "AI Agent",
   "executionRuns.invokeType.crossFlowValue": "Cross Flow",
   "executionRuns.invokeType.deployFlowValue": "Deploy Flow",
