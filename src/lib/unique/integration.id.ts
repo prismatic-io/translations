@@ -59,6 +59,11 @@ export interface IntegrationIdPhrases {
   /** English: "There is an update available" */
   "integrations.id__banner.updateText": SimplePhrase;
 
+  /** English: "Each user will need to connect their own account before this %{integrationSingularLower} will run." */
+  "integrations.id__banner.userLevelConnectionsText": ComplexPhrase<{
+    integrationSingularLower: string;
+  }>;
+
   /** English: "Configure User Level Configuration" */
   "integrations.id__filterBar.configureUserButton": SimplePhrase;
 
@@ -118,6 +123,10 @@ export const integrationIdPhrases: NamespacedSharedAndUniquePhrases<IntegrationI
       "This will cancel any pending configuration changes and upgrade to the newest version.",
     "integrations.id__banner.updateButton": "Update",
     "integrations.id__banner.updateText": "There is an update available",
+    "integrations.id__banner.userLevelConnectionsText": {
+      _: "Each user will need to connect their own account before this %{integrationSingularLower} will run.",
+      integrationSingularLower: "integration",
+    },
     "integrations.id__filterBar.configureUserButton":
       "Configure User Level Configuration",
     "integrations.id__filterBar.reconfigureButton": "Reconfigure",
