@@ -129,6 +129,11 @@ export interface DialogPhrases {
     organizationName: string;
   }>;
 
+  /** English: "Each user will need to connect their own account before this %{integrationSingularLower} will run." */
+  "configurationWizardDialog.userLevelConnectionsWarningText": ComplexPhrase<{
+    integrationSingularLower: string;
+  }>;
+
   /** English: "Do you want to reset this value to the latest value?" */
   "configurationWizardDialog.dataSourceResetText": SimplePhrase;
 
@@ -352,6 +357,10 @@ export const dialogPhrases: DialogPhrases = {
   "configurationWizardDialog.missingEmbeddedConfigVariablesWarningText": {
     _: "This page contains non-visible config variables that need to be set by %{organizationName} before continuing.",
     organizationName: "the organization",
+  },
+  "configurationWizardDialog.userLevelConnectionsWarningText": {
+    _: "Each user will need to connect their own account before this %{integrationSingularLower} will run.",
+    integrationSingularLower: "integration",
   },
   "configurationWizardDialog.dataSourceResetText":
     "Do you want to reset this value to the latest value?",

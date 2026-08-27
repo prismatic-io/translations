@@ -115,13 +115,13 @@ export interface ConfigWizardPhrases {
   /** English: "Disconnecting this connection will apply to all locations where it's used. This may cause those locations to stop working as expected." */
   "configWizard.configPage.connection.disconnect.confirmation.message": SimplePhrase;
 
-  /** English: "Connection usage" */
+  /** English: "Connection Usage" */
   "configWizard.configPage.connection.usage.label": SimplePhrase;
 
   /** English: "Warning" */
   "configWizard.configPage.connection.usage.warning.label": SimplePhrase;
 
-  /** English: "Updates made to this shared connection will be applied to %{usageCount} other locations where it is used" */
+  /** English: "Other places use this connection too. Any change you save here applies to all of them, listed below." */
   "configWizard.configPage.connection.usage.warning": ComplexPhrase<{
     usageCount: number;
   }>;
@@ -199,10 +199,10 @@ export const configWizardPhrases: ConfigWizardPhrases = {
     "Disconnect Connection",
   "configWizard.configPage.connection.disconnect.confirmation.message":
     "Disconnecting this connection will apply to all locations where it's used. This may cause those locations to stop working as expected.",
-  "configWizard.configPage.connection.usage.label": "Connection usage",
+  "configWizard.configPage.connection.usage.label": "Connection Usage",
   "configWizard.configPage.connection.usage.warning.label": "Warning",
   "configWizard.configPage.connection.usage.warning": {
-    _: "Updates made to this shared connection will be applied to %{usageCount} other locations where it is used",
+    _: "Other places use this connection too. Any change you save here applies to all of them, listed below.",
     usageCount: 0,
   },
   "configWizard.configPage.connection.name.label": "Name",
