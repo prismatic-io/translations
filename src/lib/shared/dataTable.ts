@@ -19,6 +19,9 @@ export interface DataTablePhrases {
   /** English: "Comments" */
   "dataTable.commentsLabel": SimplePhrase;
 
+  /** English: "Created on" */
+  "dataTable.createdOnLabel": SimplePhrase;
+
   /** English: "Customer" */
   "dataTable.customerLabel": SimplePhrase;
 
@@ -66,6 +69,9 @@ export interface DataTablePhrases {
 
   /** English: "Last triggered" */
   "dataTable.lastTriggeredAtLabel": SimplePhrase;
+
+  /** English: "Location" */
+  "dataTable.locationLabel": SimplePhrase;
 
   /** English: "Message" */
   "dataTable.messageLabel": SimplePhrase;
@@ -174,6 +180,7 @@ export const dataTablePhrases: DataTablePhrases = {
   "dataTable.logTypeLabel": "Type",
   "dataTable.commentsLabel": "Comments",
   "dataTable.configVariableLabel": "Config Variable",
+  "dataTable.createdOnLabel": "Created on",
   "dataTable.customerLabel": "Customer",
   "dataTable.defaultLabel": "Default",
   "dataTable.descriptionLabel": "Description",
@@ -191,6 +198,7 @@ export const dataTablePhrases: DataTablePhrases = {
   "dataTable.labelsLabel": "Labels",
   "dataTable.lastTriggeredAtLabel": "Last triggered",
   "dataTable.lastRunLabel": "Last run",
+  "dataTable.locationLabel": "Location",
   "dataTable.messageLabel": "Message",
   "dataTable.nameLabel": "Name",
   "dataTable.requiredLabel": "Required",
