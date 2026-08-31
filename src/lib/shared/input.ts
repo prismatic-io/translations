@@ -267,6 +267,9 @@ export interface InputPhrases {
   /** English: "Failed" */
   "input.status.failedValue": SimplePhrase;
 
+  /** English: "Queued" */
+  "input.status.queuedValue": SimplePhrase;
+
   /** English: "Running" */
   "input.status.runningValue": SimplePhrase;
 
@@ -476,6 +479,7 @@ export const inputPhrases: InputPhrases = {
   "input.status.disabledValue": "Disabled",
   "input.status.enabledValue": "Enabled",
   "input.status.failedValue": "Failed",
+  "input.status.queuedValue": "Queued",
   "input.status.runningValue": "Running",
   "input.status.successfulValue": "Successful",
   "input.status.successValue": "Success",
