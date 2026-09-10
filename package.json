@@ -21,7 +21,7 @@
   "publishConfig": {
     "access": "public"
   },
-  "version": "2.14.1",
+  "version": "2.14.2",
   "main": "dist/index.js",
   "types": "dist/index.d.ts",
   "files": [
