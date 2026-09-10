@@ -114,6 +114,9 @@ export interface QueryBuilderPhrases {
   /** English: "is on or before" */
   "queryBuilder.operator.isOnOrBeforeValue": SimplePhrase;
 
+  /** English: "starts with" */
+  "queryBuilder.operator.startsWithValue": SimplePhrase;
+
   /** English: "Groups can be nested %{limit} levels deep." */
   "queryBuilder.depthError": ComplexPhrase<{
     limit: number;
@@ -174,6 +177,7 @@ export const queryBuilderPhrases: QueryBuilderPhrases = {
   "queryBuilder.operator.isEmptyValue": "is empty",
   "queryBuilder.operator.isOnOrAfterValue": "is on or after",
   "queryBuilder.operator.isOnOrBeforeValue": "is on or before",
+  "queryBuilder.operator.startsWithValue": "starts with",
   "queryBuilder.depthError": {
     _: "Groups can be nested %{limit} levels deep.",
     limit: 0,
