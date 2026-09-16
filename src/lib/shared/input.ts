@@ -177,6 +177,9 @@ export interface InputPhrases {
   /** English: "All" */
   "input.logType.allValue": SimplePhrase;
 
+  /** English: "Log | Configuration Init" */
+  "input.logType.configurationInitValue": SimplePhrase;
+
   /** English: "Log | Executions" */
   "input.logType.executionsValue": SimplePhrase;
 
@@ -188,6 +191,9 @@ export interface InputPhrases {
 
   /** English: "Log | Data Sources" */
   "input.logType.dataSourcesValue": SimplePhrase;
+
+  /** English: "Log | Server Functions" */
+  "input.logType.serverFunctionsValue": SimplePhrase;
 
   /** English: "Step Results" */
   "input.logType.stepResultsValue": SimplePhrase;
@@ -444,10 +450,12 @@ export const inputPhrases: InputPhrases = {
     "Execution & Connection",
   "input.logType.integrationExecutionValue": "Execution Only",
   "input.logType.allValue": "All",
+  "input.logType.configurationInitValue": "Log | Configuration Init",
   "input.logType.executionsValue": "Log | Executions",
   "input.logType.connectionsValue": "Log | Connections",
   "input.logType.managementValue": "Log | Management Triggers",
   "input.logType.dataSourcesValue": "Log | Data Sources",
+  "input.logType.serverFunctionsValue": "Log | Server Functions",
   "input.logType.stepResultsValue": "Step Results",
   "input.logType.triggerPayloadsValue": "Trigger Payloads",
   "input.logTypeLabel": "Type",
