@@ -1,4 +1,4 @@
-import type { SimplePhrase } from "../../types";
+import type { ComplexPhrase, SimplePhrase } from "../../types";
 
 export interface CommonPhrases {
   /** English: "Cancel" */
@@ -42,6 +42,9 @@ export interface CommonPhrases {
 
   /** English: "Example" */
   "common.example": SimplePhrase;
+
+  /** English: "\"%{name}\" was removed and is no longer available." */
+  "common.instanceRemovedNotification": ComplexPhrase<{ name: string }>;
 }
 
 export const commonPhrases: CommonPhrases = {
@@ -59,4 +62,8 @@ export const commonPhrases: CommonPhrases = {
   "common.notEnabledStatus": "Not Enabled",
   "common.helpButton": "Help",
   "common.example": "Example",
+  "common.instanceRemovedNotification": {
+    _: '"%{name}" was removed and is no longer available.',
+    name: "",
+  },
 };
