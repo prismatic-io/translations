@@ -48,6 +48,12 @@ export interface TabPhrases {
   /** English: "Summary" */
   "summaryTab.title": SimplePhrase;
 
+  /** English: "Timeline" */
+  "timelineTab.title": SimplePhrase;
+
+  /** English: "Events" */
+  "eventsTab.title": SimplePhrase;
+
   /** English: "Users" */
   "usersTab.title": SimplePhrase;
   /** English: "Test is running" */
@@ -174,6 +180,8 @@ export const tabPhrases: TabPhrases = {
   },
   "payloadTab.title": "Payload",
   "summaryTab.title": "Summary",
+  "timelineTab.title": "Timeline",
+  "eventsTab.title": "Events",
   "teamMembersTab.title": "Team Members",
   "usersTab.title": "Users",
   "customersTab.title": "Customers",

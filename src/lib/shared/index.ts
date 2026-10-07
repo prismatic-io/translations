@@ -9,6 +9,10 @@ import { DataTablePhrases, dataTablePhrases } from "./dataTable";
 import { DateTimePhrases, dateTimePhrases } from "./dateTime";
 import { DetailPhrases, detailPhrases } from "./detail";
 import { DialogPhrases, dialogPhrases } from "./dialog";
+import {
+  ExecutionDetailPhrases,
+  executionDetailPhrases,
+} from "./executionDetail";
 import { ExecutionRunPhrases, executionRunPhrases } from "./executionRuns";
 import { ExecutionPhrases, executionPhrases } from "./executions";
 import { FilterPhrases, filterPhrases } from "./filter";
@@ -45,8 +49,10 @@ export {
   dateTimePhrases,
   detailPhrases,
   dialogPhrases,
+  ExecutionDetailPhrases,
   ExecutionPhrases,
   ExecutionRunPhrases,
+  executionDetailPhrases,
   executionPhrases,
   executionRunPhrases,
   FilterPhrases,
@@ -84,6 +90,7 @@ export type SharedPhrases = ChipPhases &
   DataTablePhrases &
   DetailPhrases &
   DialogPhrases &
+  ExecutionDetailPhrases &
   ExecutionPhrases &
   ExecutionRunPhrases &
   FilterPhrases &
@@ -109,6 +116,7 @@ export const sharedPhrases: SharedPhrases = {
   ...dataTablePhrases,
   ...detailPhrases,
   ...dialogPhrases,
+  ...executionDetailPhrases,
   ...executionPhrases,
   ...executionRunPhrases,
   ...filterPhrases,

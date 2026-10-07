@@ -35,6 +35,7 @@ import type {
   DateTimePhrases,
   DetailPhrases,
   DialogPhrases,
+  ExecutionDetailPhrases,
   ExecutionPhrases,
   ExecutionRunPhrases,
   FilterPhrases,
@@ -100,6 +101,7 @@ expectTypeOf<SharedPhrases>().toMatchTypeOf<DataTablePhrases>();
 expectTypeOf<SharedPhrases>().toMatchTypeOf<DateTimePhrases>();
 expectTypeOf<SharedPhrases>().toMatchTypeOf<DetailPhrases>();
 expectTypeOf<SharedPhrases>().toMatchTypeOf<DialogPhrases>();
+expectTypeOf<SharedPhrases>().toMatchTypeOf<ExecutionDetailPhrases>();
 expectTypeOf<SharedPhrases>().toMatchTypeOf<ExecutionPhrases>();
 expectTypeOf<SharedPhrases>().toMatchTypeOf<ExecutionRunPhrases>();
 expectTypeOf<SharedPhrases>().toMatchTypeOf<FilterPhrases>();
@@ -317,6 +319,12 @@ const _phrasesVal: Phrases = phrases;
 expectTypeOf<ChipPhases["chip.templateLabel"]>().toBeString();
 expectTypeOf<CommonPhrases["common.cancelButton"]>().toBeString();
 expectTypeOf<ExecutionPhrases["executionDetails.title"]>().toBeString();
+expectTypeOf<
+  ExecutionDetailPhrases["executionDetail.batches.title"]
+>().toBeString();
+expectTypeOf<
+  ExecutionDetailPhrases["executionDetail.batches.replayLimitText"]
+>().toHaveProperty("limit");
 
 // ComplexPhrase keys have the _ property
 expectTypeOf<
