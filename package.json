@@ -34,7 +34,7 @@
     "check:fix": "biome check --write",
     "format": "biome format --write",
     "lint": "biome lint",
-    "test": "echo \"Warning: no test specified\"",
+    "test": "node --disable-warning=MODULE_TYPELESS_PACKAGE_JSON --test \"__tests__/**/*.test.ts\"",
     "typecheck": "node_modules/typescript/bin/tsc -p tsconfig.typetest.json",
     "typecheck:compat": "node_modules/typescript-41/bin/tsc -p tsconfig.compat-legacy.json && node_modules/typescript-49/bin/tsc -p tsconfig.compat.json && node_modules/typescript-50/bin/tsc -p tsconfig.compat.json && node_modules/typescript-52/bin/tsc -p tsconfig.compat.json && node_modules/typescript-55/bin/tsc -p tsconfig.compat.json && node_modules/typescript-58/bin/tsc -p tsconfig.compat.json && node_modules/typescript/bin/tsc -p tsconfig.compat-current.json"
   },

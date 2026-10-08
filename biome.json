@@ -8,6 +8,7 @@
   "files": {
     "includes": [
       "src/**",
+      "__tests__/**",
       "__typetests__/**",
       "package.json",
       "tsconfig*.json",

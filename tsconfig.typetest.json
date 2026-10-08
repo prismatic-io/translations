@@ -1,9 +1,11 @@
 {
   "extends": "./tsconfig.json",
   "compilerOptions": {
+    "allowImportingTsExtensions": true,
     "noEmit": true,
     "noUnusedLocals": false,
-    "rootDir": "."
+    "rootDir": ".",
+    "types": ["node"]
   },
-  "include": ["src", "__typetests__/phrases.test-d.ts"]
+  "include": ["src", "__tests__", "__typetests__/phrases.test-d.ts"]
 }

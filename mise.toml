@@ -10,6 +10,10 @@ run = "npm run build"
 description = "Run Biome formatter, linter, and import-organizer checks"
 run = "npm run check"
 
+[tasks.test]
+description = "Run unit tests for the helper utilities"
+run = "npm test"
+
 [tasks.typecheck]
 description = "Run type regression tests against source"
 run = "npm run typecheck"
@@ -26,7 +30,7 @@ run = "scripts/benchmark.sh"
 
 [tasks.validate]
 description = "Run all validation checks"
-depends = ["check", "typecheck", "typecheck:compat"]
+depends = ["check", "test", "typecheck", "typecheck:compat"]
 
 [tasks.version-bump]
 description = "Bump package.json version (set BUMP_TYPE=patch|minor|major|preview)"
