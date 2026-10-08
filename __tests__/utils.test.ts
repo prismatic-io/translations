@@ -9,8 +9,8 @@ import {
 describe("getComplexPhase", () => {
   it("replaces a placeholder with its value", () => {
     assert.equal(
-      getComplexPhase({ _: "Hello %{name}", name: "Katryn" }),
-      "Hello Katryn",
+      getComplexPhase({ _: "Hello %{name}", name: "World" }),
+      "Hello World",
     );
   });
 
@@ -34,13 +34,13 @@ describe("getComplexPhase", () => {
 
   it("leaves placeholders without a value in place", () => {
     assert.equal(
-      getComplexPhase({ _: "Hello %{name}, %{greeting}", name: "Katryn" }),
-      "Hello Katryn, %{greeting}",
+      getComplexPhase({ _: "Hello %{name}, %{greeting}", name: "World" }),
+      "Hello World, %{greeting}",
     );
   });
 
   it("returns an empty string when the phrase has no template", () => {
-    assert.equal(getComplexPhase({ name: "Katryn" }), "");
+    assert.equal(getComplexPhase({ name: "World" }), "");
   });
 });
 
