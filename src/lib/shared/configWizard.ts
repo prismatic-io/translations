@@ -89,6 +89,9 @@ export interface ConfigWizardPhrases {
   /** English: "Cancel" */
   "configWizard.configPage.configVariableField.schedule.cancel": SimplePhrase;
 
+  /** English: "Map fields" */
+  "configWizard.configPage.configVariableField.fieldMapping.mapFields.label": SimplePhrase;
+
   /** English: "Connection" */
   "configWizard.configPage.connection.field.label": SimplePhrase;
 
@@ -185,6 +188,8 @@ export const configWizardPhrases: ConfigWizardPhrases = {
     "Close",
   "configWizard.configPage.configVariableField.schedule.save": "Save",
   "configWizard.configPage.configVariableField.schedule.cancel": "Cancel",
+  "configWizard.configPage.configVariableField.fieldMapping.mapFields.label":
+    "Map fields",
   "configWizard.configPage.connection.field.label": "Connection",
   "configWizard.configPage.connection.field.addNew.label": "Add new connection",
   "configWizard.configPage.connection.field.usageLocations.label": {
